@@ -1,0 +1,2304 @@
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.10.28)  5 DEC 2020 11:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**binduyoga-edition.tex
+(./binduyoga-edition.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2016/05/16 v3.7f configurable book, report, article docu
+ment class
+\onelineskip=\skip41
+\lxvchars=\skip42
+\xlvchars=\skip43
+\@memcnta=\count79
+\c@@memmarkcntra=\count80
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ifetex/ifetex.sty
+Package: ifetex 2011/12/15 v1.2 ifetex
+
+(/usr/local/texlive/2017/texmf-dist/tex/plain/ifetex/ifetex.tex))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+\stockheight=\skip44
+\stockwidth=\skip45
+\trimtop=\skip46
+\trimedge=\skip47
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/mem11.clo
+File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
+)
+\binding=\skip48
+\spinemargin=\skip49
+\foremargin=\skip50
+\uppermargin=\skip51
+\lowermargin=\skip52
+\headdrop=\skip53
+\normalrulethickness=\skip54
+\mem@maxheadheight=\skip55
+\mem@maxfootheight=\skip56
+\headwidth=\skip57
+\c@storedpagenumber=\count81
+\memPD=\dimen102
+\m@mabparskip=\skip58
+\thanksmarkwidth=\skip59
+\thanksmarksep=\skip60
+\droptitle=\skip61
+\c@book=\count82
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\beforechapskip=\skip62
+\midchapskip=\skip63
+\afterchapskip=\skip64
+\chapindent=\skip65
+\bottomsectionskip=\skip66
+\secindent=\skip67
+\beforesecskip=\skip68
+\aftersecskip=\skip69
+\subsecindent=\skip70
+\beforesubsecskip=\skip71
+\aftersubsecskip=\skip72
+\subsubsecindent=\skip73
+\beforesubsubsecskip=\skip74
+\aftersubsubsecskip=\skip75
+\paraindent=\skip76
+\beforeparaskip=\skip77
+\afterparaskip=\skip78
+\subparaindent=\skip79
+\beforesubparaskip=\skip80
+\aftersubparaskip=\skip81
+\pfbreakskip=\skip82
+\c@@ppsavesec=\count90
+\c@@ppsaveapp=\count91
+\ragrparindent=\dimen103
+\everylistparindent=\dimen104
+\parsepi=\skip83
+\topsepi=\skip84
+\itemsepi=\skip85
+\parsepii=\skip86
+\topsepii=\skip87
+\topsepiii=\skip88
+\itemsepii=\skip89
+\itemsepiii=\skip90
+\partopsepii=\skip91
+\partopsepiii=\skip92
+\m@msavetopsep=\skip93
+\m@msavepartopsep=\skip94
+\@enLab=\toks14
+\abstitleskip=\skip95
+\absleftindent=\skip96
+\abs@leftindent=\dimen105
+\absrightindent=\skip97
+\absparindent=\skip98
+\absparsep=\skip99
+\c@vslineno=\count92
+\c@poemline=\count93
+\c@modulo@vs=\count94
+\c@memfvsline=\count95
+\vleftskip=\skip100
+\vrightskip=\skip101
+\stanzaskip=\skip102
+\versewidth=\skip103
+\vgap=\skip104
+\vindent=\skip105
+\vleftmargin=\dimen106
+\c@verse=\count96
+\c@chrsinstr=\count97
+\beforepoemtitleskip=\skip106
+\afterpoemtitleskip=\skip107
+\c@poem=\count98
+\beforePoemTitleskip=\skip108
+\midPoemTitleskip=\skip109
+\afterPoemTitleskip=\skip110
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks15
+\extratabsurround=\skip111
+\backup@length=\skip112
+\TX@col@width=\dimen109
+\TX@old@table=\dimen110
+\TX@old@col=\dimen111
+\TX@target=\dimen112
+\TX@delta=\dimen113
+\TX@cols=\count99
+\TX@ftn=\toks16
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen126
+\ctableftskip=\skip113
+\ctabrightskip=\skip114
+\abovecolumnspenalty=\count104
+\@linestogo=\count105
+\@cellstogo=\count106
+\@cellsincolumn=\count107
+\crtok=\toks17
+\@mincolumnwidth=\dimen127
+\c@newflo@tctr=\count108
+\mem@margin@floatbox=\box26
+\@contcwidth=\skip115
+\@contindw=\skip116
+\abovecaptionskip=\skip117
+\belowcaptionskip=\skip118
+\subfloattopskip=\skip119
+\subfloatcapskip=\skip120
+\subfloatcaptopadj=\skip121
+\subfloatbottomskip=\skip122
+\subfloatlabelskip=\skip123
+\subfloatcapmargin=\dimen128
+\c@@contsubnum=\count109
+\m@mscap@capbox=\box27
+\m@mscap@fbox=\box28
+\sidecapsep=\dimen129
+\sidecapwidth=\dimen130
+\m@m@tempdima=\dimen131
+\m@mscapraise=\dimen132
+\sidecapraise=\dimen133
+\m@mscapmainwidth=\dimen134
+\m@mscaplkern=\dimen135
+\beforeepigraphskip=\skip124
+\afterepigraphskip=\skip125
+\epigraphwidth=\skip126
+\epigraphrule=\skip127
+LaTeX Info: Redefining \em on input line 7551.
+LaTeX Info: Redefining \emph on input line 7559.
+\tocentryskip=\skip128
+\tocbaseline=\skip129
+\cftparskip=\skip130
+\cftbeforebookskip=\skip131
+\cftbookindent=\dimen136
+\cftbooknumwidth=\dimen137
+\cftbeforepartskip=\skip132
+\cftpartindent=\skip133
+\cftpartnumwidth=\skip134
+\cftbeforechapterskip=\skip135
+\cftchapterindent=\skip136
+\cftchapternumwidth=\skip137
+\cftbeforesectionskip=\skip138
+\cftsectionindent=\skip139
+\cftsectionnumwidth=\skip140
+\cftbeforesubsectionskip=\skip141
+\cftsubsectionindent=\skip142
+\cftsubsectionnumwidth=\skip143
+\cftbeforesubsubsectionskip=\skip144
+\cftsubsubsectionindent=\skip145
+\cftsubsubsectionnumwidth=\skip146
+\cftbeforeparagraphskip=\skip147
+\cftparagraphindent=\skip148
+\cftparagraphnumwidth=\skip149
+\cftbeforesubparagraphskip=\skip150
+\cftsubparagraphindent=\skip151
+\cftsubparagraphnumwidth=\skip152
+\prechapterprecisshift=\dimen138
+\c@maxsecnumdepth=\count110
+\bibindent=\dimen139
+\bibitemsep=\skip153
+\indexcolsep=\skip154
+\indexrule=\skip155
+\indexmarkstyle=\toks18
+\@indexbox=\insert199
+\glossarycolsep=\dimen140
+\glossaryrule=\dimen141
+\sideparvshift=\skip156
+\sideins=\insert198
+\sidebartopsep=\skip157
+\sidebarhsep=\skip158
+\sidebarvsep=\skip159
+\sidebarwidth=\skip160
+\footmarkwidth=\skip161
+\footmarksep=\skip162
+\footparindent=\skip163
+\footinsdim=\skip164
+\footinsv@r=\insert197
+\@mpfootinsv@r=\insert196
+\m@m@k=\count111
+\m@m@h=\dimen142
+\m@mipn@skip=\skip165
+\sidefootins=\insert195
+\sidefootadjust=\skip166
+\sidefootheight=\skip167
+\sidefoothsep=\skip168
+\sidefootvsep=\skip169
+\sidefootwidth=\skip170
+\m@mdownsf=\skip171
+\c@sidefootnote=\count112
+\sidefootmarkwidth=\skip172
+\sidefootmarksep=\skip173
+\sidefootparindent=\skip174
+\c@pagenote=\count113
+\c@pagenoteshadow=\count114
+\mem@pn@lastkern=\skip175
+\every@verbatim=\toks19
+\afterevery@verbatim=\toks20
+\verbatim@line=\toks21
+\tab@position=\count115
+\verbatim@in@stream=\read1
+\verbatimindent=\skip176
+\verbatim@out=\write3
+\bvboxsep=\skip177
+\c@memfbvline=\count116
+\c@bvlinectr=\count117
+\bvnumlength=\skip178
+\fb@frw=\dimen143
+\fb@frh=\dimen144
+\FrameRule=\dimen145
+\FrameSep=\dimen146
+\c@cp@cntr=\count118
+LaTeX Info: Redefining \: on input line 12068.
+LaTeX Info: Redefining \! on input line 12070.
+\c@ism@mctr=\count119
+\c@xsm@mctr=\count120
+\c@csm@mctr=\count121
+\c@ksm@mctr=\count122
+\c@xksm@mctr=\count123
+\c@cksm@mctr=\count124
+\c@msm@mctr=\count125
+\c@xmsm@mctr=\count126
+\c@cmsm@mctr=\count127
+\c@bsm@mctr=\count128
+\c@workm@mctr=\count129
+\c@sheetsequence=\count130
+\c@lastsheet=\count131
+\c@lastpage=\count132
+\c@figure=\count133
+\c@lofdepth=\count134
+\cftbeforefigureskip=\skip179
+\cftfigureindent=\skip180
+\cftfigurenumwidth=\skip181
+\c@table=\count135
+\c@lotdepth=\count136
+\cftbeforetableskip=\skip182
+\cfttableindent=\skip183
+\cfttablenumwidth=\skip184
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package array [2008/09/09] emulated by memoir.
+Package booktabs [2016/05/16] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package dcolumn [2008/07/23] emulated by memoir.
+Package delarray [2008/07/23] emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package mparhack [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package tabularx [2008/07/23] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/mempatch.sty
+Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
+))
+
+******************************************************
+Stock height and width: 625.96062pt by 441.01772pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 625.96062pt by 441.01772pt
+Text height and width: 473.4002pt by 330pt
+Spine and edge margins: 51.21495pt and 59.75081pt
+Upper and lower margins: 64.682pt and 87.8784pt
+Headheight and headsep: 5pt and 19.8738pt
+Footskip: 27.46295pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 45.75081pt
+Sidecapsep and sidecapwidth: 7pt and 111pt
+Sidebarhsep and sidebarwidth: 7pt and 111pt
+Sidebarvsep and sidebartopsep: 13.6pt and 0pt
+Sidebarheight: 539.9202pt
+Sidefoothsep and sidefootwidth: 7pt and 111pt
+Sidefootvsep and sidefootheight: 13.6pt and 539.9202pt
+******************************************************
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/reledmac/reledmac.sty
+Package: reledmac 2017/05/04 v2.20.0 typesetting critical editions
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks22
+\XKV@tempa@toks=\toks23
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count137
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/xargs/xargs.sty
+Package: xargs 2008/03/22 v1.1  extended macro definitions  (mpg)
+\xargs@max=\count138
+\xargs@toksa=\toks24
+\xargs@toksb=\toks25
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count139
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count140
+\decimalpart=\count141
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip185
+\RaggedLeftLeftskip=\skip186
+\RaggedRightLeftskip=\skip187
+\CenteringRightskip=\skip188
+\RaggedLeftRightskip=\skip189
+\RaggedRightRightskip=\skip190
+\CenteringParfillskip=\skip191
+\RaggedLeftParfillskip=\skip192
+\RaggedRightParfillskip=\skip193
+\JustifyingParfillskip=\skip194
+\CenteringParindent=\skip256
+\RaggedLeftParindent=\skip257
+\RaggedRightParindent=\skip258
+\JustifyingParindent=\skip259
+)
+\@l@dtempcnta=\count142
+\@l@dtempcntb=\count143
+\l@dnumpstartsL=\count144
+\section@num=\count145
+\led@toksa=\toks26
+\led@toksb=\toks27
+\line@margin=\count146
+\line@margin@columns=\count147
+\c@firstlinenum=\count148
+\c@linenumincrement=\count149
+\c@firstsublinenum=\count150
+\c@sublinenumincrement=\count151
+\lock@disp=\count152
+\sublock@disp=\count153
+\linenumsep=\skip260
+\line@num=\count154
+\subline@num=\count155
+\absline@num=\count156
+\@lock=\count157
+\sub@lock=\count158
+\page@num=\count159
+\endpage@num=\count160
+\endline@num=\count161
+\endsubline@num=\count162
+\@inputcheck=\read2
+\last@page@num=\count163
+\insert@count=\count164
+\linenum@out=\write5
+\@edtext@level=\count165
+\c@edtext=\count166
+\raw@text=\box29
+\num@lines=\count167
+\one@line=\box30
+\par@line=\count168
+\c@pstart=\count169
+\ballast@count=\count170
+\c@ballast=\count171
+\@k=\count172
+\@h=\dimen147
+\old@hsize=\dimen148
+\Afootins=\insert252
+\Aprevpage@num=\count173
+\Aprevpage@numR=\count174
+\Bfootins=\insert251
+\Bprevpage@num=\count175
+\Bprevpage@numR=\count176
+\c@line=\count177
+\c@subline=\count178
+\c@absline=\count179
+\sidenote@margin=\count180
+\l@dlp@rbox=\box31
+\l@drp@rbox=\box32
+\ledlsnotewidth=\dimen149
+\ledrsnotewidth=\dimen150
+\ledlsnotesep=\dimen151
+\ledrsnotesep=\dimen152
+\c@labidx=\count181
+\c@pageline=\count182
+\@edindex@fornote@=\count183
+\stanza@count=\count184
+\stanzaindentbase=\skip261
+\c@stanzaindentsrepetition=\count185
+\stanza@modulo=\count186
+\c@stanza=\count187
+\@emptytoks=\toks28
+\l@denvbody=\toks29
+\l@dampcount=\count188
+\l@dcolcount=\count189
+\hilfsbox=\box33
+\hilfsskip=\skip262
+\Hilfsbox=\box34
+\hilfscount=\count190
+\dcoli=\dimen153
+\dcolii=\dimen154
+\dcoliii=\dimen155
+\dcoliv=\dimen156
+\dcolv=\dimen157
+\dcolvi=\dimen158
+\dcolvii=\dimen159
+\dcolviii=\dimen160
+\dcolix=\dimen161
+\dcolx=\dimen162
+\dcolxi=\dimen163
+\dcolxii=\dimen164
+\dcolxiii=\dimen165
+\dcolxiv=\dimen166
+\dcolxv=\dimen167
+\dcolxvi=\dimen168
+\dcolxvii=\dimen169
+\dcolxviii=\dimen170
+\dcolxix=\dimen171
+\dcolxx=\dimen172
+\dcolxxi=\dimen173
+\dcolxxii=\dimen174
+\dcolxxiii=\dimen175
+\dcolxxiv=\dimen176
+\dcolxxv=\dimen177
+\dcolxxvi=\dimen178
+\dcolxxvii=\dimen179
+\dcolxxviii=\dimen180
+\dcolxxix=\dimen181
+\dcolxxx=\dimen182
+\dcolerr=\dimen183
+\edtabcolsep=\skip263
+\edfilldimen=\dimen184
+\c@addcolcount=\count191
+\HILFSskip=\skip264
+\Hilfsskip=\skip265
+\tabhilfbox=\box35
+\tabHilfbox=\box36
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lu
+aLaTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/makecmds/makecmds.sty
+Package: makecmds 2009/09/03 v1.0a extra command making commands
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2017/05/13 L3 programming layer (loader) 
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2017/05/13 L3 programming layer (code)
+\c_max_int=\count192
+\l_tmpa_int=\count193
+\l_tmpb_int=\count194
+\g_tmpa_int=\count266
+\g_tmpb_int=\count267
+\g__prg_map_int=\count268
+\c_log_iow=\count269
+\l_iow_line_count_int=\count270
+\l__iow_line_target_int=\count271
+\l__iow_one_indent_int=\count272
+\l__iow_indent_int=\count273
+\c_zero_dim=\dimen185
+\c_max_dim=\dimen186
+\l_tmpa_dim=\dimen187
+\l_tmpb_dim=\dimen188
+\g_tmpa_dim=\dimen189
+\g_tmpb_dim=\dimen190
+\c_zero_skip=\skip266
+\c_max_skip=\skip267
+\l_tmpa_skip=\skip268
+\l_tmpb_skip=\skip269
+\g_tmpa_skip=\skip270
+\g_tmpb_skip=\skip271
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+\l_keys_choice_int=\count274
+\c__fp_leading_shift_int=\count275
+\c__fp_middle_shift_int=\count276
+\c__fp_trailing_shift_int=\count277
+\c__fp_big_leading_shift_int=\count278
+\c__fp_big_middle_shift_int=\count279
+\c__fp_big_trailing_shift_int=\count280
+\c__fp_Bigg_leading_shift_int=\count281
+\c__fp_Bigg_middle_shift_int=\count282
+\c__fp_Bigg_trailing_shift_int=\count283
+\l__sort_length_int=\count284
+\l__sort_min_int=\count285
+\l__sort_top_int=\count286
+\l__sort_max_int=\count287
+\l__sort_true_max_int=\count288
+\l__sort_block_int=\count289
+\l__sort_begin_int=\count290
+\l__sort_end_int=\count291
+\l__sort_A_int=\count292
+\l__sort_B_int=\count293
+\l__sort_C_int=\count294
+\c_empty_box=\box37
+\l_tmpa_box=\box38
+\l_tmpb_box=\box39
+\g_tmpa_box=\box40
+\g_tmpb_box=\box41
+\l__box_top_dim=\dimen191
+\l__box_bottom_dim=\dimen192
+\l__box_left_dim=\dimen193
+\l__box_right_dim=\dimen194
+\l__box_top_new_dim=\dimen256
+\l__box_bottom_new_dim=\dimen257
+\l__box_left_new_dim=\dimen258
+\l__box_right_new_dim=\dimen259
+\l__box_internal_box=\box42
+\l__coffin_internal_box=\box43
+\l__coffin_internal_dim=\dimen260
+\l__coffin_offset_x_dim=\dimen261
+\l__coffin_offset_y_dim=\dimen262
+\l__coffin_x_dim=\dimen263
+\l__coffin_y_dim=\dimen264
+\l__coffin_x_prime_dim=\dimen265
+\l__coffin_y_prime_dim=\dimen266
+\c_empty_coffin=\box44
+\l__coffin_aligned_coffin=\box45
+\l__coffin_aligned_internal_coffin=\box46
+\l_tmpa_coffin=\box47
+\l_tmpb_coffin=\box48
+\l__coffin_display_coffin=\box49
+\l__coffin_display_coord_coffin=\box50
+\l__coffin_display_pole_coffin=\box51
+\l__coffin_display_offset_dim=\dimen267
+\l__coffin_display_x_dim=\dimen268
+\l__coffin_display_y_dim=\dimen269
+\l__coffin_bounding_shift_dim=\dimen270
+\l__coffin_left_corner_dim=\dimen271
+\l__coffin_right_corner_dim=\dimen272
+\l__coffin_bottom_corner_dim=\dimen273
+\l__coffin_top_corner_dim=\dimen274
+\l__coffin_scaled_total_height_dim=\dimen275
+\l__coffin_scaled_width_dim=\dimen276
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2017/03/18 v L3 Experimental driver: xdvipdfmx
+\l__driver_tmp_box=\box52
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2017/05/13 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count295
+\g__xparse_grabber_int=\count296
+\l__xparse_m_args_int=\count297
+\l__xparse_mandatory_args_int=\count298
+\l__xparse_v_nesting_int=\count299
+)
+Package: fontspec 2017/03/31 v2.6a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2017/03/31 v2.6a Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count300
+\l__fontspec_language_int=\count301
+\l__fontspec_strnum_int=\count302
+\l__fontspec_tmp_int=\count303
+\l__fontspec_em_int=\count304
+\l__fontspec_emdef_int=\count305
+\l__fontspec_strong_int=\count306
+\l__fontspec_strongdef_int=\count307
+\l__fontspec_tmpa_dim=\dimen277
+\l__fontspec_tmpb_dim=\dimen278
+\l__fontspec_tmpc_dim=\dimen279
+\g__file_internal_ior=\read3
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 472.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 483.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 503.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 523.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 543.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 547.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 555.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 563.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 571.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 603.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 614.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 645.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 672.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 686.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 700.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 720.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 724.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 745.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 778.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 782.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 786.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 797.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3438.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3444.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3450.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3456.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3462.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3487.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3493.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3501.
+.................................................
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3686.
+LaTeX Info: Redefining \slshape on input line 3691.
+LaTeX Info: Redefining \scshape on input line 3696.
+LaTeX Info: Redefining \upshape on input line 3701.
+LaTeX Info: Redefining \em on input line 3731.
+LaTeX Info: Redefining \emph on input line 3756.
+LaTeX Info: Redefining \- on input line 3807.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 3902.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 3906.
+.................................................
+))
+\xpg@normalclass=\XeTeXcharclass1
+)
+(/usr/local/texlive/2017/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count308
+\tipasavetokens=\toks30
+\tipachecktokens=\toks31
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 99.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2016/07/11 v4.10 LaTeX color/graphics driver for XeTeX (L3/RRM/
+JK)
+))
+\Gin@req@height=\dimen280
+\Gin@req@width=\dimen281
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/libertineotf.sty
+Package: libertineotf 2012/11/19 (Bob Tennent) Compatibility style file for Lin
+ux Libertine and Biolinum.
+
+
+Package libertineotf Warning: *********************************************
+(libertineotf)                The libertine package provides partial 
+(libertineotf)                compatibility with the original libertineotf 
+(libertineotf)                package for legacy documents; for new 
+(libertineotf)                documents, please use `libertine' directly: 
+(libertineotf)                    \usepackage{libertine}. 
+(libertineotf)                The original libertineotf package is 
+(libertineotf)                available from CTAN. 
+(libertineotf)                **********************************************.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/libertine.sty
+Package: libertine 2017/03/22 (Bob Tennent) Supports Libertine and Biolinum fon
+ts for all LaTeX engines.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+Requested font "[LinLibertine_R.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_R.otf
+\g__fontspec_family_LinLibertine_int=\count309
+Requested font "[LinLibertine_RB.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_RB.otf
+Requested font "[LinLibertine_RI.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_RI.otf
+Requested font "[LinLibertine_RBI.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_RBI.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(0)' created for font 'LinLibertine' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Ligatures=TeX,Numbers =
+. {Monospaced,Lining},UprightFont = *_R,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex
+-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mappi
+ng=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=t
+ex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;map
+ping=tex-text;"
+.................................................
+LaTeX Info: Redefining \rmfamily on input line 300.
+Requested font "[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;m
+apping=tex-text;" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_R.otf
+Requested font "[LinBiolinum_R.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinBioli
+num_R.otf
+\g__fontspec_family_LinBiolinum_int=\count310
+Requested font "[LinBiolinum_RB.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinBioli
+num_RB.otf
+Requested font "[LinBiolinum_RI.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinBioli
+num_RI.otf
+Requested font "[LinBiolinum_RBO.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinBioli
+num_RBO.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(0)' created for font 'LinBiolinum' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Ligatures=TeX,Numbers =
+. {Monospaced, },Scale = 1,UprightFont = *_R,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-t
+ext;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mapping
+=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex
+-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappi
+ng=tex-text;"
+.................................................
+LaTeX Info: Redefining \sffamily on input line 310.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(1)' created for font 'LinLibertine' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers =
+. {Monospaced,Lining},UprightFont = *_R,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=tex
+-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mappi
+ng=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=t
+ex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;map
+ping=tex-text;"
+.................................................
+Requested font "[LinLibertine_RZ.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_RZ.otf
+Requested font "[LinLibertine_RZI.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_RZI.otf
+
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Numbers=Monospaced,Lining' (tnum) not available for font
+* 'LinLibertine_RZI' with script 'Latin' and language 'Default'.
+*************************************************
+*************************************************
+* fontspec warning: "icu-feature-not-exist-in-font"
+* 
+* OpenType feature 'Numbers=Monospaced,Lining' (tnum) not available for font
+* 'LinLibertine_RZI' with script 'Latin' and language 'Default'.
+*************************************************
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(2)' created for font 'LinLibertine' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers =
+. {Monospaced,Lining},UprightFont = *_RZ,ItalicFont = *_RZI,BoldFont =
+. *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_RZ.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_RZ.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RZI.otf]/OT:script=latn;language=DFLT;+lnum;mapping=tex-tex
+t;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RZI.otf]/OT:script=latn;language=DFLT;+lnum;+smcp;mapping=t
+ex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=t
+ex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;map
+ping=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(3)' created for font 'LinLibertine' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers =
+. {Monospaced,OldStyle},UprightFont = *_R,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mapping=tex
+-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;mappi
+ng=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mapping=te
+x-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;mapp
+ing=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mapping=te
+x-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;mapp
+ing=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mapping=t
+ex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;map
+ping=tex-text;"
+.................................................
+Requested font "[LinLibertine_DR.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_DR.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(4)' created for font 'LinLibertine' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers =
+. {Monospaced,Lining},UprightFont = *_DR,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=te
+x-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;mapp
+ing=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;mapping=t
+ex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;map
+ping=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(1)' created for font 'LinBiolinum' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers = {Monospaced, },Scale =
+. 1,UprightFont = *_R,ItalicFont = *_RI,BoldFont = *_RB,BoldItalicFont =
+. *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-t
+ext;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mapping
+=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex
+-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappi
+ng=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(2)' created for font 'LinBiolinum' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers = {Monospaced,
+. OldStyle},Scale = 1,UprightFont = *_R,ItalicFont = *_RI,BoldFont =
+. *_RB,BoldItalicFont = *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mapping
+=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;m
+apping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mappin
+g=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;
+mapping=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mappin
+g=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp;
+mapping=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+onum;mappi
+ng=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+onum;+smcp
+;mapping=tex-text;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(3)' created for font 'LinBiolinum' with options
+. [Ligatures = TeX,Extension =
+. .otf,SmallCapsFeatures={Letters=SmallCaps},Numbers = {Monospaced},Scale =
+. 1,UprightFont = *_R,ItalicFont = *_RI,BoldFont = *_RB,BoldItalicFont =
+. *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-t
+ext;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mapping
+=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex-
+text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappin
+g=tex-text;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;mapping=tex
+-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;mappi
+ng=tex-text;"
+.................................................
+Requested font "[LinLibertine_M.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_M.otf
+Requested font "[LinLibertine_MB.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_MB.otf
+Requested font "[LinLibertine_MO.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_MO.otf
+Requested font "[LinLibertine_MBO.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_MBO.otf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(5)' created for font 'LinLibertine' with options
+. [Extension =
+. .otf,WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace,Scale =
+. 1,UprightFont = *_M,ItalicFont = *_MO,BoldFont = *_MB,BoldItalicFont =
+. *_MBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinLibertine_M.otf]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \hyphenchar \font =\c_minus_one 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MB.otf]/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \hyphenchar \font =\c_minus_one 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MO.otf]/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \hyphenchar \font =\c_minus_one 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MBO.otf]/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+. and font adjustment code:
+. \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font =0\fontdimen 3\font
+. \fontdimen 4\font =0\fontdimen 4\font \fontdimen 7\font =0\fontdimen 2\font
+. \hyphenchar \font =\c_minus_one 
+.................................................
+LaTeX Info: Redefining \ttfamily on input line 413.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(6)' created for font 'LinLibertine' with options
+. [Extension = .otf,Scale = 1,UprightFont = *_M,ItalicFont = *_MO,BoldFont =
+. *_MB,BoldItalicFont = *_MBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinLibertine_M.otf]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MB.otf]/OT:script=latn;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: 
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MO.otf]/OT:script=latn;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinLibertine_MBO.otf]/OT:script=latn;language=DFLT;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+Requested font "[LinBiolinum_K.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinBioli
+num_K.otf
+\g__fontspec_family_LinBiolinum_K_int=\count311
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum_K(0)' created for font 'LinBiolinum_K' with options
+. [Extension = .otf,BoldFont={},ItalicFont={},SmallCapsFont={}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinBiolinum_K.otf]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+Requested font "[LinLibertine_I.otf]/OT" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_I.otf
+\g__fontspec_family_LinLibertine_I_int=\count312
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine_I(0)' created for font 'LinLibertine_I' with
+. options [Extension = .otf,BoldFont={},ItalicFont={},SmallCapsFont={}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_I.otf]/OT:script=latn;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Info: Redefining \oldstylenums on input line 461.
+LaTeX Info: Redefining \liningnums on input line 462.
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(7)' created for font 'LinLibertine' with options
+. [Extension = .otf,Numbers = {Monospaced,Lining},UprightFont = *_R,ItalicFont
+. = *_RI,BoldFont = *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinLibertine(8)' created for font 'LinLibertine' with options
+. [Extension = .otf,Numbers = {Proportional,Lining},UprightFont =
+. *_R,ItalicFont = *_RI,BoldFont = *_RB,BoldItalicFont = *_RBI].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"[LinLibertine_R.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"[LinLibertine_RB.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;+smcp;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->"[LinLibertine_RI.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;+smcp;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->"[LinLibertine_RBI.otf]/OT:script=latn;language=DFLT;+pnum;+lnum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(4)' created for font 'LinBiolinum' with options
+. [Extension = .otf,Numbers = {Monospaced,},Scale = 1,UprightFont =
+. *_R,ItalicFont = *_RI,BoldFont = *_RB,BoldItalicFont = *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+tnum;+smcp;"
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'LinBiolinum(5)' created for font 'LinBiolinum' with options
+. [Extension = .otf,Numbers = {Proportional,},Scale = 1,UprightFont =
+. *_R,ItalicFont = *_RI,BoldFont = *_RB,BoldItalicFont = *_RBO].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+pnum;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_R.otf]/OT:script=latn;language=DFLT;+pnum;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+pnum;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RB.otf]/OT:script=latn;language=DFLT;+pnum;+smcp;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+pnum;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RI.otf]/OT:script=latn;language=DFLT;+pnum;+smcp;"
+. - 'bold italic' (bx/it) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+pnum;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.:
+. <->s*[1]"[LinBiolinum_RBO.otf]/OT:script=latn;language=DFLT;+pnum;+smcp;"
+.................................................
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/LinLibertine_R.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/LinBiolinum_R.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/LinBiolinum_K.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/LinLibertine_I.tex)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/libertine/LKey.tex)))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for english
+)
+Package polyglossia Info: Default language is english.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/polyglossia/gloss-sanskrit.ldf
+File: gloss-sanskrit.ldf polyglossia: module for sanskrit
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/polyglossia/devanagaridigits.sty
+Package: devanagaridigits 2010/04/01 v0.1 Formatting of Devanagari digits
+)
+Package polyglossia Info: Skipping automatic font setup for language sanskrit.
+\sanskrit@punctthin=\XeTeXcharclass2
+)
+Requested font "Adobe Text Pro" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+\g__fontspec_family_AdobeTextPro_int=\count313
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/BI/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-SemiboldIt.ttf
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/B/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Semibold.ttf
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/I/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/B/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Semibold.ttf
+Requested font "Adobe Text Pro/B/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Semibold.ttf
+Requested font "Adobe Text Pro/I/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+Requested font "Adobe Text Pro/I/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+Requested font "Adobe Text Pro/BI/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-SemiboldIt.ttf
+Requested font "Adobe Text Pro/BI/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-SemiboldIt.ttf
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'AdobeTextPro(0)' created for font 'Adobe Text Pro' with options
+. [Ligatures=TeX].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->"Adobe Text
+. Pro/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'small caps'  (m/sc) with NFSS spec.: <->"Adobe Text
+. Pro/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. - 'bold' (bx/n) with NFSS spec.: <->"Adobe Text
+. Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: <->"Adobe Text
+. Pro/B/OT:script=latn;language=DFLT;+smcp;mapping=tex-text;"
+. - 'italic' (m/it) with NFSS spec.: <->"Adobe Text
+. Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+. - 'bold italic' (bx/it) with NFSS spec.: <->"Adobe Text
+. Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text;"
+. - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
+.................................................
+LaTeX Info: Redefining \rmfamily on input line 32.
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Sanskrit Text/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+\g__fontspec_family_SanskritText_int=\count314
+Requested font "Sanskrit Text/BI/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Sanskrit Text/BI" (it probably doesn't exist).
+.................................................
+Requested font "Sanskrit Text/B/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Sanskrit Text/B" (it probably doesn't exist).
+.................................................
+Requested font "Sanskrit Text/I/OT" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "Sanskrit Text/I" (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SanskritText(0)' created for font 'Sanskrit Text' with options
+. [Script=Devanagari,Mapping=RomDev,Scale=1.2,LetterSpace=1.1].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.: <->s*[1.2]"Sanskrit
+. Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapping=RomDev;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
+\MT@toks=\toks32
+\MT@count=\count315
+LaTeX Info: Redefining \textls on input line 774.
+\MT@outer@kern=\dimen282
+LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
+\MT@listname@count=\count316
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2016/05/14 v2.6a Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 255.
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
+))
+(./Sigla-Ed.tex) (./binduyoga-edition.aux
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
+(Font)              scaled to size 13.13995pt on input line 253.
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
+ing=RomDev;" at 13.13995pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+)
+\openout1 = `binduyoga-edition.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 82.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 82.
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 82.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 82.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 82.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 82.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 82.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 82.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 82.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 82.
+LaTeX Font Info:    Redeclaring math accent \check on input line 82.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 82.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 82.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 82.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 82.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 82.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/AdobeTextPro(0)/m/n on input line 82
+.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 82.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/AdobeTextPro(0)/m/n on input line 8
+2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/AdobeTextPro(0)/m/n --> TU/AdobeTextPro(0)/m/n on in
+put line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/AdobeTextPro(0)/m/it on input line 
+82.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/AdobeTextPro(0)/bx/n on input line 
+82.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/LinBiolinum(0)/m/n on input line 82
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/LinLibertine(5)/m/n on input line 8
+2.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/AdobeTextPro(0)/m/n --> TU/AdobeTextPro(0)/bx/n on i
+nput line 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/AdobeTextPro(0)/bx/it on input lin
+e 82.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/LinBiolinum(0)/bx/n on input line 
+82.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/LinLibertine(5)/bx/n on input line 
+82.
+Package microtype Info: Patching ((r)e)ledmac to enable character protrusion.
+LaTeX Info: Redefining \microtypecontext on input line 82.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `AdobeTextPro' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 17.28pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 17.28pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Semibold.ttf
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 14.4pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 14.4pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Semibold.ttf
+Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
+mapping=tex-text;" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_DR.otf
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinLibertine' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 8.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 6.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "cmmi10" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+Requested font "cmmi8" at 8.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+Requested font "cmmi6" at 6.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+Requested font "cmsy10" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+Requested font "cmsy8" at 8.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+Requested font "cmsy6" at 6.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 86.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 86.
+Requested font "cmr10" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+Requested font "cmr8" at 8.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+Requested font "cmr6" at 6.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+
+Overfull \hbox (1.7652pt too wide) in paragraph at lines 104--105
+\TU/AdobeTextPro(0)/m/n/10.95 more consistent and meaningful readings, b) are i
+n several cases more
+ []
+
+
+Overfull \hbox (2.88213pt too wide) in paragraph at lines 104--105
+\TU/AdobeTextPro(0)/m/n/10.95 stemmatic hints pointing towards the inferiority 
+of group 1., currently
+ []
+
+
+Class memoir Warning: The material used in the headers is too large
+(13.59999pt) for the given head height (5.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 105.
+
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 105.
+Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 10.95pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_M.otf
+LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
+(Font)              scaled to size 8.03pt on input line 105.
+Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 8.03pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_M.otf
+
+[1
+
+
+]
+Overfull \hbox (7.7441pt too wide) in paragraph at lines 107--108
+[]\TU/AdobeTextPro(0)/m/n/10.95 Notiz für mich selbst: ENTSCHEIDEN OB SANDHI SE
+TZEN ODER
+ []
+
+
+Overfull \hbox (27.62537pt too wide) in paragraph at lines 107--108
+\TU/AdobeTextPro(0)/m/n/10.95 NICHT! HANDSCHRIFTEN VS. EDPRINT! DURCHGÄNGIG BIS
+HER
+ []
+
+
+Overfull \hbox (23.42914pt too wide) in paragraph at lines 107--108
+\TU/AdobeTextPro(0)/m/n/10.95 IMMER SANDHI BIS ZUM 1/3 DES NAVAMACAKRAABSCHNITT
+ES 
+ []
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `SanskritText' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/AdobeTextPro(0)/m/sl' in size <10.95> not av
+ailable
+(Font)              Font shape `TU/AdobeTextPro(0)/m/it' tried instead on input
+ line 114.
+Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 10.95pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[2]
+Requested font "Adobe Text Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text
+;" at 17.28pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-SemiboldIt.ttf
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
+(Font)              scaled to size 14.39996pt on input line 116.
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
+ing=RomDev;" at 14.39996pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+ Section 1 (./binduyoga-edition.1)
+\openout5 = `binduyoga-edition.1'.
+
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 10.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
+(Font)              scaled to size 10.79997pt on input line 123.
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
+ing=RomDev;" at 10.79997pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 9.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
+mapping=tex-text;" at 9.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_DR.otf
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;" at 9.0pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 5.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+Requested font "cmmi9" at 9.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+Requested font "cmsy9" at 9.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 129.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 129.
+Requested font "cmr9" at 9.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
+(Font)              scaled to size 7.19998pt on input line 129.
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
+ing=RomDev;" at 7.19998pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;" at 6.0pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;+tnum;+lnum;
+mapping=tex-text;" at 10.0pt
+ -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
+tine_DR.otf
+Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
+at 7.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 136.
+Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 10.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+ [3
+
+]
+Overfull \vbox (8.8993pt too high) has occurred while \output is active []
+
+
+
+LaTeX Font Warning: Font shape `TU/SanskritText(0)/m/sl' undefined
+(Font)              using `TU/SanskritText(0)/m/n' instead on input line 220.
+
+
+Class memoir Warning: The material used in the headers is too large
+(15.71223pt) for the given head height (5.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 220.
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[4]
+Overfull \vbox (27.51694pt too high) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/sl' will be
+(Font)              scaled to size 13.13995pt on input line 232.
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[5]
+Overfull \hbox (0.86082pt too wide) in paragraph at lines 250--279
+\TU/SanskritText(0)/m/sl/10.95 वति । तन्मध्ये ऽष्टदलमधोमुखं [][][]  [][][] कमलं
+ वर्त्तते । तन्मध्ये प्राणवायोः स्थानमष्टदलक-
+ []
+
+
+Overfull \hbox (3.4445pt too wide) in paragraph at lines 250--279
+\TU/SanskritText(0)/m/sl/10.95 स्वर्गपातालाकशमनुष्यगन्धर्वकिन्नरगुह्यकविद्याधरल
+ोकसम्बन्धिन्यः स्त्रीयो ऽपि  [][][] सा-
+ []
+
+
+Overfull \hbox (0.86082pt too wide) detected at line 279
+[]\TU/SanskritText(0)/m/sl/10.95 वति । तन्मध्ये ऽष्टदलमधोमुखं [][][]  [][][] कम
+लं वर्त्तते । तन्मध्ये प्राणवायोः स्थानमष्टदलक-
+ []
+
+
+Overfull \hbox (18.91193pt too wide) has occurred while \output is active
+[] \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 मूर्तेर् [][][][][]\TU
+/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$[][][][]P[][][][]$[]$[
+][][][]E[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] मूर्ति [][][][][]\TU/LinLibe
+rtine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m
+/n/9 ध्यानकरणात् [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][]
+[][]$[]$[][][][]P[][][][]$[]$[][][][]L[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 
+] ध्यानकारणात् [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$  \TU/AdobeText
+Pro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 °नाटकादिसकलवाङ्मयं
+ []
+
+
+Overfull \vbox (19.24591pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[6]
+Overfull \hbox (3.4445pt too wide) detected at line 279
+[]\TU/SanskritText(0)/m/sl/10.95 स्वर्गपातालाकशमनुष्यगन्धर्वकिन्नरगुह्यकविद्याध
+रलोकसम्बन्धिन्यः स्त्रीयो ऽपि  [][][] सा-
+ []
+
+
+Overfull \hbox (16.69778pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 र्णिकेति [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][
+]$[]$  \TU/AdobeTextPro(0)/m/n/9 4 \TU/SanskritText(0)/m/n/9 संज्ञा [][][][][]\
+TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]N[][][][]$[]
+$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro(0)/m/n/9 
+om. [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/
+9 5 \TU/SanskritText(0)/m/n/9 तत्कलिकामध्ये [][][][][]\TU/LinLibertine(4)/m/n/9
+ P[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] ततकलिकामध्ये 
+[][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 तत
+्कर्णिकामध्ये
+ []
+
+
+Overfull \hbox (43.8601pt too wide) has occurred while \output is active
+[][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 मध
+्ये [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/
+9 5 \TU/SanskritText(0)/m/n/9 पद्मरागरत्नसमानवर्णांगुष्थप्रमाणैका ] \TU/AdobeTe
+xtPro(0)/m/n/9 em. \TU/SanskritText(0)/m/n/9 पद्मरागसमानवर्णांगुष्ठप्रमाणैका []
+[][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 पद्म
+रागसमानवर्णां-
+ []
+
+
+Overfull \hbox (5.83331pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 तस्या [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[
+]$[][][][]P[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] तस्याः [][][][][]\TU/LinL
+ibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$[]\TU/AdobeTextPro(0)/m/n/9
+ om. [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n
+/9 6 \TU/SanskritText(0)/m/n/9 बलम् अथ च स्वरूपं [][][][][]\TU/LinLibertine(4)/
+m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] बलं अथ स
+्वरूपं [][][][][]\TU/LinLibertine(4)/m/n/9 P[][][][]$[]$[]\TU/SanskritText(0)/m
+/n/9 बलमध्यस्वरूपं
+ []
+
+
+Overfull \hbox (0.14714pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 इत्यत्र किं [][][][][]\TU/LinLibertine(4)/m/n/9 N[][]
+[][]$[]$[][][][]U[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/
+m/n/9 इदानीं [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]
+$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro(0)/m/n/9 om. [][][][][]\TU/
+LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]L[][][][]$[]$  
+\TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 कमलं षोदशदलं कण्ठस्थाने [
+][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/San
+skritText(0)/m/n/9 ] कण्टस्थाने
+ []
+
+
+Overfull \hbox (1.54414pt too wide) has occurred while \output is active
+\TU/AdobeTextPro(0)/m/it/10 bhavaṃti \TU/AdobeTextPro(0)/m/n/10 as witnessed in
+ [][][][]\TU/LinLibertine(4)/m/n/10 N[][][][]$[]$\TU/AdobeTextPro(0)/m/n/10 and
+ \TU/AdobeTextPro(0)/m/it/10 pṛthvīloka saṃbaṃdhinyo pi striyaḥ vasyā bhavaṃti
+ []
+
+
+Overfull \vbox (25.86249pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[7]
+Overfull \vbox (8.25604pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[8]
+LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
+(Font)              scaled to size 9.59998pt on input line 481.
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
+ing=RomDev;" at 9.59998pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;" at 8.0pt
+ -> /Users/enjotel/Library/Fonts/Sanskr.ttf
+
+Overfull \hbox (23.8748pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 °शिरोरोग- [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][]
+[]$[]$[][][][]U[][][][]$[]$[][][][]E[][][][]$[]$[][][][]P[][][][]$[]$ []\TU/San
+skritText(0)/m/n/9 ] °रोग- [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$[][
+][][]B[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 °जिह्
+वायाजडभावा [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[
+]$ []\TU/SanskritText(0)/m/n/9 ] जिह्वायजडभावान् [][][][][]\TU/LinLibertine(4)/
+m/n/9 L[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 जिह्वाजडभावान्
+ []
+
+
+Overfull \vbox (14.38992pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[9]
+Overfull \hbox (0.51677pt too wide) has occurred while \output is active
+[] \TU/AdobeTextPro(0)/m/n/9 7 \TU/SanskritText(0)/m/n/9 मनसा वचसा ] [][][][][]
+\TU/AdobeTextPro(0)/m/n/10 All manuscripts at hand share this usage of the inst
+rumentals. Only
+ []
+
+
+Overfull \hbox (1.8095pt too wide) has occurred while \output is active
+[][][][][]\TU/AdobeTextPro(0)/m/n/10 A \TU/AdobeTextPro(0)/m/it/10 saptadaśī ka
+lā \TU/AdobeTextPro(0)/m/n/10 appears frequently in Śaiva literature. Reference
+s need to be added
+ []
+
+
+Overfull \vbox (5.41241pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[10]
+Overfull \hbox (34.4006pt too wide) has occurred while \output is active
+[] \TU/AdobeTextPro(0)/m/n/9 12 \TU/SanskritText(0)/m/n/9 ध्यानकारणात् [][][][]
+[]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]B[][][][]
+$[]$[][][][]L[][][][]$[]$[][][][]N[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] ध्
+यानकरणा [][][][][]\TU/LinLibertine(4)/m/n/9 U[][][][]$[]$  \TU/AdobeTextPro(0)/
+m/n/9 12 \TU/SanskritText(0)/m/n/9 तद्भवति [][][][][]\TU/LinLibertine(4)/m/n/9 
+N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextP
+ro(0)/m/n/9 om. [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][
+][]$[]$[][][][]L[][][][]$[]$[][][][]B[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 12
+ \TU/SanskritText(0)/m/n/9 राज्यसुखभोगवृतः
+ []
+
+
+Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+
+[11] [12
+
+
+] Section 2 (./binduyoga-edition.2)
+Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 9.0pt
+ -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[13
+\openout5 = `binduyoga-edition.2'.
+
+]
+Overfull \hbox (8.38055pt too wide) in paragraph at lines 1081--1082
+ \TU/AdobeTextPro(0)/m/n/10.95 tions (\TU/AdobeTextPro(0)/m/it/10.95 bahukriyāy
+ogī\TU/AdobeTextPro(0)/m/n/10.95 ). Fraud, illusion, property, violence, cravin
+g, envy,
+ []
+
+
+Overfull \hbox (7.18011pt too wide) in paragraph at lines 1091--1092
+ []\TU/AdobeTextPro(0)/m/n/10.95 At the root-bulp exists the single major vesse
+l, which consists wholly
+ []
+
+
+Overfull \hbox (6.35472pt too wide) in paragraph at lines 1091--1092
+ \TU/AdobeTextPro(0)/m/n/10.95 and liberation. While abiding in (\TU/AdobeTextP
+ro(0)/m/it/10.95 satyāṃ\TU/AdobeTextPro(0)/m/n/10.95 ) her (\TU/AdobeTextPro(0)
+/m/it/10.95 asyāṃ\TU/AdobeTextPro(0)/m/n/10.95 ) knowledge arises
+ []
+
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[14]
+Overfull \hbox (3.05731pt too wide) in paragraph at lines 1099--1100
+ \TU/AdobeTextPro(0)/m/n/10.95 and mindstuffs?!(\TU/AdobeTextPro(0)/m/it/10.95 
+manāṃsi\TU/AdobeTextPro(0)/m/n/10.95 ) [symbolized by the syllables] “vaṃ”, “śa
+ṃ”,
+ []
+
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[15]
+Overfull \hbox (5.78728pt too wide) in paragraph at lines 1129--1134
+ []\TU/AdobeTextPro(0)/m/n/10.95 Now (follows the description of) the fifth lot
+us having sixteen petals
+ []
+
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[16]
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[17]
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[18]
+
+Class memoir Warning: The material used in the headers is too large
+(15.71223pt) for the given head height (5.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1173.
+
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[19] (./binduyoga-edition.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 30790 strings out of 493005
+ 611927 string characters out of 6134595
+ 745062 words of memory out of 5000000
+ 34522 multiletter control sequences out of 15000+600000
+ 7885 words of font info for 86 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 58i,11n,89p,10421b,719s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on binduyoga-edition.pdf (19 pages).

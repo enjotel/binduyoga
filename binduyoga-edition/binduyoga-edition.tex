@@ -1,0 +1,1192 @@
+\documentclass[11pt,showtrims]{memoir} 
+                                               % Standardgröße  Indica et Tibetica
+\setstocksize{220mm}{155mm} 	               % Papiergröße (das theoretisch beschnitten wird)
+\settrimmedsize{220mm}{155mm}{*}	       % Größe der Seite 
+\settypeblocksize{170mm}{116mm}{*}	       % bedruckter Bereich 
+\setlrmargins{18mm}{*}{*}                      % linker und rechter Rand
+\setulmargins{*}{*}{1.2}                       % ober und unterer Rand
+\setlength{\headheight}{5pt}                             
+\checkandfixthelayout[lines]                                           % ist nötig zur abschließenden Layout-Abstimmung
+\linespread{1.2}                                                       % zusätzlicher Durchschuß, "leading", also eine Reihe Blei im Bleisatz, (=Zeilenabstand)
+\quarkmarks                                                            % Schnittmarken 
+
+                                             %%% reledmac setup %%%
+\usepackage[series={A,B},noend,noeledsec,nofamiliar,noledgroup]{reledmac}                                            %  zwei Fußnotenebenen werden angelegt: A und B
+\Xarrangement[A]{paragraph}                                                                                          % A als Paragraph formatiert
+\Xarrangement[B]{paragraph}                                                                                          % B als Paragraph
+\lineation{page} \linenummargin{outer}                                                                 % automatische Zeilenzählung seitenweise (nicht für das ganze Dokument) u. am Außenrand      
+\newcommand{\var}[3]{\edtext{}{\lemma{\hskip -3.6mm \textrm{#1}~~#2}\Afootnote[nonum]{{#3}}}}          % Varianten für nummerierte Strophen mit manuellem Bezug auf
+                                                                                                       % Vers und Pāda mit 3 Klammerpaaren:  \var{1a}{kritischer Text}{Variante}                     
+\newcommand{\varc}[2]{\nobreak\hskip 0pt \edtext{}{\lemma{#1}\Afootnote{{#2}}}\hskip 0pt \relax}        % Varianten für Prosatext mit automat. Bezug auf Zeilen 
+\newcommand{\varcc}[1]{\edtext{}{\lemma{\hskip -4mm}\Afootnote[nosep]{#1}}}                             % habe vergessen, wozu das war 
+\newcommand{\notes}[2]{\edtext{}{\lemma{#1}\Bfootnote{{\footnotesize\textrm{#2}}}}}                     % 2. Apparat für Anmerkungen     \notes{tat}{Pronomen}
+                               %%%%%   einprägsamere Macros für reledmac 
+\def\prose{\pstart}\def\endprose{\pend}                                                                 % einprägsamere Varianten statt dem ständigen \pstart \pend
+\def\mula{\pstart}\def\endmula{\pend\medskip}                                                           % Variante mit zusätzlichem Abstand am Ende für mūla-Text 
+
+                                                 %%%%%%   XeTeX- Setup       sollte klar sein
+\usepackage{polyglossia,fontspec,xunicode,libertineotf}     % Ich verwende Libertine für die Sigla, sieht besser aus.
+ \widowpenalty=10000
+ \clubpenalty=10000
+  \setdefaultlanguage{english} \setotherlanguage{sanskrit}
+ \setmainfont{Adobe Text Pro} %Adobe Text Pro in Mac umstellen                                                       
+\newfontfamily\devanagarifont[Script=Devanagari,Mapping=RomDev,Scale=1.2,LetterSpace=1.1]{Sanskrit Text}
+\usepackage{microtype}
+\lineskiplimit=-3pt     % sonst werden die Fußnotezeilen bei Nagari auseinandergeschoben
+
+
+                                              %   OTHER MACROS  -- Beispiele               --- das ist alles spezifisch für bestimmte Texte
+ \def\colophon#1{\centerline{{\small #1}}}
+\def\fourbijas{oṃ aiṃ hrīṃ śrīṃ}
+\def\thirtysevenbijas{37}                                 \def\etc{°~}
+\def\title#1{\centerline{\large{\devanagarifont{#1}}}\thispagestyle{empty}}
+\def\prakarana#1{\centerline{[#1]}}
+\def\lem{\textrm{]\ }}
+\def\coni{\textrm{\footnotesize coni.}}\def\conj{\textrm{coni.}}
+\def\coniI{\textrm{\footnotesize coni. Isaacson}}
+\def\trick{\textrm{}}                                            \def\smallcirc{$\cdot$}
+\def\bijaAanusvara{aṃ}
+\def\ornament{\centerline{\aldineleft}}   
+\def\ornamentb{{\footnotesize\centerline{\ding{105}}}\leavevmode\smallskip}
+\def\ornamentstar{{\footnotesize\centerline{\ding{105}}}\leavevmode\smallskip}
+% \def\ornamentstar{\centerline{\Huge{\schmuckfont{s}}}}
+\def\amlig{a{ṃ}  }  % das war ein Fehler, so geht es. 
+\def\crux{$\dag$}
+
+% Grunddefinitionen für die einzelnen Siglen. Die Buchstaben werden mit LibertineDisplay gesetzt.
+% Ich habe mit zwei Varianten der Definition gespielt, die erste mit \superscript und \subscript,
+% die zweite ohne (es funktionieren beide. 
+
+%\def\acpc#1#2#3{\begin{english}\libertineDisplay #1\end{english}%
+%  \textsuperscript{\begin{english}\kern-1.8pt \tiny{#3}\end{english}}%
+%  \textsubscript{\begin{english}\kern-1em \tiny{#2}\end{english}}}
+%\def\sigl#1#2{\begin{english}\libertineDisplay #1\end{english}%
+%  \textsubscript{\begin{english}\kern-.2em \tiny{#2}\end{english}}}
+
+\def\acpc#1#2#3{\begin{english}\libertineDisplay #1\end{english}%
+  \raisebox{.8ex}{{\begin{english}\kern-1.8pt \tiny{#3}\end{english}}}%
+  \raisebox{-.3ex}{{\begin{english}\kern-.8em \tiny{#2}\end{english}}}}
+\def\sigl#1#2{\begin{english}\libertineDisplay #1\end{english}%
+     \raisebox{-.3ex}{{\begin{english}\kern-.2em \tiny{#2}\end{english}}}}
+
+\input{Sigla-Ed}     %   Die Siglen für den Apparat in eigener Datei
+   
+\chapterstyle{crosshead}
+\nouppercaseheads
+\pagestyle{headings}
+\createmark{section}{both}{nonumber}{}{}
+\def\englishnote#1{\begin{english}\textrm{#1}\end{english}}
+
+%große Frage: Reihenfolge der Zeugen im Apparat? 
+
+\begin{document}
+\chapter{Conventions in the Critical Apparatus}
+\section{Sigla in the Critical Apparatus}
+\begin{itemize}
+\item \edprint : Druckausgabe
+\item \pune : Pune BORI 664
+\item \lalchand : Lalchand Research Library LRL5876
+\item \oxford : Bodleian Oxford D 4587
+\item \nepal : NGMPP B 38-31
+\item \unbekannt: IGNCA 30019
+\end{itemize}
+
+The order of the readings in the critical apparatus is arranged according to the quality of readings in decending order.  
+
+\section{Punctuation}
+
+The very inconsistent use of punctuation marks in the witnesses at hand makes standardization necessary. Deviation of punctuation marks will not be documented in the critical apparatus. The usual standard conventions are followed:
+
+Especially in the verse poetry, a \textit{daṇḍa} marks the end of a half verse, half of the \textit{śloka}, and the double \textit{daṇḍa} marks the end of a verse. A half verse is a \textit{pāda}, at least in some literary works, this is concluded by a \textit{daṇḍa} and the end of a \textit{śloka} by a double \textit{daṇḍa}. In the prose the single \textit{daṇḍa} indicates the end of a sentence and the double \textit{daṇḍa} marks the end of a paragraph.
+
+\section{Notes}
+\begin{itemize}
+\item probelm with the strongly deviating structuration of the sentences between the two groups of witnesses 1. \edprint \pune \lalchand \oxford und 2. \nepal \unbekannt: Even though it is not entirely clear which of the group is closer to the supposedly original of the author, as an hypothesis I suspect that given the cummulative evidence of a) \nepal and \unbekannt generally have the better, more consistent and meaningful readings, b) are in several cases more extensive in their descriptions and c) generally there seems to be stemmatic hints pointing towards the inferiority of group 1., currently I decided to prefer the structuration of sentences of group 2.
+\item it is clear that the author of \edprint has not understood the specific tantric-haṭhayogic terminology. This is evident by his ambitions to emend the terminology of the śakta-pīṭhas, which are very important in the haṭhayogic traditions. He takes uḍḍīyāna as upayana and jālaṃdhāra as jatyadana etc.
+\item in many cases the manuscripts do not utilize \textit{sandhi}
+\item Notiz für mich selbst: ENTSCHEIDEN OB SANDHI SETZEN ODER NICHT! HANDSCHRIFTEN VS. EDPRINT! DURCHGÄNGIG BISHER IMMER SANDHI BIS ZUM 1/3 DES NAVAMACAKRAABSCHNITTES
+\item jetzt klar: die prakriyā-Formen sind charakteristisch und der Sandhi wird wahrscheinlich bewusst im Prosa ausgelassen!
+\item in cakra 9 unbedingt die Verweise für das siebzehnte kalā ergänzen! Jürgen fragen nach e-texts?!
+\item kurzen Abschnitt zum Titel verfassen und diskutieren 
+\end{itemize}
+
+\begin{sanskrit} 
+\chapter{Critical Edition of the \textit{Yogatattvabindu}}
+  
+\title{Yogatattvabindu}\markboth{\devanagarifont Yogatattvabindu}{\devanagarifont Yogatattvabindu}
+\beginnumbering
+\bigskip
+
+\pstart
+\centerline{\begin{english}\textrm{\small{[Introduction]}}\end{english}}
+\pend
+\bigskip
+
+\prose
+\noindent %komisch das l wird irgendwie transformiert! 
+\varc{śrī gaṇeśāya namaḥ \edprint \lalchand}{śrī ṇe ya maḥ \pune śrī gaṇeśāya namaḥ // śrī gurave namaḥ \nepal śrīgaṇeśāya namaḥ / śrī sarasvatyai namaḥ / śrī nirañjanāya namaḥ \unbekannt}atha rājayogaprakāro likhyate // \varc{atha rājayogaprakāro likhyate}{rājayogāntargataḥ // binduyogaḥ \edprint atha tattvabiṃduyogaprāraṃbhaḥ \lalchand} 
+\endprose
+
+\prose
+\noindent 
+rājayogasyedaṃ phalaṃ \varc{rājayogasyedaṃ \pune}{rājayogasya idaṃ \nepal \unbekannt}/ yena rājayogenānekarājyabhogasamaya eva 
+anekapārthivavinodaprekṣaṇasamaya eva bahutarakālaṃ śarīrasthitirbhavati 
+sa eva rājayogaḥ / tasya ete bhedāḥ\varc{tasya ete bhedāḥ \unbekannt \nepal}{tasyaite bhedaḥ \pune} / kriyāyogaḥ / jñānayogaḥ / caryāyogaḥ / haṭhayogaḥ / karmayogaḥ / layayogaḥ / dhyānayogaḥ / mantrayogaḥ / lakṣyayogaḥ / vāsanāyogaḥ / śivayogaḥ / brahmayogaḥ / advaitayogaḥ / siddhayogaḥ / rājayogaḥ\varc{siddhayogaḥ / rājayogaḥ \pune}{rājayogaḥ / siddhayogaḥ \nepal \unbekannt}\notes{kriyāyogaḥ ... rājayogaḥ}{\englishnote{\small The initial codification of 15 yogas appears so far only in \nepal \pune and \unbekannt. It is ommitted in \edprint \lalchand. \oxford can't be determined due to missing folios.}} / ete pañcadaśayogāḥ //
+\endprose
+
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of \textit{kriyāyoga}]}}\end{english}}
+\pend
+\bigskip
+
+\prose
+\noindent
+idānīṃ kriyāyogasya lakṣaṇaṃ kathyate\varc{kathyate \pune \nepal}{kathayate \unbekannt}/
+\endprose
+\medskip
+
+%\AtEveryStanza{\vskip 2mm}??? Er will das nicht beim kompilieren. Warum?
+\setlength{\stanzaindentbase}{13pt}
+\setstanzaindents{0,4,4,4,4}
+
+\stanza
+kriyāmuktirayaṃ yogaḥ svapiṇḍe siddhidāyakaḥ/ &
+yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/ &
+tattataḥ kuñcanaṃ kurvan kriyāyogastato bhavet\varc{bhavet \pune}{ato bhava \nepal \unbekannt}// \& %komisch das beide es falsch haben. ato bhava macht aber keinen Sinn, oder? 
+\medskip
+\stanza
+kṣamāvivekavairāgyaṃ\varc{kṣamāvivekavairāgyaṃ \nepal \unbekannt \pune}{kṣamā vivekaṃ vairāgyaṃ \edprint} śāntiḥ santoṣanispṛhāḥ\varc{santoṣanispṛhāḥ \pune}{santoṣaniṣpṛhā \edprint santoṣanispṛhaḥ \unbekannt santoṣanispṛhā \nepal} / &
+etadyuktiyuto\varc{etadyuktiyuto \pune \edprint}{etat yuktiyuto \unbekannt \nepal} yogī kriyāyogī nigadyate// \&
+\medskip
+\stanza 
+mātsaryaṃ mamatā māyā hiṃsā ca madagarvatā\varc{madagarvatā \nepal \unbekannt}{madagarvitā \pune \edprint}/ & 
+kāmakrodhabhayaṃ \varc{kāmakrodhabhayaṃ \pune \nepal \edprint}{krāmakrodho bhayaṃ \unbekannt}lajjā lobhamohau tathāśuciḥ\varc{tathā 'śuciḥ \pune \unbekannt \nepal}{tathā śuciḥ \edprint}// \& %müsste es eigentlichn nicht tathāśuciḥ sein?
+\medskip
+\stanza %Lalchand starts here: how shall I mark this in the apparatus? Or where? Is it here? With a note? 
+rāgadveṣau \varc{rāgadveṣau \edprint \nepal \pune \unbekannt}{athadveṣo \lalchand}ghṛnālasyaṃ bhrantirdaṃbho \varc{bhraṃtirdaṃbho \nepal \pune \lalchand}{bhrāṃtirdebho \unbekannt bhrāntitvaṃ \edprint}akṣamā bhramaḥ\varc{akṣamā bhramaḥ \nepal}{kṣamābhramaḥ \unbekannt \lalchand \pune mokṣamābhramaḥ \edprint}/ &
+yasyaitāni na \varc{na \nepal \pune \lalchand \unbekannt}{ca \edprint}vidyante kriyāyogī sa ucyate// \&
+
+%rāgadveṣau ghṛṇālasyaṃ bhrāntitvaṃ mokṣamābhramaḥ / &
+%yasyaitāni ca vidyante kriyāyogī sa ucyate // \&
+\medskip
+\prose
+\noindent
+yasyāntaḥkaraṇe kṣamāvivekavairāgyaśāntisaṃtoṣa \varc{kṣamā- \edprint \lalchand}{kṣāmaḥ \nepal kṣāmā \unbekannt}ityādīni \varc{ityādīni \nepal \unbekannt}{ityādīny- \pune ityādinotpadyaṃte \lalchand}utpatyante / sa eva bahukriyāyogī kathyate /\varc{yasyāntaḥkaraṇe \nepal}{\om \unbekannt \edprint} kāpaṭyaṃ \varc{kāpaṭyaṃ \nepal \unbekannt}{kāpayaṃ \lalchand} māyā \varc{māyā \nepal \unbekannt \lalchand \edprint}{\om \pune} vittaṃ \varc{vittaṃ \edprint \pune}{vitvaṃ \nepal \unbekannt vitaṃ \lalchand} hiṃsā tṛṣṇā mātsaryamahaṃkāraḥ roṣo\varc{roṣo \nepal \unbekannt \lalchand \pune}{roṣaḥ \edprint} bhayaṃ \varc{bhayaṃ \nepal \unbekannt \lalchand}{kṣayaṃ \edprint}lajjā lobhaḥ mohaḥ aśucitvaṃ rāgadveṣau \varc{\conj rāgadveṣau}{rāgadveṣaḥ \nepal \unbekannt \lalchand \om \edprint}ālasyaṃ pāṣaṃḍitvaṃ \varc{pāṣaṃḍitvaṃ \nepal \unbekannt}{pākhaṃḍitvaṃ \lalchand \pune pākhaṃḍatvaṃ \edprint}bhrāntirindriyavikāraḥ \varc{indriyavikāraḥ \nepal \unbekannt \edprint \pune}{itivikāraḥ \lalchand}kāmaḥ ete \varc{ete \nepal \unbekannt}{eta \lalchand}yasya manasi pradidinaṃ nyūna bhavanti / sa eva bahukriyāyogī kathyate //\notes{rāgadveṣau}{\englishnote{\small All witnesses currently at hand read \textit{rāgadveṣaḥ}. I conjectured to \textit{rāgadveṣau}. However, there is the possibility to also read \textit{rāgo dveṣaḥ}. Another problem that comes up here is the inconsistent use of \textit{daṇḍa} in the witnesses within the given lists. Several witnesses seperate the elements by a \textit{daṇḍa}, whereas others do not. I still have to gain more clarity about what to do.}}
+x+
+
+%yasyāntaḥkaraṇe_                in his mind
+%yasyā= yasya                    his, in his
+%antaḥkaraṇe_                    in the mind
+%kāpaṭyaṃ_                       fraud 
+%māyā_                           illusion
+%vittam_                         property
+%hiṃsā_                          violence
+%tṛṣṇā_                          craving 
+%mātsaryam=                      envy
+%haṃkāraḥ_ ahaṃkāraḥ             ego
+%roṣā_                           anger 
+%bhayaṃ_                         anxiety 
+%lajjā_                          shame
+%lobhaḥ_                         greed
+%mohaḥ_                          perplexity
+%aśucitvaṃ_                      impurity
+%rāgadveṣaḥ_                     attachment and aversion
+%ālasyaṃ_                        idleness 
+%pāṣaṃḍitvaṃ_                    heresy 
+%bhraṃti_                        false view
+%indriyavikāraḥ_                 affection of the senses
+%kāmaṃ_                          cupidity
+
+%Fraud, illusion, property, violence, craving, envy, ego, anger, anxiety, shame, greed, perplexity, impurity, attachment, aversion, idleness, heresy?, false view, affection of the senses, sexual desire: The mindful one who in his mind diminishes these he alone is called a yogī of many actions (\textit{bahukriyāyogī}). 
+
+%Schwindel, Besitz, Gewalt, Verlangen, Neid, Ego, Wut, Konsumdenken, Scham, Ungeduld, Verwir-
+%rung, Unreinheit, Unfrömmigkeit, Zweifel, Affektion der Sinne, Lüsternheit: Wer diese im Geiste
+%von Tag zu Tag verringert, er allein wird ein Yogin der vielen Handlungen genannt.
+
+
+%kāpaṭyaṃ māyā vitvaṃ hiṃsā tṛṣṇā mātsaryamahaṃkāraḥ roṣā bhayaṃ lajjā // lobhaḥ mohaḥ aśucitvaṃ rāgadveṣaḥ // ālasyaṃ pāṣaṃḍitvaṃ bhraṃti / indriyavikāraḥ / kāmaḥ ete yasya manasi pradidinaṃ nyūna bhavaṃti /
+%sa eva bahukriyāyogī kathyate /
+\endprose
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Varieties of \textit{rājayoga}: Siddhakuṇḍalinīyoga and Mantrayoga]}}\end{english}}
+\pend
+\bigskip
+
+\prose
+idānīṃ rājayogasya bhedāḥ kathyante \varc{kathyante \nepal \unbekannt \pune \edprint}{\om \lalchand}/ ke te\varc{ke te \nepal \unbekannt}{te ke \pune \lalchand \edprint} / ekaḥ siddhakuṇḍalinīyogaḥ \varc{siddhakuṇḍalinīyogaḥ \unbekannt}{siddhakuṇḍalanīyogaḥ \nepal \pune \edprint siddhakuṇḍalanīyoga \lalchand} mantrayogaḥ / amū \varc{amū \nepal \unbekannt \pune \lalchand}{astu \edprint} rājayogau \varc{rājayogau \nepal \unbekannt \pune \lalchand}{rājayogaḥ \edprint} kathyete \varc{kathyete \pune}{kathyate \nepal \unbekannt \lalchand kathyante \edprint} / mūlakandasthāne \varc{mūlakandasthāne \nepal \edprint \lalchand}{mūlakadasthāne \unbekannt mūlaṃ kaṃdasthāne \pune} ekā tejorūpā mahānāḍī varttate / iyaṃ \varc{iyaṃ \nepal \unbekannt \edprint \pune}{trayaṃ \lalchand} ekā \varc{ekā \nepal \unbekannt}{eka \pune \edprint kā \lalchand} nāḍī iḍāpiṅgalāsuṣumnān \varc{suṣumnān \nepal \unbekannt}{suṣumnā \pune \lalchand \edprint} etān \varc{etān \pune \lalchand \edprint}{ete \nepal \unbekannt}bhedān prāpnoti / vāmabhāge candrarūpā iḍā nāḍī varttate / dakṣiṇabhāge sūryarūpā piṅgalā nāḍī varttate / madhyamārge \varc{madhyamārge \nepal \pune \lalchand \edprint}{madhyarge \unbekannt}'tisūkṣmā padminī\varc{padminī \edprint}{padmanī \nepal \unbekannt \lalchand \pune} tantusamākārā koṭividyutsamaprabhā / bhuktimuktidā\varc{bhuktimuktidā \pune}{bhuktimuktido \nepal \unbekannt bhuktimuktipradā \edprint \lalchand} / asyāṃ\varc{asyāṃ}{\emend asyā \pune \lalchand 'sya \edprint sya \nepal \om \unbekannt} jñānotpattau\varc{jñānotpattau \pune \lalchand \edprint}{utpanne \unbekannt nno \nepal} satyāṃ\varc{satyāṃ \pune \lalchand}{satyaṃ \edprint sati \nepal \unbekannt} puruṣaḥ sarvajño bhavati / idānīṃ suṣumṇāyāṃ \varc{suṣumṇāyāṃ \edprint}{suṣumnāyāḥ \nepal \unbekannt suṣumṇāyā \pune suṣumṇā \lalchand} jñānotpattavupāyāḥ\varc{jñānotpattavupāyāḥ \edprint}{jñānotpattau upāyāḥ \pune \unbekannt jñānotpattau upāyaḥ \lalchand jñānotpanno upāyāḥ \nepal} kathyante\varc{kathyante \nepal \unbekannt \pune \edprint}{kathyate \lalchand} //\notes{jñānotpattau upāyaḥ}{\englishnote{\small So far it is not clear at all if the list given at the beginning of the text codifying the fifteen \textit{yoga}s belongs to the original text or was a later addition by a another hand. The text begins with a description of \textit{kriyāyoga} and continues to describe \textit{siddhakuṇḍaliniyoga} and somewhat suprisingly mentions \textit{mantrayoga} in the same breath. One starts wondering why the structure of the text does not follow the codification. However the mention of \textit{jñānotpattau upāyaḥ} might be a clue why the second \textit{yoga} in the list might be \textit{jñānayoga}. So far it seems to me that there are three options or a combination of these to explain these apparent inconsistencies: 1. The text is highly corrupted. 2. The codification was a later addition of another hand. 3. The term \textit{jñānayoga} is listed due to the results of \textit{siddhakuṇḍalinīyoga}, which is the generation of knowledge due to the practice of a certain \textit{yoga} involving the central channel, as mentioned in this section of the text.}}
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the first Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+ādau caturdalaṃ mūlacakraṃ \varc{caturdalaṃ mūlacakraṃ \nepal \unbekannt}{caturdalaṃ mūlaṃ cakraṃ \edprint \pune caturdalamūlacakraṃ \lalchand} varttate / prathamamādhāracakraṃ \varc{prathamamādhāracakraṃ \pune \lalchand}{prathamam ādhāracakraṃ varttate \edprint} gudasthānaṃ \varc{gudasthānam \pune \lalchand}{gudāsthānam \edprint} raktavarṇaṃ gaṇeśadaivataṃ \varc{ganeśadaivataṃ \edprint \lalchand}{gaṇeśāṃ daivataṃ \pune} siddhibuddhiśaktiṃ mūṣako vāhanaṃ \varc{siddhibuddhiśaktiṃ muṣako vāhanaṃ}{\emend siddhibuddhiśaktir mukhako vāhanaṃ \pune siddhibuddhiśaktimūṣako vāhanaṃ \lalchand siddhibuddhiśaktimuṣakavāhanam \edprint} kūrmaṛṣiḥ ākuncamudrā apānavāyu\varc{apānavāyuś \pune}{apānavāyuḥ \edprint \lalchand}ścaturddaleṣu rajaḥsattvatamomanāṃsi vaṃ śaṃ ṣaṃ saṃ madhyatrikoṇe triśīkhā tanmadhye \varc{triśīkhā \pune \lalchand}{triśikhāt \edprint}\notes{prathamam ... triśikhāt}{\englishnote{\small The whole section is missing in \nepal and \unbekannt. All witnesses match again from the word \textit{tanmadhye} onwards. \oxford can't be determined due to missing folios.}}\varc{tanmadhye \pune \edprint \nepal \unbekannt}{tanmadhya \lalchand}trikoṇākāraṃ kāmapīṭhaṃ varttate / tatpīṭhamadhye 'gniśikhākāraikā \varc{agniśikhākāraikā \edprint}{agniśikhākārā ekā \nepal \unbekannt magniśikhākārā ekā \pune jñiśikhākaraṇakā \lalchand}mūrtirvarttate / tasyāḥ \varc{tasyāḥ \nepal \unbekannt \edprint}{tasyā \pune \lalchand} mūrterdhyānakaraṇāt\varc{mūrter \nepal \unbekannt \pune \edprint}{mūrti \lalchand}\varc{dhyānakaraṇāt \nepal \unbekannt \pune \lalchand}{dhyānakāraṇāt \edprint} \ sakalaśāstrakāvyanāṭakādisakalavāṅmayaṃ\varc{°nāṭakādisakalavāṅmayaṃ \pune \edprint}{°nāṭakādisakalavāgmayaṃ \nepal \unbekannt °nāṭakādi // vāṅmayaṃ \lalchand} vinābhyāsena puruṣasya manomadhye sphurati //
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the second Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+idānīṃ dvitīyaṃ svādhiṣṭānacakraṃ\notes{svādhiṣṭānacakraṃ}{\englishnote{\small One would rather expect \textit{svādhiṣṭhānacakraṃ}. Instead the witnesses all transmit \textit{svādhiṣṭānacakraṃ}.}} ṣaṭdalaṃ \varc{ṣaṭdalaṃ \nepal \unbekannt \pune \lalchand}{ṣaḍdalaṃ \edprint} uḍḍīyāṇapīṭhasaṃjñakaṃ \varc{uḍḍīyāṇapīṭhasaṃjñakaṃ}{\emend uḍḍīyāṇāpīṭhasaṃjñakaṃ \unbekannt upāyanapīṭhasaṃjñakaṃ \edprint uḍḍīyāne pīṭhasaṃjñakaṃ \nepal uḍḍīyānapīṭhaṃ saṃjñakaṃ \pune uḍḍīyān pīṭhaṃ saṃjñako \lalchand} bhavati / tanmadhye 'tiraktavarṇam\varc{'tiraktavarṇam \pune \lalchand}{atiraktavarṇaṃ \nepal \unbekannt \edprint} / tasya dhyānāt sādhako\varc{sādhako \pune \lalchand \edprint}{sadhakaḥ \nepal \unbekannt} 'tisundaro\varc{'tisundaro \pune \lalchand \edprint}{atisundaro \nepal \unbekannt} bhavati / yuvatināmativallabho\varc{yuvatināmativallabho \pune \lalchand}{yuvatīnāṃ vallabho \edprint yuvatīnāṃ vallabho \nepal \unbekannt} bhavati\varc{bhavati \nepal \unbekannt \lalchand \edprint}{na bhavati \pune} / pratidinamāyurvardhate \varc{pratidinam \edprint \pune \lalchand}{dinaṃ dinaṃ prati \nepal dinaṃ prati \unbekannt}//
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the third Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+tṛtīyaṃ \varc{tṛtīyaṃ \nepal \unbekannt \lalchand}{tṛtīye \edprint \pune}nābhistāne daśadalaṃ\varc{daśadalaṃ \pune \edprint \nepal \unbekannt}{daśadala \lalchand} padmaṃ\varc{padmaṃ \edprint \pune}{padme \lalchand padma \nepal \unbekannt} varttate / tanmadhye pancakoṇaṃ cakraṃ varttate\varc{tanmadhye paṃcakoṇaṃ cakraṃ varttate \nepal \unbekannt \pune \edprint}{\om \lalchand} / tanmadhye ekā mūrtirvarttate\varc{tanmadhye ekā mūrtirvarttate \nepal \unbekannt \pune \edprint}{\om \lalchand} / tasyāstejo\varc{tasyās \edprint \pune \lalchand}{tasyāḥ \unbekannt tasyā \nepal} jihvayā kathituṃ\varc{kathituṃ \edprint \pune}{kathayituṃ \nepal \unbekannt \lalchand} na śakyate/ tasyāḥ \varc{tasyāḥ \nepal \unbekannt \edprint}{tasyā \lalchand \pune} mūrterdhyānakāraṇāt \varc{mūrter \edprint \pune \nepal \unbekannt}{mūrtir \lalchand}\varc{dhyānakaraṇāt \nepal \unbekannt}{dhyānakāraṇāt \edprint \pune \lalchand} puruṣasya śarīraṃ \varc{śarīraṃ \edprint \lalchand \nepal}{śarīrāṃ \unbekannt} sthiraṃ bhavati \varc{śarīraṃ sthiraṃ bhavati \edprint \lalchand \nepal \unbekannt}{\om \pune}//
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the fourth Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+caturthaṃ\varc{caturthaṃ \edprint \pune \nepal \unbekannt}{caturthakaṃ \lalchand} hṛdayamadhye dvadaśadalaṃ kamalaṃ\varc{hṛdayamadhye dvadaśadalaṃ kamalaṃ \edprint \pune \lalchand}{kamalaṃ hṛdayamadhye dvadaśadalaṃ \nepal \unbekannt} vartate / atitejomayatvāddṛṣtigocaraṃ\varc{atitejomayatvād \edprint}{atitejomayatvāt \pune \nepal \unbekannt atitejomayatvā \lalchand} na bhavati / tanmadhye 'ṣṭadalamadhomukhaṃ\varc{'ṣṭadalam \edprint}{'ṣṭadale \pune 'ṣṭadalaṃ \lalchand aṣṭadalaṃ \nepal \unbekannt}\varc{adhomukhaṃ \edprint \nepal \unbekannt}{adhomukha \lalchand mukhaṃ \pune}kamalaṃ varttate / tanmadhye prāṇavāyoḥ sthānamaṣṭadalakamalamadhye \varc{sthānam \edprint \nepal \unbekannt}{sthānaṃ \pune \lalchand} liṃgākārā karṇikā\varc{karṇikā \edprint \lalchand \nepal \unbekannt}{varṇikā \pune} kathyate / tasyāḥ kaliketi \varc{kaliketi \pune \lalchand \nepal \unbekannt}{karṇiketi \edprint} saṃjñā \varc{saṃjñā \edprint \pune \nepal \unbekannt}{\om \lalchand} tatkalikāmadhye \varc{tatkalikāmadhye \pune \unbekannt}{tatakalikāmadhye \nepal tatkarṇikāmadhye \edprint madhye \lalchand} padmarāgaratnasamānavarṇāṃguṣthapramāṇaikā \varc{padmarāgaratnasamānavarṇāṃguṣthapramāṇaikā}{\emend padmarāgasamānavarṇāṃguṣṭhapramāṇaikā \edprint padmarāgasamānavarṇāṃ- guṣṭhapramāṇā ekā \pune madhye padmaratnasamānavarṇā / aṅguṣṭhāpramāṇā / ekā \lalchand padmarāgaratnasamānavarṇā aṅguṣthapramāṇo eka \nepal padmarāgaratnasamānavarṇā aṅguṣthapramāṇāt ekā \unbekannt} puttalikā vartate / tasyā \varc{tasyā \edprint \pune}{tasyāḥ \nepal \unbekannt tasya \lalchand}jīveti saṃjñā \varc{jīveti saṃjñā}{\emend jīveti saṃjñāḥ \nepal jīveti saṃjña \unbekannt jīvasaṃjñā \edprint \pune \om \lalchand}tasyā \varc{tasyā \edprint \pune}{tasyāḥ \nepal \unbekannt \om \lalchand}balamatha ca svarūpaṃ \varc{balam atha ca svarūpaṃ \nepal \unbekannt}{balaṃ atha svarūpaṃ \pune balamadhyasvarūpaṃ \edprint balasapasvvarūpaṃ \lalchand} koṭijihvābhirvaktuṃ \varc{koṭijihvābhir \edprint \pune \nepal \unbekannt}{koṭijihvāyābhi \lalchand}naiva śakyate /
+%
+%tasyā  jīvasaṃjñā       tasyā balamadhyasvarūpaṃ               koṭijihvābhir vaktuṃ naiva śakyate // \edprint
+%tasyā  jīvasaṃjñā       tasyā balam atha svarūpaṃ              koṭijihvābhir vaktuṃ naiva śakyate // \pune 
+%tasya                        balasa?pasvarūpaṃ                koṭijihvāyābhi vaktuṃ na śakyate // \lalchand 
+%tasyāḥ jīveti saṃjñāḥ  tasyāḥ balaṃ atha ca svarūpaṃ      koṭijihvābhir vaktuṃ na śakyate // \nepal
+%tasyāḥ jīveti saṃjña / tasyāḥ balaṃ atha ca svarūpaṃ     koṭijihvābhir vaktuṃ na śakyate // \unbekannt
+%
+%
+%Her technical designation is embodied soul. Not even with a thousand tongues it is possible to talk about her nature and her power.
+asyā\varc{asyā}{asyā \edprint \pune \lalchand asyāḥ \nepal \unbekannt} mūrterdhyānakaraṇāt\varc{dhyānakaraṇāt \nepal \unbekannt \pune}{dhyānakāraṇāt \edprint dhyānāt \lalchand} svargapātālākaśamanuṣyagandharvakinnaraguhyakavidyādharalokasambandhinyaḥ strīyo 'pi \varc{strīyo 'pi \edprint \pune \lalchand}{strīyaḥ \nepal \unbekannt}sādhakasya puruṣasya \varc{strīyaḥ sādhakasya puruṣasya \nepal \unbekannt}{strīyo 'pi \edprint \pune \lalchand}\notes{sādhakasya puruṣasya}{\englishnote{\small Based on the material at hand it is not possible to determine the better reading at this passage. Due to those doubts I presently lean towards choosing the reading providing more detail: \textit{strīyaḥ sādhakasya puruṣasya} instead of merely \textit{strīyo 'pi}. To complicate the matter a similiar sentence follows only in \nepal and \unbekannt, which is left out in \edprint \pune and \lalchand: \textit{pṛthvīloke saṃbaṃdhinyo 'pi striyaḥ vaśyo bhavaṃti} as witnessed in \nepal and \textit{pṛthvīloka saṃbaṃdhinyo pi striyaḥ vasyā bhavaṃti} in \unbekannt. This sentence is currently not included into the constituted critical edition due to its clear redundance. However, due to syntactical reasons and to provide a more readable Sanskrit without changing the meaning of the sentence, I tend to produce a conjecture, by adopting the \textit{strīyo 'pi}-reading of \edprint \pune \lalchand and merge it with the \textit{strīyaḥ sādhakasya puruṣasya}-reading of \nepal and \unbekannt to arrive at: \textit{strīyo 'pi sādhakasya puruṣasya vaśyā bhavanti}. Please don't freak out.}}vaśyā bhavanti /
+%asyā mūrter dhyānakāraṇāt    svargapātālākaśamanuṣyagandharvakinnaraguhyakavidyādharalokasambandhinyaḥ strīyo 'pi vaśyā bhavanti / \edprint
+%asyā mūrter dhyānakaraṇāt    svargapātālākāśamanuṣyagandharvakiṃnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyo 'pi vaśyā bhavanti / \pune
+%asyā mūrtir dhyānāt          svargapātālākāśamanuṣyagaṃdharvakinnaraguhyakavidyādharalokasambandhinyaḥ strīyo 'pi vaśyā bhavanti /lalchand
+%asyāḥ mūrter dhyānakaraṇāt   svargapātāla ākāśamanuṣyagaṃdharvakinnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyaḥ sādhakasya puruṣasya vaśyā bhavanti // \nepal
+%asyāḥ mūrter dhyānakaraṇāt   svargapātāla ākāśamanuṣyagaṃdharvakiṃnaraguhyakavidyādharalokasaṃbaṃdhinyaḥ strīyaḥ sādhakasya puruṣasya vaśyā bhavanti // \unbekannt
+%
+% Because of the exercise of meditation on her form the inhabitants of the universe (which are) Humans, Gandharvas, Kinnaras, Guhyakas, Vidyādharas (and their) females, in the heavenly world, underworld and open space are obedient to the will of the practicing person.
+%pṛthvīlokasaṃbaṃdhinyo \varc{pṛthvīlokasaṃbaṃdhinyo \unbekannt}{pṛthvīloke saṃbaṃdhinyo \nepal} 'pi striyaḥ vaśyā \varc{vaśyā \unbekannt}{v%aśyo \nepal} bhavanti / \varc{pṛthvīlokasaṃbaṃdhinyo 'pi striyaḥ vaśyā bhavanti}{\om \edprint \pune \lalchand} 
+%The inhabitants of the universe and the earth as well as their females are brought into subjection. 
+%
+ityatra\varc{ityatra \nepal \pune \lalchand}{ityatra kiṃ \nepal \unbekannt} kathyate // 
+%ityatra kathyate// /edprint
+%ityatra kathyate// \pune
+%ityatra kathyate// \lalchand
+%ityatra kiṃ kathyate // \nepal
+%ityaṃtra kiṃ kathyate // \unbekannt 
+%which is told in this case.
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the fifth Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+idānīṃ \varc{idānīṃ \nepal \unbekannt}{\om \edprint \pune \lalchand}pañcamaṃ kamalaṃ ṣodaśadalaṃ kaṇṭhasthāne \varc{kamalaṃ ṣodaśadalaṃ kaṇṭhasthāne \nepal \unbekannt}{kaṇṭasthāne ṣoḍaśadalaṃ kamalaṃ \edprint \pune \lalchand}vartate /
+%       pañcamaṃ kaṇṭhasthāne ṣoḍaśadalaṃ kamalaṃ vartate // \edprint
+%       paṃcamaṃ kaṃṭhasthāne ṣoḍaśadalaṃ kamalaṃ vartate \pune
+%       paṃcamaṃ kaṃṭhasthāne ṣoḍaśadalaṃ kamalaṃ vartate \lalchand
+%
+%idānīṃ paṃcamaṃ kamalaṃ ṣodaśadalaṃ kaṃṭhasthāne varttate // \nepal
+%idānīṃ paṃcamaṃ kamalaṃ ṣodaśadalaṃ kaṃṭhasthāne varttate // \unbekannt --------> Was in diesem Falle machen?
+%
+%Now (follows the description of) the fifth lotus having sixteen petals (which) exists at the location of the throat.
+%
+%
+tanmadhye koṭicandrasamaprabaḥ\varc{koṭicandrasamaprabaḥ \nepal \pune}{koṭicandrasamaprabhā \unbekannt \lalchand koṭisūryasamāna \edprint} ekaḥ puruṣo vartate /
+%tanmadhye koṭisūryasamāna ekaḥ puruṣo vartate / \edprint
+%tanmadhye koṭicaṃdrasamaprabhaḥ ekaḥ puruṣo vartate \pune
+%tanmadhye koṭicaṃdrasamaprabhā ekaḥ puruṣo vartate \lalchand
+%tanmadhye koṭicaṃdrasamaprabhaḥ ekaḥ puruṣo varttate \nepal
+%tanmadhye koṭicaṃdrasamaprabhā ekapuruṣo varttate \unbekannt
+%In its  middle exists a single person which shines like a thousand moons.
+tasya puruṣasya dhyānakaraṇādasādhyarogā\varc{°karaṇāt \nepal \unbekannt \pune \lalchand}{°kāraṇāt \edprint} naśyanti /
+%tasya puruṣasya dhyānakāraṇādasādhyarogā naśyanti // \edprint
+%tasya puruṣasya dhyānakāraṇādasādhyarogā naśyanti // \lalchand
+%tasya puruṣasya dhyānakāraṇādasādhyarogā naśyaṃti // \pune
+%tasya puruṣasya dhyānakaraṇāt asādhyarogā naśyaṃti // \nepal
+%tasya puruṣasya dhyānakaraṇāt / asādhyarogā naśyaṃti // \unbekannt
+%%Because of the exercise of meditation on this person all diseases which are (otherwise) not possible to be controlled vanish.
+ekasahasravarṣaparyaṃtaṃ \varc{°paryaṃtaṃ \edprint \pune \nepal \unbekannt}{\om \lalchand} sa \varc{sa \edprint \pune}{\om \lalchand \nepal \unbekannt}puruṣo jīvati//
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the sixth Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+īdānīṃ ṣaṣṭhacakraṃ\varc{ṣaṣṭhacakraṃ \nepal \unbekannt}{ṣaṣṭhaṃ \edprint \pune ṣaṣṭaḥ \lalchand} ājñānāmakaṃ\varc{ajñānāmakaṃ \nepal \unbekannt}{bhrumadhye ājñācakraṃ \edprint \pune \lalchand} vartate /
+%Now (there) exists the sixth cakra named \textit{ājñā}. 
+%ekasahasravarṣa paryaṃtaṃ sa puruṣo jīvatīdānīṃ ṣaṣṭhaṃ bhrūmadhye ājñācakraṃ vartate// \edprint
+%ekasahasravarṣa paryaṃtaṃ sa puruṣo jīvati īdānīṃ ṣaṣṭhaṃ bhrūmadhye ājñācakraṃ vartate// \pune
+%ekasahasravarṣa puruṣo jīvati //           īdānīṃ ṣaṣṭhaḥ bhrūmadhye ājñācakraṃ vartate// \lalchand
+%ekasahasravarṣa paryaṃtaṃ puruṣo jīvati / idānīṃ ṣaṣṭhacakraṃ ajñānāmakaṃ varttate // \nepal
+%ekasahasravarṣa paryaṃtaṃ puruṣo jīvati / idānīṃ ṣaṣṭhacakraṃ ajñānāmakaṃ varttate // \unbekannt
+%The person lives up to 1001 years. %Now (there) exists the sixth, the \textit{ajñācakra} inbetween the eyebrows.
+                                        %dvidalaṃ tanmadhye 'gnijvālākārakamalaṃ kiṃcid vastu vartate / \edprint
+                                        %dvidalaṃ tanmadhye agnijvālākārakamalaṃ kiṃcid vastu vartate / \pune
+                                        %dvidalaṃ tanmadhye agnijvālākārakamalaṃ kiṃcid vastu vartate / \lalchand
+                                                           %agnijvālākārakamalaṃ  kiṃcid vastu vartate / \oxford                                                                           %hier ist mir nicht ganz klar wie ich mich entscheiden soll und ich weiß auch nicht, ob der Apparat so am sinnvollssten ist.  außerdem starer hier auch \oxford ---> muss ich das in einer FN erwähnen?  
+%tac cakraṃ bhruvor madhye dvidalakaṃ sthitaṃ // tanmadhye agnijvālākāraṃ akalaṃ kiṃcid vastu varttate / \nepal
+%tac cakraṃ bhruvor madhye dvidalakaṃ sthitaṃ // tanmadhye agnijvālākāraṃ akalaṃ kiṃcid vastu varttate / \unbekannt                                                   
+taccakraṃ bhrūvormadhye dvidalakaṃ sthitaṃ \varc{taccakraṃ bhrūvormadhye dvidalakaṃ sthitaṃ \nepal \unbekannt}{dvidalaṃ \edprint \pune \lalchand} / tanmadhye agnijvālākāramakalaṃ\varc{akalaṃ \nepal \unbekannt}{\om \edprint \pune \lalchand \oxford} kiṃcidvastu vartate /
+%In its middle exists a place with a certain two-petalled lotus in the form of blazing fire. \edprint übersetzung
+%This two-petalled cakra is situated in the middle of the eyebrows. In its middle exists a certain object (\textit{kiṃcid vastu}) being a form of blazing fire without parts,... \nepal
+%na strī pumān / tasya dhyānakāraṇāt puruṣasya    śarīram ajarāmaraṃ bhavati / \edprint
+%na strī pumān // tasyā dhyānakaraṇāt puruṣasya    śarīraṃ ajarāmaro bhavati / \oxford
+%na strī pumān // tasyā dhyānakaraṇāt puruṣasya    śarīraṃ ajarāmaro bhavati / \lalchand
+%na strī na pumān // tasyā dhyānakaraṇāt puruṣasya śarīraṃ ajarāmaro bhavati / \pune
+%na strī na pumān / tasya dhyānakaraṇāt puruṣasya śarīram ajarāmaraṃ bhavati \nepal
+%na strī na pumān / tasya dhyānakaraṇāt puruṣasya śarīram ajarāmaraṃ bhavati \unbekannt
+na strī na pumān\varc{na pumān \nepal \unbekannt \pune}{pumān \edprint \lalchand \oxford}/ tasya\varc{tasya \edprint \nepal \unbekannt}{tasyā \pune \lalchand \oxford} dhyānakaraṇāt\varc{°karaṇāt \nepal \unbekannt \pune \lalchand \oxford}{°kāraṇāt \edprint} puruṣasya śarīram ajarāmaraṃ \varc{ajārāmaraṃ \edprint \nepal \unbekannt}{ajāramaro \pune \lalchand \oxford} bhavati //
+%...not being female not being  male. Because of the exercise of meditation on it the body of the person becomes non-aging and immortal.
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the seventh Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+% idānīṃ saptamaṃ  tālumadhye catuḥṣaṣṭidalaṃ              amṛtapūrṇaṃ vartate / \edprint
+% idānīṃ saptamaṃ  tālumadhye catuḥṣaṣṭhidalaṃ             amṛtapūrṇaṃ vartate / \pune
+% idānīṃ saptamaṃ  // tāludeśe madhye catuḥṣaṣṭhidala      amṛtapūrṇaṃ vartate / \lalchand
+% idānīṃ saptamaṃ  // tāludeśe madhye catuḥṣaṣṭhidala      amṛtapūrṇaṃ vartate / \oxford
+% idānīṃ saptamaṃ  cakraṃ     catuḥṣaṣṭhidalaṃ tālumadhye  amṛtapūrṇaṃ varttate // \nepal
+% idānīṃ saptamaṃ  cakraṃ     catuḥṣaṣṭhidalaṃ tālumadhye  amṛtapūrṇaṃ varttate // \unbekannt
+%
+%
+% Now the seventh cakra having 64 petals and being full of nectar exists in the middle of the palate.
+%
+%
+idānīṃ saptamaṃ cakraṃ\varc{cakraṃ \nepal \unbekannt}{\om \edprint \pune \lalchand \oxford} catuḥṣaṣṭhidalaṃ tālumadhye\varc{catuḥṣaṣṭhidalaṃ tālumadhye \nepal \unbekannt}{tālumadhye catuḥṣaṣṭhidalaṃ \edprint \pune tāludeśe madhye catuḥṣaṣṭhidala \lalchand \oxford} amṛtapūrṇaṃ varttate /
+%
+%
+%adhikaśobhāyuktam     atiśvetaṃ       tanmadhye       raktavarṇaṃ ghāṃṭikāsaṃjñaikā      karṇikā varttate / \edprint
+%adhikataraśobhayuktaṃ atiśvetaṃ       tanmadhye       raktavarṇaṃ ghaṭikāsaṃjñā ekā      karṇikā varttate / \pune
+%adhikataraśobhayuktaṃ // atiśvetaṃ // tanmadhye       raktavarṇaṃ ghaṇikāsaṃjñā ekā ekā  karṇikā varttate / \lalchand
+%adhikataraśobhayuktaṃ // atiśvetaṃ // tanmadhye       raktavarṇaṃ ghaṃṭikāsaṃjñā ekā ekā karṇikā varttate / \oxford
+%adhikataraśobhayuktaṃ atiśvetaṃ       tanmadhye       raktavarṇaṃ ghaṃṭikāsaṃjñā ekā     karṇikā varttate / \nepal
+%adhikataraśobhayuktaṃ atiśvetaṃ       tanmadhye       raktavarṇaṃ ghaṃṭikāsaṃjñā ekā     karṇikā varttate / \unbekannt
+adhikataraśobhayuktaṃ\varc{adhikataraśobhayuktaṃ \nepal \unbekannt \pune \lalchand \oxford}{adhikaśobhāyuktam \edprint} atiśvetaṃ tanmadhye raktavarṇaṃ ghaṇṭikāsaṃjñā\varc{ghaṃṭikā° \edprint \oxford \nepal \unbekannt}{ghaṭikā° \pune ghaṇikā° \lalchand} ekā\varc{ekā \edprint \pune}{ekā ekā \lalchand \oxford ekāka \nepal \unbekannt} karṇikā varttate /
+% Being endowed with superabundant beauty, very bright in its middle, red in color exists a single pericarp named ``uvula'' (\textit{ghāṃṭikā}).% 
+% tanmadhye bhūmiḥ / \edprint
+% tanmadhye bhūmiḥ / \pune
+% tanmadhye bhūmiḥ / \lalchand
+% tanmadhye bhūmiḥ / \oxford
+% tanmadhye bhūmiḥ / \nepal
+% tanmadhye bhūmiḥ / \unbekannt
+%
+%In its middle is the place.
+%
+%
+% tanmadhye prakaṭacandrakalā 'mṛtādhārā bhavati           / \edprint
+% tanmadhye prakaṭacandrakalā 'mṛtādhārā sravati           / \pune
+% tanmadhye prakaṭacandrakalā 'mṛtādhārā sravaṃti          / \lalchand
+% tanmadhye prakaṭacandrakalā 'mṛtādhārā sravaṃti          / \oxford
+% tanmadhye prakaṭacandrakalā amṛtādhārāsravaṃtī varttate / \nepal
+% tanmadhye prakaṭacandrakalā 'mṛtādhārāsravaṃtī varttate / \unbekannt %sravantī f. Fluss Nom Sg
+tanmadhye bhūmiḥ / tanmadhye prakaṭacandrakalā 'mṛtādhārāsravantī\varc{°sravantī \nepal \unbekannt}{sravaṃti \oxford \lalchand sravati \pune bhavati \edprint} vartate\varc{varttate \nepal \unbekannt}{\om \edprint \pune \lalchand \oxford} /\notes{amṛtādhārāsravantī vartate}{\englishnote{\small One of the main problems at the current state of constituting the critical edition is the stark deviation in sentence contruction. As mentioned ealier with some exceptions there are two main groups of witnesses. Group a) is \edprint \pune \lalchand \oxford and group b) is \nepal as well as \unbekannt. Even though one might assume that there is the possibility of even the former group being closer to the original, this very sentence clearly shows the relation  between the witnesses and suggests a clear direction of the corruption. Here we see how the \textit{vartate} of \nepal and \unbekannt was deleted by a scribe in the process of transmission due to misunderstanding the compound \textit{amṛtādhārāsravantī}. The last member of the compound \textit{sravantī} was taken as a verb like \textit{sravaṃti, sravati} or even \textit{bhavati}. This supports the justification for the decisions between variants in cases of deviating sentence construction to usually prefer readings of \nepal and \unbekannt.}}
+%
+%In its middle exists a flow of nectar like a river (\textit{amṛtādhārāsravantī}, appearing from the digit of the moons disc.
+%
+%
+% tasyāḥ kalāyā dhyānakāraṇāt-tasya samīpe maraṇaṃ nāyāti / \edprint -> does not come near to death -> na-ā-yāti
+% tasyāḥ kalāyā dhyānakaraṇāttasya samīpe maraṇaṃ nāyāti / \pune
+% tasyāḥ karṇikāyā dhyānakaraṇāt tasya samīpe maraṇaṃ na yāti /lalchand
+% tasyāḥ karṇikāyā dhyānakaraṇāt tasya samīpe maraṇaṃ na yāti /oxford
+% tasyāḥ kalāyāḥ dhyānakaraṇāt tasya samīpe maraṇaṃ nāyāti /nepal
+% tasyāḥ kalāyāḥ dhyānakaraṇāt tasya samīpe maraṇaṃ nāyāti /unbekannt
+%
+%Because of the exercise of meditation on this digit death does not come near him. 
+%
+tasyāḥ kalāyā\varc{kalāyā \edprint \pune}{kalāyāḥ \nepal \unbekannt karṇikāyā \lalchand \oxford} dhyānakaraṇāttasya\varc{dhyānakaraṇāt \nepal \unbekannt \oxford \lalchand \pune}{dhyānakāraṇāt \edprint} samīpe maraṇaṃ nāyāti\varc{nāyāti \edprint \pune \nepal \unbekannt}{na yāti \lalchand \oxford}/%Because of the exercise of meditation on the digit death does not come into proximity of him. 
+%
+%
+%nirantaradhyānād        -amṛtadhārāyāḥ sajīvo bhavati / \edprint
+%niraṃtaradhyānātamṛtadhārāplāvanaṃ            bhavati / \pune
+%niraṃtaradhyānakaraṇād   amṛtadhārā           sravati / \lalchand
+%niraṃtaradhyānakaraṇād   amṛtadhārā           sravati / \oxford
+%niraṃtaradhyānakaraṇāt / amṛtadhārā           sravaṃti / \nepal
+%niraṃtaradhyānakaraṇāt / amṛtadhārā           sravaṃti / \unbekannt
+nirantaradhyānakaraṇādamṛtadhārā \varc{°dhyānakaraṇāt \nepal \unbekannt \oxford \lalchand}{dhyānāt \edprint \pune}\varc{°dhārā \nepal \unbekannt \pune \lalchand \oxford}{°dhārāyāḥ} sravati\varc{sravati \lalchand \oxford}{sravaṃti \nepal \unbekannt sajīvo bhavati \edprint plāvanaṃ bhavati \pune} /
+%Due to uninterrupted meditation the stream (\textit{dhārā}) of nectar flows. 
+% tadā yakṣam-aroga   -pittajvarahṛdayadāha-śiroroga-jihvā--jaḍa-bhāvā  naśyanti / \edprint
+% tadā    kṣayaroga   -pittajvarahṛdayadāha-śiroroga-jihvā--jaḍa-bhāvān naśyanti / \pune
+% tadā    kṣayaroga   -pittajvarahṛdayadāha     roga-jihvāyājaḍa-bhāvān naśyanti / \lalchand
+% tadā    kṣayaroga   -pittajvarahṛdayadāha     roga-jihvāyājaḍa-vān    naśyanti / \oxford
+%         kṣayarogaṃ   pittajvarahṛdayadāha-śiroroga jihvāyājaḍa-bhāvā  naśyanti / \nepal %besser kṣayarogaṃ emendieren zu vollem Kompositum? 
+%         kṣayaṃ rogaṃ pittajvarahṛdayadāha-śiroroga jihvāyājaḍa-bhāvā  naśyanti / \unbekannt
+\varc{tadā \edprint \pune \lalchand \oxford}{\om \nepal \unbekannt} kṣayarogapittajvarahṛdayadāhaśirorogajihvājaḍabhāvā\varc{kṣayarogaṃ \nepal}{kṣayaroga°\pune \lalchand \oxford kṣayaṃ rogaṃ \unbekannt yakṣam aroga \edprint}\varc{°śiroroga- \nepal \unbekannt \edprint \pune}{°roga- \lalchand \oxford}\varc{°jihvāyājaḍabhāvā \nepal \unbekannt}{jihvāyajaḍabhāvān \lalchand jihvājaḍabhāvān \pune jihvajaḍabhāvā \edprint jihvāyājaḍavān \oxford} naśyanti /
+%
+%The appearances of emaciation (\textit{kṣayaroga}), fever due to disordered bile (\textit{pittajvara), heartburn (\textit{hṛdayadāha}), head-disease (\textit{śiroroga}) and tongue insensibility (\textit{jihvājaḍa}) vanish. %!!!Krankheiten in Ayurvedabuch checken! medizinische Identifikationen! 
+%
+%Then the appearances of disease caused by Yakṣas, fever due to disordered bile (\textit}pittajvara), heartburn, head-disease, and tongue insensibility vanishes. \edprint Übersetzung
+%
+%bhakṣitam  api   viṣan    na bādhate / \edprint
+%bhakṣitam  api   viṃṣa    na bādhate / \pune
+%bhākṣitam  api   viṣaṃ    na bādhyate / \lalchand
+%bhākṣitamār pi   viṣaṃ    na bādhyate / \oxford
+%bhakṣitam        viṣamapi na bādhyate / \nepal
+%bhakṣitāṃ        viṣamapi na bādhyate / \unbekannt
+bhakṣitaṃ\varc{bhakṣitam \nepal}{bhakṣitāṃ \unbekannt bhakṣitamapi \edprint \pune bhākṣitamapi \lalchand bhākṣitam ār pi \oxford} viṣamapi\varc{viṣamapi \nepal \unbekannt}{viṣaṃ \lalchand \oxford viṣan \edprint viṃṣa \pune} na bādhate\varc{bādhate \edprint \pune}{bādhyate \nepal \unbekannt \lalchand \oxford} / 
+%Also eaten venom doesn't trouble him. 
+yadyatra\varc{yadyatra \edprint \pune \nepal}{yadatramapi \lalchand \oxford yadyanna \unbekannt} manaḥ sthiraṃ\varc{manaḥ sthiraṃ \edprint \pune}{manasthiram \lalchand \oxford \nepal \unbekannt} bhavati //
+% yady atra manaḥ sthiraṃ   bhavati / \edprint
+% yady atra manaḥ sthiraṃ   bhavati / \pune
+% yady atramapi manasthiraṃ bhavati / \lalchand              %VARIANTE UNSICHER!!!WAS MEINT JÜRGEn??
+% yady atramapi manasthiraṃ bhavati / \oxford
+% yady atra     manasthiraṃ bhavati / \nepal
+% yadyanna      manasthiraṃ bhavati / \unbekannt
+%  If here the mind becomes stable.
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the eighth Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+%idānīṃ brahmarandhrasthāne 'ṣṭamaṃ śatadalaṃ cakraṃ varttate / \edprint
+%idānīṃ brahmaraṃdhrasthāne 'ṣṭamaṃ śatadalaṃ cakraṃ vartate / \pune
+%idānīṃ brahmaraṃdhrasthāne aṣṭamaṃ śatadalaṃ cakraṃ vartate / \lalchand
+%idānīṃ brahmaraṃdhrasthāne aṣṭamaṃ śatadalaṃ cakraṃ vartate / \oxford
+%idānīṃ aṣṭamacakraṃ brahmaraṃdhrasthāne śatadalaṃ   vartate / \nepal
+%idānīṃ aṣṭamacakraṃ brahmaraṃdhrasthāne śatadalaṃ   vartate / \unbekannt
+%Now exists the eighth \textit{cakra} having one hundred petals located  at the aperture of Brahman.
+idānīṃ aṣṭamacakraṃ brahmarandhrasthāne śatadalaṃ\varc{aṣṭamacakraṃ brahmaraṃdhrasthāne śatadalaṃ \nepal \unbekannt}{brahmaraṃdhrasthāne 'ṣṭamaṃ śatadalaṃ cakraṃ \edprint \pune brahmarandhrasthāne aṣṭamaṃ śatadalaṃ cakraṃ \lalchand \oxford} vartate / 
+%tasya kamalajātyadharaṇīpīṭha iti saṃjñā / \edprint
+%tasya kamalasya jālaṃdharapīṭha iti saṃjñā / \pune
+%tasya kamalasya jālaṃdharapīṭha iti saṃjñā ...  \lalchand
+%tasya kamalasya jālaṃdharapīṭhasaṃjñā ...  \oxford
+%tasya kamalasya jālaṃdharapīṭha iti saṃjñā ...  \nepal
+%tasya kamalasya jālaṃdharapīṭha iti saṃjñā ...  \unbekannt
+tasya kamalasya jālandharapīṭha\varc{kamalasya jālaṃdharapīṭha \pune \lalchand \oxford \nepal \unbekannt}{kamalajātyadharaṇīpīṭha \edprint} iti\varc{iti \edprint \pune \lalchand \nepal \unbekannt}{\om \oxford} saṃjñā /
+%``The (divine) seat of  Jālaṃdhara'' is the designation of the lotus.
+%siddhapuruṣasya sthānam / \edprint
+%siddhapuruṣasya sthānam / \pune
+%siddhapuruṣasya sthānam mūrti vartate // \lalchand                         %%% schwerer Satz -> wie soll ich hier entscheiden?! 
+%siddhapuruṣasya sthānam mūrti vartate // \oxford %Zeilensprung
+%siddhapuruṣasya sthānam // \nepal
+%siddhapuruṣasya sthānam // \unbekannt
+siddhapuruṣasya sthānam\varc{mūrti vartate \lalchand \oxford}{\om \edprint \pune \nepal \unbekannt} /
+%
+%(It is) the place of the accomplished person.
+%
+%tanmadhye 'gnidhūmākārarekhā   yādṛśy  ādṛśy ekā  puruṣasya mūrttir varttate / \edprint
+%tanmadhye 'gnidhūmākārarekhā   yādṛśī tādṛśy ekā  puruṣasya mūrttir varttate / \pune
+%tanmadhye 'gnidhūmākārārekhā  yādṛśī tādṛśy ekā  puruṣasya mūrttir varttate / \lalchand               
+%tanmadhye 'gnidhūmākārārekhā  yādṛśī tādṛśy ekā  puruṣasya mūrttir varttate / \oxford
+%tanmadhye 'gnidhūmākārāreṣā   yādṛśī tādṛśī ekā  puruṣasya mūrttir varttate / \nepal
+%tanmadhye agnidhūmākārāreṣā   yādṛśī tādṛśī ekā  puruṣasya mūrttir varttate / \unbekannt
+%
+tanmadhye 'gnidhūmākārarekhā\varc{'gnidhūmakārarekhā \edprint \pune}{'gnidhūmākārārekhā \lalchand \oxford}{'gnidhūmākārāreṣā \nepal agnidhūmākārāreṣā \unbekannt} yādṛśī tādṛśyekā\varc{yādṛśī tādṛśyekā \pune \lalchand \oxford}{yādṛśī tādṛśī ekā \nepal \unbekannt yādṛśyādṛśyekā \edprint} puruṣasya mūrtirvartate / 
+%
+%In its middle exists some single (divine) form of the person (\textit{puruṣa}) being a streak having the form of smoke and fire. 
+%
+%
+%
+%tasyā nādir nāṃto 'sti / \edprint
+%tasyā nādināṃ 'to sti / \pune
+%tasyā nādir nāṃto sti / \lalchand -> vor dem bei allen anderen vorigen Satz!?!?!?! 
+%tasyā nādir nāṃto sti / \oxford -> vor dem bei allen anderen vorigen Satz!?!?!?! 
+%tasyāḥ nāsthaṃtaḥ ādir api nāsti / \nepal????
+%tasyāḥ nāsty aṃtaḥ ādir api nāsti / \unbekannt 
+%????? unklarer Satz
+tasyā\varc{tasyā \edprint \pune \lalchand \oxford}{tasyāḥ \nepal \unbekannt} nāstyanta ādirapi nāsti\varc{nāstyaṃtaḥ ādirapi nāsti \unbekannt}{tasyāḥ nāsthaṃtaḥ ādirapi nāsti \nepal nādirnāṃto sti \lalchand \oxford tasyā nādirnāṃto 'sti \edprint tasyā nādināṃ 'to sti \pune} /
+% Of her exists no end, nor a beginning.
+
+%
+%
+%-------------------------------
+%tasyā  mūrtter dhyānakāraṇāt pratyakṣaṃ niraṃtaraṃ puruṣasyākāśe   gamāgamau   bhavataḥ / \edprint
+%tasyā  mūrtter dhyānakaraṇāt pratyakṣaniraṃtaraṃ   puruṣasyākāśe   gamāgamau   bhavataḥ / \pune
+%tasyā  mūrtir  dhyānakaraṇāt pratyakṣaniraṃtaraṃ   puruṣasyākāśe   gamāgamau   bhavataḥ / \lalchand         
+%tasyā  mūrtir  dhyānakaraṇāt pratyakṣaṃ niraṃtaraṃ puruṣasyākāśe   gamāgamau   bhavataḥ / \oxford
+%tasyāḥ mūrttir dhyānakaraṇāt pratyakṣaniraṃtaraṃ   puruṣasya ākāśe gamāgamau   bhavataḥ / \nepal
+%tasyāḥ mūrtir  dhyānakaraṇāt pratyakṣaniraṃtaraṃ   puruṣasya ākāśe gamāgamau   bhavataḥ / \unbekannt
+tasyā\varc{tasyā \edprint \pune \lalchand \oxford}{tasyāḥ \nepal \unbekannt} mūrterdhyānakaraṇāt\varc{mūrter\edprint \pune}{mūrtir \lalchand \oxford \unbekannt mūrttir \nepal}\notes{\conj pratyakṣaṃ nirantaraṃ}{\englishnote{\small Even though every single witness at hand transmits the latter reading right after \textit{°karaṇāt}, several considerations make it reasonable to conject that the original sentence is corrupted and was written without it. The main consideration to assume the corruption is that \textit{pratyakṣaṃ nirantaraṃ} is ungrammatical. The second is that the sentence is way more meaningful without it. The third that two sentences later we get the phrase in a meaningful context. Due to the last consideration my best guess is an interlace at an early stage of transmission.}}\varc{\conj. °karaṇāt pratyakṣaṃ nirantaraṃ \edprint \oxford}{°karaṇāt pratyakṣanirantaraṃ \nepal \unbekannt \pune \lalchand} puruṣasyākāśe gamāgamau bhavataḥ /
+%BEDEUTUNG DES SATZES BIS JETZT UNKLAR! Idee: Zeilensprung aus übernächstem Satz! Streiche pratyakṣaṃ niraṃtaraṃ und der Satz ergibt Sinn!  
+%gamāgamau nom.  dual = coming and going ; bhavataḥ = 3p du ind pres von bhū
+%Due to the exercise of meditation on this (divine) form both coming and going of the person in space occurs. 
+%Kolloquium: Meinung zu Kompositum pratyakṣaniraṃtaraṃ = macht wenig Sinn oder?
+%-------------------------------
+%pṛthvīmadhye  sthitasyāpi pṛthvībādho          na bhavati / \edprint
+%pṛthvīmadhye  sthitasyāpi    pṛthaka              bhavati   \pune %Zeilenspringer führt zu Verlust von Zeile in Pune
+%pṛthvīmadhye  sthitasyāpi pṛthvībādho          na bhavati / \lalchand
+%pṛthivīmadhye sthitasyāpi // pṛtvībādho        na bhavati // /oxford
+%pṛthvīmadhye  sthitāvapi  pṛthvī kṣa?to bādho  na bhavati // \nepal
+%pṛthvīmadhye  sthitāvapi  pṛthvīkṣato bādho    na bhavati // \unbekannt
+%
+pṛthvīmadhye\varc{pṛtvīmadhye \edprint \nepal \unbekannt \pune \lalchand}{pṛthivīmadhye \oxford} sthitasyāpi\varc{sthitasyāpi \edprint \lalchand \oxford \pune}{sthitāvapi \nepal \unbekannt} pṛthvībādho\varc{pṛthvībadho \edprint \lalchand \oxford}{pṛtvīkṣato bādho \nepal \unbekannt pṛtahaka \pune} na\varc{na \edprint \lalchand \oxford \nepal \unbekannt}{\om \pune} bhavati / 
+%Affliction from the earth-element does not arise (anymore) even if he is situated in the middle of the earth.  
+%------------------------------
+%sakalān pratyakṣaṃ niraṃtaraṃ paśyati ca pṛthagbhavati / \edprint
+%sakalāḥ pratyakṣaṃ niraṃtara paśyatī  ca pṛthak bhavati // \oxford
+%sakalāḥ pratyakṣaṃ niraṃtara paśyatī  ca pṛthak bhavati / \lalchand
+%sakalāpratyakṣaniraṃtaraṃ    paśyati  ca pṛthak ca bhavati // \nepal
+%sakalāpratyakṣaniraṃtaraṃ paśyati ca pṛthak pṛthak bhavati \unbekannt
+% omitted completely in \pune
+%
+sakalaṃ pratyakṣaṃ nirantaraṃ\varc{sakalāpratyakṣaṃ nirantaraṃ}{\emend sakalāpratyakṣaniraṃtaram \nepal \unbekannt sakalāḥ pratyakṣaṃ niraṃtara \oxford \lalchand sakalān pratyakṣaṃ niraṃtaraṃ \edprint \om \pune} paśyati\varc{paśyati \edprint \nepal \unbekannt}{paśyatī \oxford \lalchand \om \pune} ca pṛthagbhavati\varc{pṛthagbhavati \edprint}{pṛthak bhavati \oxford \lalchand pṛthak ca bhavati \nepal pṛthak pṛthak bhavati \unbekannt \om \pune} /
+%He constantly sees everything in front of his eyes and he becomes separated (from the material world).
+%
+%------------------------------
+%
+%atiśayenāyur vardhate / \edprint 
+%atīśayanāyur vardhayate / \oxford
+%atīśayanāyur vardhayate // \lalchand
+%atiśayena āyur varddhate // \nepal
+%atiśayena āyur varddhate // \unbekannt
+%atiśayenāyur vardhate \pune
+%
+%
+% The force of life increases eminently. 
+%
+atiśayenāyurvardhate\varc{atiśayenāyur \edprint \pune}{atīśayanāyur \oxford \lalchand atiśayena āyur \nepal \unbekannt} //
+%
+%
+%------------------------------
+%
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the ninth Cakra]}}\end{english}}
+\pend
+\bigskip
+\prose
+%
+%idānīṃ navamacakrasya   bhedāḥ kathyante / \edprint
+%idānīṃ navamacakrasya   bhedāḥ kathyante / \pune
+%idānīṃ navamaṃ cakrasya bhedāḥ kathyate // \oxford
+%idānīṃ navamacakrasya   bhedāḥ kathyate \lalchand
+%idānīṃ navamacakrasya   bhedāḥ kathyaṃte // \nepal
+%idānīṃ navamacakrasya   bhedāḥ kathyaṃte // \unbekannt
+%
+%Now the divisions/differentiations of the ninth cakra are explained.
+%
+idānīṃ navamacakrasya\varc{navamacakrasya \edprint \pune \lalchand \nepal \unbekannt}{navamaṃ cakrasya} bhedāḥ kathyante\varc{kathyante \edprint \pune \nepal \unbekannt}{kathyate \lalchand \oxford}/
+% !!!Ist es nicht seltsam, dass wir hier bhedāḥ haben?!!! Welche Divisions? Mal weiterlesen. Vielleicht wirds dann klarer. 
+%
+%------------------------------
+%
+%tasya mahāśūnyacakram    iti  saṃjñā / \edprint
+%tasya mahāśūnyacakram    iti  saṃjñā / \pune
+%tasye mahāśūnye cakram   iti  saṃjñā \oxford
+%tasya mahāśūnye cakram   iti  saṃjñā \lalchand
+%tasya mahāśūnye cakreti       saṃjñā // \nepal
+%tasya mahāśūnyacakreti        saṃjñā // \unbekannt
+%
+%
+tasya mahāśūnyacakramiti\varc{mahāśūnyacakramiti \edprint \pune}{mahāśūnye cakram iti \oxford \lalchand mahāśūnye cakreti \nepal mahāśūnyacakreti \unbekannt} saṃjñā /
+%
+%The designation of it is ``the \textit{cakra} of the great void (\textit{mahāśūnyacakra})''.
+%
+%------------------------------
+%
+%tadupary aparaṃ kimapi nāsti / \edprint
+%tadupary aparaṃ kimapi nāsti \pune
+%tadupary        kimapi nāsti \oxford ??-> auch mögliche Lesart
+%tadupari        kimapi nāsti \lalchand
+%tadupari aparaṃ kiṃapi nāsti / \nepal
+%tadupari aparaṃ kiṃapi nāsti / \unbekannt
+%
+%kim api: somewhat, to a considerable extent, rather, much more, still, further. Śa
+%
+%Above that there is no other. 
+%
+taduparyaparaṃ\varc{tadupary \edprint \pune}{tadupari \lalchand \nepal \unbekannt}\varc{aparaṃ \edprint \pune \nepal \unbekannt}{\om \lalchand \oxford} kimapi nāsti / 
+%
+%------------------------------
+%
+%tadeva mahāsiddhacakraṃ kathyate // \edprint
+%tadeva mahāsiddhacakraṃ kathyate    \pune 
+%tadeva mahāsiddhacakraṃ kathyate // \oxford
+%tadeva mahāsiddhacakraṃ kathyate // \lalchand
+%tadeva mahāsiddhacakraṃ kathyate // \nepal
+%tadeva mahāsiddhacakraṃ kathyate // \unbekannt
+%
+%Therefore it is declared to be the \textit{cakra} of the great perfection (\textit{mahāsiddhacakra}).
+%
+tadeva mahāsiddhacakraṃ kathyate /
+%------------------------------
+%
+%tasya pūrṇagiripīṭha              etadṛśaṃ nāma /\edprint
+%tasya pūrṇagiripīṭham iti         etādṛśaṃ nāma \pune
+%tasya pūrṇagiripīṭham iti saṃjñā  etādṛsaṃ nāma \oxford
+%tasya pūrṇagiripīṭham iti saṃjñā  etādṛsaṃ nāma \lalchand
+%tasya cakrasya  pūrṇagiri         etādṛśaṃ nāma / \nepal
+%tasya cakrasya  pūrṇagiri         etādṛśaṃ nāma / \unbekannt
+%
+tasya\varc{tasya \edprint \pune \oxford \lalchand}{tasya cakrasya \nepal \unbekannt} pūrṇagiripīṭhamiti\varc{pūrṇagiripīṭhamiti \pune \oxford \lalchand}{pūrṇagiripīṭha \edprint pūrṇagiri \nepal \unbekannt}\varc{saṃjñā \oxford \lalchand}{\om \edprint \pune \nepal \lalchand} etādṛśaṃ\varc{etādṛśaṃ \edprint \pune}{etādṛsaṃ \lalchand \oxford} nāma /
+%!!!Varianten im Kolloquium diskutieren?!
+%
+%A(nother) name of it is ``(divine) seat of Pūrṇagiri''.   
+%
+%
+%------------------------------
+%
+%tasya mahāśūnyacakrasya madhye ūrdhvamukham iti raktavarṇaṃ sakalaśobhāspadam \edprint
+%tasya mahāśūnyacakrasya madhye ūrdhvamukham iti raktavarṇa-sakalaśobhāspadaṃ \pune
+%tasya mahāśūnyacakrasya madhye ūrdhvamukhem iti raktavarṇaṃ sakalaśobhāspadaṃ // \oxford    
+%tasya mahāśūnyacakrasya madhye ūrdhvamukham iti raktavarṇaṃ sakalaśobhāspadaṃ // \lalchand
+%tasya mahāśūnyacakramadhye     ūrdhvamukhaṃ atiraktavarṇaṃ sakalaśobhāspadaṃ / \nepal
+%tasya mahāśūnyacakramadhye     ūrdhvamukhaṃ atiraktavarṇaṃ sakalaśobhāspadaṃ / \unbekannt
+%
+%
+%anekakalyāṇapūrṇaṃ sahasradalan   ekaṃ kamalaṃ  varttate / \edprint
+%anekakalyāṇapūrṇaṃ sahasradalaṃ   ekaṃ kamalaṃ  vartate \pune
+%anekakalyāṇapūrṇa--sahasradalaṃ   ekaṃ kamalaṃ  vartato \oxford
+%anekakalyāṇapūrṇaṃ sahasradalaṃ   ekaṃ kamalaṃ  vartate \lalchand
+%anekakalyāṇapūrṇaṃ sahasradalaṃ   ekakamalaṃ    varttate \unbekannt
+%anekakalyāṇapūrṇaṃ sahasradalaṃ   ekaṃ kamalaṃ  vartate \nepal
+%Fragezeichen in |nepal ... schreiber Einfügung? 
+%
+%
+tasya mahāśūnyacakramadhye\varc{mahāśūnyacakramadhye \nepal \unbekannt}{mahāśūnyacakrasya madhye \edprint \pune \lalchand \oxford} ūrdhvamukhaṃ\varc{ūrdhvamukhaṃ \nepal \unbekannt}{urdhvamukham \edprint \pune \lalchand urdhamukhem \oxford} atiraktavarṇaṃ\varc{atiraktavarṇaṃ \nepal \unbekannt}{iti raktavarṇaṃ \edprint \lalchand \oxford iti raktavarṇa° \pune} sakalaśobhāspadaṃ /
+%
+%
+anekakalyāṇapūrṇaṃ\varc{anekakalyāṇapūrṇaṃ \edprint \pune \lalchand \unbekannt \nepal}{anekakalyāṇapūrṇa° \pune} sahasradalaṃ ekaṃ kamalaṃ\varc{ekaṃ kamalaṃ \edprint \pune \lalchand \oxford \nepal ekakamalaṃ \unbekannt} vartate\varc{vartate \edprint \pune \lalchand \nepal \unbekannt}{vartato \oxford} /
+%
+%In the middle of the \textit{mahāśūnyacakra} exists one lotus facing upward, very red in color with a thousand petals - an abode of brilliance and wholeness.
+%------------------------------
+%yasya parimalo manaso vacaso na gocaraḥ // \edprint
+%yasya parimalo manasā vacasā gocaraḥ / \lalchand
+%yasya parimalo manasā vacasā na gocaraḥ / \oxford
+%yasya parimalo manasā vacasā na gocaraḥ / \nepal
+%yasya parimalo manasā vacasā na gocaraḥ / \unbekannt
+%yasya parimalo manasā vacasā na gocaraḥ / \pune
+%
+%
+yasya parimalo manasā\varc{manasā \pune \lalchand \oxford \nepal \unbekannt}{manaso \edprint} vacasā\varc{vacasā \pune \lalchand \oxford \nepal \unbekannt}{vacaso \edprint}\notes{manasā vacasā}{\englishnote{\small All manuscripts at hand share this usage of the instrumentals. Only the printed edition conjectures the forms into the exspected genitiv.}}na\varc{na \edprint \pune \oxford \nepal \unbekannt}{\om \lalchand} gocaraḥ /
+%Whose fragrance is not in range of mind and speech. 
+%Dessen Duft ist nicht in Reichweite von Geist und Sprache. 
+%
+%------------------------------
+%
+%tasya kamalasya madhye trikoṇarūpa-ikā karṇikā varttate / \edprint
+%tasya kamala----madhye     trikoṇārūpā ekā karṇikā varttate/ \pune
+%tasya kamalasya madhye trikoṇarūpā ekā karṇikā varttate/ \lalchand
+%tasya kamalasya madhye trikoṇarūpā ekā karṇikā varttate/ \oxford
+%tasya kamalasya madhye trikoṇarūpā eka karṇikā varttate/ \nepal
+%tasya kamalasya madhye trikoṇarūpā ekā karṇikā varttate/ \unbekannt
+%
+%
+tasya kamalasya\varc{kamalasya \edprint \lalchand \oxford \nepal \unbekannt}{kamala° \pune} madhye trikoṇarūpaikā\varc{trikoṇarūpaikā \edprint}{trikoṇarūpā ekā \pune \lalchand \oxford \unbekannt trikoṇarūpā eka \nepal} karṇikā vartate /
+%
+%In the middle of this lotus exists one pericarp having the shape of a triangle. 
+%------------------------------
+%
+%tatkarṇikāmadhye saptadaśī         niraṃjanarūpā kalā varttate/ \edprint
+%tatkarṇikāmadhye saptadaśireṇa ekā niraṃjanarūpā kalā vartate// \lalchand
+%tatkarṇikāmadhye saptadaśireṇa ekā niraṃjanarūpā kalā vartate// \oxford
+%tatkarṇikāmadhye saptadaśī     ekā niraṃjanarūpā kalā vartate// \pune
+%tatkarṇikāmadhye saptadaśī     ekā niraṃjanarūpā kalā vartate// \nepal
+%tatkarṇikāmadhye saptadaśī     ekā niraṃjanarūpā kalā vartate// \unbekannt
+%
+%
+tatkarṇikāmadhye saptadaśī\varc{saptadaśī \edprint \pune \nepal \unbekannt}{saptadaśireṇa \lalchand \oxford} ekā\varc{ekā \pune \nepal \unbekannt \lalchand \oxford}{\om \edprint} nirañjanarūpā kalā vartate /\notes{saptadaśī}{\englishnote{\small A \textit{saptadaśī kalā} appears frequently in Śaiva literature. References need to be added here.}}
+%
+%In the middle of the pericarp exists one seventeenth digit in the shape of a immaculé form. 
+%
+%------------------------------
+%
+%koṭisūryasamaprabhaṃ kalāyās tejo vartate / \edprint
+%koṭisūryasamaprabhā kalāyās tejo vartate / \lalchand
+%koṭisūryasamaprabhā kalāyās tejo vartate / \oxford
+%koṭisūryasamaprabha kalāyās tejo vartate / \pune
+%koṭisūryasamaprabhaṃ kalāyās tejo vartate / \nepal
+%koṭisūryasamaprabhaṃ kalāyās tejo vartate / \unbekannt
+%
+%
+koṭisūryasamaprabhaṃ\varc{°samaprabhaṃ \edprint \nepal \unbekannt}{°samaprabhā \lalchand \oxford °samaprabhā \pune} kalāyāstejo vartate /
+%
+%There exists a light of the part shining like a thousand suns. 
+%------------------------------
+%
+%param udbhavo nāsti / \edprint
+%parim uṣṇabhavo nāsti / \pune
+%parim uṣṇabhavo nāsti / \lalchand
+%parim uṣṇabhavo nāsti / \oxford
+%parim uṣṇabhāvo nāsti / \nepal
+%parim auṣṇabhāvo nāsti / \unbekannt
+%
+%
+paramuṣṇabhavo\varc{param° \edprint}{parim° \pune \oxford \nepal \unbekannt} nāsti / 
+%
+%(But) excessive heat is not arising. 
+%------------------------------
+%
+%koṭicandrasamaprabhā śītalaṃ paraṃ śītabhāvo nāsti / \edprint
+%koṭicandrasamaprabhā śītalaṃ paraṃ śītabhavo nāsti / \pune
+%koṭicandrasamaprabhā śītalaṃ paraṃ śītabhavo nāsti / \NICHT IN LALCHAND!!!!
+%koṭicandrasamaprabhā śītalaṃ paraṃ śītabhavo nāsti / \oxford
+%
+%Shining like a thousand moons, although being cool, cold is not arising.
+%
+%koṭicandrasamaprabhaṃ śītalaparaṃ bhavo nāsti / \nepal
+%koṭicaṃdrasamaprabhaṃ śītalaparaṃ bhavo nāsti / \unbekannt
+%
+%
+koṭicandrasamaprabhaṃ\varc{koṭicandrasamaprabhaṃ \unbekannt koṭicaṃdrasamaprabhaṃ \nepal}{koṭicandrasamaprabhā \edprint \pune \oxford \om \lalchand} śītalaparaṃ\varc{śītalaparaṃ \nepal \unbekannt}{śītalaṃ paraṃ \edprint \pune \oxford \om \lalchand} bhavo\varc{\nepal \unbekannt śītabhavo \edprint \pune \oxford \om \lalchand} nāsti /
+%
+%Shining like a thousand moons, excess of cold is not arising.
+%
+%------------------------------
+%
+%asyāḥ kalāyā  dhyānayogāt    sādhakasya manasi duḥkhaṃ na bhavati / \edprint
+%asyāḥ kalādhyānayogāt        sādhakasya manasi duḥkhaṃ na bhavati / \pune
+
+%asyāḥ kalāyāḥ  dhyānakaraṇāt sādhakasya manasi duḥkhaṃ na bhavati / nepal
+%asyāḥ kalāyāḥ dhyānakaraṇāt  sādhakasya manasi duḥkhaṃ na bhavati / unbekannt
+%
+%asyāḥ kalāyā dhyānayogāt     sādhakasya manasi duḥkhaṃ bhavati /oxford
+%asyāḥ kalāyā dhyānayogāt     sādhakasya manasi duḥkhaṃ bhavati /lalchand
+%
+%
+asyāḥ kalāyā dhyānakaraṇāt\varc{\emend kalāyāḥ dhyānakaraṇāt \nepal \unbekannt}{kalāyā dhyānayogāt \\nepal \unbekannt kalādhyānayogāt \pune} sādhakasya manasi duḥkhaṃ na\varc{na \edprint \pune \nepal \unbekannt}{\om oxford \lalchand} bhavati /
+%
+%Due to the exercise of meditation upon the digit suffering does not arise in the mind of the practitioner (anymore). 
+%------------------------------
+%
+%tadupari anaṃtaparamānandasya sthānam / \edprint
+%tadupari anaṃtaparamānandasya sthānaṃ  \pune
+%tadupari anantaparamānaṃdasya sthānam / \nepal
+%tadupari anantaparamānaṃdasya sthānaṃ / \unbekannt
+%tadupari anantaparamānaṃdasya sthānam vartate/ \oxford
+%tadupari anaṃtaparamānaṃdasya sthānam vartate/ \lalchand
+%
+%
+tadupari anantaparamānaṃdasya sthānam\varc{sthānam \edprint \pune \nepal \unbekannt}{sthānam vartate \oxford \lalchand}/
+%
+%Above that is the place of infinite supreme bliss.
+%
+%
+%
+%------------------------------
+%
+%tatrordhvaśaktiḥ / \edprint
+%tatordhvaśaktiḥ \pune
+%tatrordhvaśaktiḥ / \nepal
+%tatra ūrdhva śaktiḥ / \nepal
+%rdhaśakti ardhaśakti \oxford
+%rdhaśakti ardhaśakti \lalchand
+%
+%
+%
+tatrordhvaśaktiḥ\varc{tatrordhvaśaktiḥ \edprint \nepal}{tatordhvaśaktiḥ \pune tatra ūrdhva śaktiḥ \unbekannt rdhaśakti ardhaśakti \lalchand \oxford}/
+%
+%There above is \textit{śakti},
+%------------------------------
+%
+%etādṛśī  saṃjñā ekā kalā vartate / \edprint
+%ekādaśā  saṃjñā ekā kalā vartate \pune
+%etādṛśī  saṃjñā ekā kalā vartate / \nepal
+%etādṛsaṃ saṃjñā ekā kalā vartate / \unbekannt
+%ekādaśā  saṃjñā ekā kalā vartate / \oxford
+%ekādaśā  saṃjñā ekā kalā vartate / \lalchand
+%
+%
+etādṛśī\varc{etādṛśī \edprint \nepal}{etādṛśaṃ \unbekannt ekādaśā \pune \lalchand \oxford} saṃjñā ekā kalā vartate / 
+%
+%Being designated as such she is one single digit. 
+%
+%------------------------------
+%
+%asyāḥ kalāyā dhyānakāraṇāt  puruṣo yadicchati / \edprint
+%asyāḥ kalāyā dhyānakāraṇāt  puruṣo yadicchati ?Zeichen? \pune
+%asyāḥ kalāyā dhyānakāraṇāt  puruṣo yadicchati  tad bhavati \nepal
+%asyāḥ kalāyā dhyānakāraṇā   puruṣo yadicchati  tad bhavati \unbekannt
+%asyāḥ kalāyā dhyānakāraṇāt / puruṣo yadicchati / \oxford
+%asyāḥ kalāyā dhyānakāraṇāt / puruṣo yadicchati / \lalchand
+%
+%
+asyāḥ kalāyā dhyānakāraṇāt\varc{dhyānakāraṇāt \edprint \pune \oxford \lalchand \nepal}{dhyānakaraṇā \unbekannt} puruṣo yadicchati tadbhavati\varc{tadbhavati \nepal \unbekannt}{\om \edprint \pune \lalchand \oxford} / 
+%
+%Due to the exercise of meditation on this part the person manifests whatever he wishes for.
+%
+%------------------------------
+%
+%tasya sukhabhogavataḥ / \edprint
+%tasya sukhabhogavataḥ \pune
+%rājyasukhabhogavataḥ \nepal
+%rājyasukhabhogavṛtaḥ \unbekannt !!!
+%tasya khaṃ bhogavataṃ / \oxford
+%tasya sukhaṃ bhogavaṃtaṃ / \lalchand
+%
+rājyasukhabhogavṛtaḥ\varc{rājyasukhabhogavṛtaḥ \unbekannt}{rājyasukhabhogavataḥ \nepal tasya sukhabhogavataḥ \edprint \pune tasya sukhaṃ bhogavaṃtaṃ \lalchand tasya khaṃ bhogavataṃ} /
+%
+%He is furnished with royal pleasure and enjoyment. 
+%
+%------------------------------
+%
+%strīmadhye vilāsavataḥ    saṃgītavilāsavataḥ vinodaprekṣāvataḥ      puruṣasya pratidinaṃ śuklapakṣe candrakalāvat   kalā    vardhate/ \edprint
+%strīmadhye vilāsavataḥ    saṃgītavinodaprekṣāvataḥ eva              puruṣasya pratidinaṃ śuklapakṣe candrakalāvat   kalā    vardhate / \pune
+%strīmadhye vilāsavaṃtaṃ   saṃgītaṃ prekṣāvatāḥ // evaṃ              puruṣasya pratidinaṃ śuklapakṣe caṃdrakalāvat / kalā    vartate / \lalchand
+%strīmadhye vilāsavaṃtaṃ   saṃgītaṃ vinodavaṃtaṃ prekṣāvaṃtāḥ // eva puruṣasya pratidinaṃ śuklapakṣe caṃdrakalāvat / kalā    vartate / \oxford
+%strīmadhye vilāsavataḥ    saṃgītavinodaprekṣyāvataḥ    evaṃ         puruṣasya pratidinaṃ śuklapakṣe candrakalā vṛddhivato?   vardhate / \nepal
+%strīmadhye vilāsavataḥ // saṃgītavinodaprekṣyāvataḥ // evaṃ         puruṣasya pratidinaṃ śuklapakṣe candrakalā vṛddhivato    vardhate / \unbekannt
+%
+strīmadhye vilāsavataḥ\varc{vilāsavataḥ \edprint \pune \nepal \unbekannt}{vilāsavaṃtaṃ \lalchand \oxford} saṃgītavinodaprekṣyāvataḥ\varc{saṃgītavinodaprekṣyāvataḥ \nepal \unbekannt}{saṃgītavilāsavataḥ vinodaprekṣāvataḥ \edprint saṃgītavinodaprekṣāvataḥ \pune saṃgītaṃ prekṣāvatāḥ \lalchand saṃgītaṃ vinodavaṃtaṃ prekṣāvaṃtāḥ \oxford} eva\varc{eva \oxford \pune}{evaṃ \nepal \unbekannt \lalchand \om \edprint} puruṣasya pratidinaṃ śuklapakṣe candrakalāvat kalā\varc{candrakalāvat kalā \edprint \pune \lalchand \oxford}{candrakalā vṛddhivato \nepal \unbekannt} vardhate\varc{vardhate \edprint \pune \nepal \unbekannt}{vartate \lalchand \oxford} /
+%(Selbst) bei einem Menschen, der sich inmitten von Frauen vergnügt, (und) ein Musikvergnügen
+%ansieht, wächst täglich die Kraft (kalā = śakti?) wie die "kalā" (Phase) des Mondes in der hellen Monatshälfte.
+%The \textit{kalā} of a person grows daily, like the \textit{kalā} of the moon in the bright half of the month, even amusing oneself amongst women and watching a musical pleasure.
+%(Even) amusing oneself amongst women, and watching musical pleasures, the \textit{kāla} of the person grows daily like the \textit{kalā} of the moon in the bright half of the month. 
+%------------------------------
+%
+%puṇyapāpe 'sya śarīraṃ na spṛśataḥ / \edprint
+%puṇyapāpe asya śarīrena spṛśataḥ / \nepal
+%puṇyapāpe asya śarīrena spṛśataḥ / \unbekannt
+%puṇyapāpe asya śarīrasya na spṛśataḥ // \oxford
+%puṇyapāpe asya śarīrasya na spṛśataḥ // \lalchand
+%omitted in \pune
+%
+puṇyapāpe\varc{puṇyapāpe \edprint \lalchand \oxford \nepal \unbekannt}{\om \pune} 'sya\varc{'sya \edprint}{asya \nepal \unbekannt \oxford \lalchand \om \pune} śarīrasya\varc{śarīrasya \lalchand \oxford}{śarīraṃ \edprint śarīrena \nepal \unbekannt \om \pune} na\varc{na \edprint \oxford \lalchand}{\om \nepal \unbekannt \pune} spṛśataḥ\varc{spṛśataḥ \edprint \lalchand \oxford \nepal \unbekannt}{\om \pune} /
+%
+%His body is not affected by merit and sin. 
+%------------------------------
+%
+%nirantaradhyānakaraṇāt     nijasvarūpaṃ prakāśanasāmarthyaṃ bhavati / \edprint
+%nirantaradhyānakaraṇāt /   nijasvarūpaprakāśasāmarthyaṃ bhavati / \nepal <-----
+%nirantaradhyānakaraṇāt /   nijasvarūpaprakāśasāmarthyaṃ bhavati / \unbekannt
+%niraṃtaraṃ dhyānakaraṇāt   nijasvarūpaprakāśasāmarthyaṃ bhavati / \oxford
+%niraṃtaraṃ dhyānakaraṇāt// nijasvarūpaprakāśasāmarthyaṃ bhavati / \lalchand
+%omitted until .....        nijasvarūpaprakāśasāmarthyaṃ bhavati / \pune
+%
+nirantaradhyānakaraṇāt\varc{nirantaradhyānakaraṇāt \edprint \nepal \unbekannt}{niraṃtaraṃ dhyānakaraṇāt \oxford \lalchand \om \pune} nijasvarūpaprakāśasāmarthyaṃ\varc{nijasvarūpaprakāśasāmarthyaṃ \lalchand \oxford \nepal \unbekannt \pune}{nijasvarūpaṃ prakāśanasāmarthyaṃ \edprint} bhavati /
+%
+%Due to uninterrupted meditation the power of the light of the innate nature arises. 
+%------------------------------
+%
+%dūrasthopi ca dūrasthavastu samīpa iva  paśyati // \edprint
+%dūrasthamapi                samīpamiva  paśyati // \nepal
+%dūrasthamapy-arthaṃ         samīpa iva  paśyati // \unbekannt
+%dūrasthamapi padārthaṃ      samīpa iva  paśyati // \oxford
+%dūrasthamapi parārthaṃ      samīpa iva  paśyati // \lalchand
+%dūrasthamapi padārthaṃ      samīpa iva  paśyati // \pune
+%------------------------------
+%
+dūrasthamapyarthaṃ\varc{dūrasthamapyarthaṃ \unbekannt}{dūrasthamapi padārthaṃ \oxford \pune durasthamapi parārthaṃ \lalchand sūrastamapi \nepal ca dūrasthavastu \edprint} samīpa\varc{samīpa \unbekannt \edprint \lalchand \oxford \pune}{samīpam \nepal} iva paśyati //
+%
+%He sees remotely located objects as if they'd be near.
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+%
+\endprose
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Lakṣyayoga, the yoga of the aimed object]}}\end{english}}
+\pend
+\bigskip
+\prose
+%------------------------------
+%
+%idānīṃ sukhasādhyo lakṣyayogaḥ kathyate / \edprint
+%idānīṃ sukhasādhyo lakṣyayohaḥ kathyate / \nepal
+%idānīṃ sukhasādhyo lakṣyayohaḥ kathyate / \unbekannt
+%
+%Now \textit{lakṣyayoga}, which is an easily accomplished is explained. 
+%------------------------------
+%asya lakṣyayogasya paṃca bhedā bhavanti   ūrdhvalakṣyam / adholakṣyam / lakṣyam / bāhyalakṣyam / aṃtaralakṣyam / \edprint
+%     lakṣyayogasya paṃcabhedā  bhavaṃti //urdhvalakṣya adholakṣya bāhyalakṣya madhyalakṣya antaralakṣya // \nepal
+%     lakṣyayogasya paṃcabhedā  bhavaṃti //urdhvalakṣya adholakṣya bāhyalakṣya madhyalakṣya antaralakṣya // \unbeaknnt
+%
+%Of this \textit{lakṣyayoga} there are five subdivisions: 1. The upward directed \textit{lakṣya}, 2. the inward directed \textit{lakṣya},3. the \textit{lakṣya} 4. the outer \textit{lakṣya}, 5. the inner \textit{lakṣya}
+%------------------------------
+%prathamamūrdhvalakṣyaṃ kathyate / \edprint
+%prathamaṃ urdhvalakṣaḥ kathyate / \nepal
+%prathamaṃ urdhvalakṣaḥ kathyate / \unbekannt
+%At first the upward directed \textit{lakṣya} is explained. 
+%------------------------------
+%
+%ākāśamadhye dṛṣṭiḥ / \edprint
+%ākāśamadhye dṛṣṭiḥ / \nepal
+%ākāśamadhye dṛṣṭiḥ / \unbekannt
+%
+%
+%In the middle of the sky is a fixed point (\textit{dṛṣṭi). 
+%------------------------------
+%
+%kadā ca mana ūrdhvaṃ kṛtvā sthāpayati / \edprint
+%atha ca // mana urdhvaṃ kṛtvā sthāpyate / \nepal
+%atha vā mana ūrdhaṃ kṛtvā sthāpyate \unbekannt
+%
+%When having caused the mind to be directed upwards, he causes it to stay there. 
+%------------------------------
+%
+%etasya lakṣyasya dṛḍhakaraṇāt   parameśvarasya tejasā saha dṛṣṭeraikyaṃ  bhavati / \edprint
+%etasya lakṣyasya dṛdhīkaraṇāt / parameśvarasya tejasā saha dṛṣteḥ aikyaṃ bhavati / \nepal
+%etasya lakṣasya dṛdhīkaraṇāt // parameśvarasya tejasā saha dṛṣṭeḥ aikyaṃ bhavati // \unbekannt
+%
+%Due to the exercise of fixing of this \textit{lakṣya} arises unity of the fixed point (\textit{dṛṣṭi}) with the light of the highest lord (\textit{parameśvara}). 
+%
+%------------------------------
+%atha cākāśamadhye yaḥ kaścid adṛṣṭaḥ padārtho bhavati / \edprint
+%atha ca ākāśamadhye yaḥ kaścit adṛṣtaḥ padārthe bhavati / \nepal
+%atha ca ākāśamadhye yaḥ kaścit adṛsṭaḥ padārtho bhavati / \unbekannt
+%
+%And then an indefinable invisible object arises in the middle of the sky.
+%
+%------------------------------
+%
+%sa sādhakasya dṛṣṭigocaro bhavati// \edprint
+%sādhakasya dṛṣṭigocaro bhavati// \lalchand
+%sa sādhakasya dṛṣṭigocare bhavati // \unbekannt <- Passt sa = saḥ, weil es sich auf padārtho m.? bezieht?
+%sa sādhakasya dṛṣṭigocare bhavati // \nepal
+%
+%It arises in the range of sight of the practitioner.  
+%------------------------------
+%
+%ayamevordhvalakṣyaḥ                       nāsikāyāḥ upari dvādaśāṃgulamūlaparyantaṃ dṛṣṭiḥ sthirā karttavyā / \edprint
+%ayamevordhvalakṣya // atha adholakṣyaḥ // nāsikāyā upari dvādaśaṃgulaparyaṃtaṃ dṛṣṭiḥ sthirā karttavyā // \nepal
+%ayamevordhvalakṣyaḥ // atha adholakṣaḥ // nāsikāyā upari dvādaśaṃgulaparyaṃtaṃ dṛṣṭiḥ sthirā karttavyā // \unbekannt
+%
+%this truly being \textit{ūrdhvalakṣya} from the nose above within the circumference (\textit{paryanta}) of twelve \textit{aṅgula}s one shall make the \textit{dṛṣṭi} fixed. 
+%
+%
+%------------------------------
+%
+%athavā nāsikāyā agre dṛṣṭiḥ sthirā karttavyā / \edprint
+%athavā nāsikāyā agre dṛṣṭiḥ sthirā karttavyā // \nepal
+%%athavā nāsikāyā agre dṛṣṭiḥ sthirā karttavyā // \unbekannt
+%------------------------------
+%lakṣadūyasya dṛḍhīkaraṇāt / dṛṣṭiḥ sthirā bhavati / \edprint
+%lakṣadvayasya dṛdhīkaraṇāt dṛṣṭiḥ sthirā bhavati / \nepal 
+%lakṣadvayasya dṛdhīkaraṇāt dṛṣṭiḥ sthirā bhavati / \unbekannt
+%------------------------------
+%pavanaḥ sthiro bhavati / \edprint
+%pavanaḥ sthiro bhavati / \nepal
+%%pavanaḥ sthiro bhavati / \unbekannt
+%------------------------------
+%
+%
+%āyurvarddhate / \edprint
+%āyurvardhate / \nepal
+%āyurvardhate / \unbekannt
+%------------------------------
+%etaddūyamapi bāhyalakṣyameva bhavati bāhyāṃtara ākāśe śūnyalakṣya) karttavyaḥ / \edprint
+%etatadvayamevavākhyalakṣamapi kathyate // bāhyo bhyaṃtaraṃ ākāśavat śūnyalakṣyaḥ karttavyaḥ / \nepal
+%etatadvayamevabāhyalakṣamapi kathyate // bāhyo bhyaṃtaraṃ ākāśavat // śūnyalakṣyaḥ karttavyaḥ / \unbekannt
+%
+%
+%------------------------------
+%jāgraddaśāyāṃ calanadaśāyāṃ bhojanadaśāyāṃ sthitikāle sarvasthāne śūnyasya dhyānakāraṇāt // \edprint
+%jāgraddaśāyāṃ cakabadaśāyāṃ bhojanadaśāyāṃ sthitikāle sarvvasthāne śūnyasya dhyānakaraṇāt maraṇatrāso na bhavati// \nepal
+%jāgraddaśāyāṃ calanadaśāyāṃ bhojanadaśāyāṃ sthitikāle sarvvasthāne śūnyasya dhyānakaraṇāt maraṇatrāso na bhavati// śūnya \unbekannt
+%
+%------------------------------
+%idānīṃ rājayogayuktasya śarīre yaccihnaṃ tat kathyate / \edprint
+%idānīṃ rājayogayuktasya puruṣasya yaccarīracihnaṃ tat kathyate / \nepal
+%idānīṃ rājayogayuktasya puruṣasya yaccarīracihnaṃ tat kathyate / \unbekannt
+%%------------------------------
+%tatsarvatra pūrṇo bhavati / \edprint
+%   sarvvatra pūrṇo bhavati / \nepal
+%   sarvvatra pūrṇo bhavati  \unbekannt
+%%------------------------------
+%
+%pṛthivyāḥ dūre tiṣṭati / \edprint
+%pṛthivyāḥ dūre tiṣṭati / \nepal
+%pṛthivyāḥ dūre tiṣṭati / \unbekannt
+%%------------------------------
+%
+%pṛthivyāṃ vyāpya tiṣṭhati / \edprint
+%pṛthvāṃ vyāpya tiṣṭhati / \nepal
+%pṛthvīṃ vyāpya tiṣṭhati / \unbekannt
+%------------------------------
+%yasya janmamaraṇe na staḥ sukhaṃ na bhavati / \edprint
+%yasya janmamaraṇe na staḥ sukhaṃ na bhavati / \nepal
+%yasya janmamaraṇe na staḥ sukhaṃ na bhavati / \unbekannt
+%
+%%------------------------------
+%
+%duḥkhaṃ na bhavati / \nepal
+%duḥkham na bhavati / \unbekannt
+%%------------------------------
+%kūlaṃ na bhavati / \nepal
+%kūlaṃ na bhavati / \unbekannt
+%------------------------------
+%śīlaṃ na bhavati / \nepal
+%śīlaṃ na bhavati / \unbekannt
+%------------------------------
+%sthānaṃ na bhavati / \nepal
+%sthānaṃ na bhavati / \unbekannt
+%asya siddhasya manomadhye īśvarasaṃvaṃ?? prakāśaḥ niraṃtaraṃ pratyakṣa bhavati  \nepal
+%asya siddhasya manomadhye īśvarasaṃvaṃdhiprakāśaḥ niraṃtaraṃ pratyakṣo bhavati  \unbekannt
+%%------------------------------
+%
+%sa ca prakāśo na śīto na coṣṇo na śveto na pīto bhavati /
+%
+%
+%
+%tasya na jātirna kiñciccihnam। ayaṃ ca niṣkalo niraṃjanaḥ alakṣyaśca bhavati। atha ca phalaṃdvade na kāminyāderyasyecchā na bhavati।।
+%anyad rājayogasya cihnaṃ kathyate । yasya rājyādilābhe'pi phalalābho na bhavati। hānāvapi manomadhye duḥkhaṃ na bhavati। atha ca tṛṣṇā na bhavati। atha ca kasmin padārthasyoparyanicchā na bhavati। kasmin padārthe manasonurāgo na bhavati। ayamapi rājayogaḥ kathyate। athacaḥ yasya manaḥ munividvatpuruṣeṣu metrai ca samaṃ bhavati। dṛṣṭiśca samā bhavati। sakalapṛthvīmadhye gamanavataḥ sukhabhogavataḥ yasya manasi karttṛtvābhimāno nāsti। atha ca lokamadhye gamanavataḥ sukhabhogavataḥ yasya manasi karttṛtvābhimāno nāsti। atha ca lokamadhye kartṛtvaṃ na jñāpayati। sopi rājayogaḥ kathyate।।
+%navīnāni paṭṭasūtramayadhṛtāni vasrāṇi athavā jīrṇāni chidrāṇi dhṛtāni kastūrīcandanalepairvā kardamalepena yasya manasi harṣaśokau na staḥ। sa evātra tiṣṭhati। yasya janmamaraṇe na staḥ sukhaṃ na bhavati। kulaṃ na bhavati śīlaṃ na bhavati। sthānaṃ na bhavati। rājayogaḥ naramadhye atha ca vanamadhye yuddhe saṃgrāma madhye vā yasya manaḥ bhayapūrṇaṃ vā na bhavati। sopi rājayogaḥ kathyate।।
+%
+\endprose
+\medskip
+\endnumbering
+\end{sanskrit}
+
+\bigskip
+\clearpage
+\chapter{Translation of the \textit{Yogatattvabindu}}
+
+\section*{\centerline{A Drop of the [Oceanic] Reality of Yoga}}
+
+
+\beginnumbering
+\pstart
+\centerline{\textrm{\small{[Introduction]}}}
+\pend
+
+\bigskip
+
+\numberlinefalse \noindent Now the methods of \textit{rājayoga} are laid down. \par 
+\numberlinefalse \noindent \par This is the result of \textit{rājayoga}\footnote{This statement seems unconnected to the definition of
+  \textit{rājayoga} that follows.}: \textit{Rājayoga} is that by which long-term durability of the body arises even amongst manifold royal pleasures even amongst the manifold royal entertainments
+and spectacle. This truly is \textit{rājayoga}. Of this [\textit{rājayoga}] these are the varieties:  1. Yoga of [mental] action (\textit{kriyāyoga}), 2. Yoga of knowledge (\textit{jñānayoga}), 3. Yoga of wandering (\textit{caryāyoga}), 4. Yoga of force (\textit{haṭhayoga}), 5. Yoga of deeds (\textit{karmayoga}), 6. Yoga of absorption (\textit{layayoga}), 7. Yoga of meditation (\textit{dhyānayoga}), 8. Yoga of mantras (\textit{mantrayoga}), 9. Yoga of fixation objects (\textit{lakṣyayoga}), 10. Yoga of mental residues (\textit{vāsanāyoga}), 11. Yoga of Śiva (\textit{śivayoga}), 12. Yoga of Brahman (\textit{brahmayoga}), 13. Yoga of non-duality (\textit{advaitayoga}), 14. Yoga of completion (\textit{siddhayoga}) 15. Yoga of kings (\textit{rājayoga}). These are the fifteen \textit{yoga}s.\footnote{At the current stage of research it is far from clear if this list is a later addition by another scribe or if it originally stems from the author. The list suggests the text that follows ordering its chapters according to this list. But it does'nt. Furthermore just \nepal \pune and \unbekannt include the list. The other witnesses at hand omit this part of the text. However, currently it is more likely that this list was included since \nepal \pune and \unbekannt usually offer better readings than \edprint \lalchand and \oxford.} 
+
+\bigskip
+
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of \textit{kriyāyoga}]}}\end{english}}
+\pend
+\bigskip
+
+Now the characteristic of the Yoga of [mental] action (\textit{kriyāyoga}) is described.
+\bigskip
+
+\leftskip2em This Yoga is liberation through [mental] action. It bestows success (\textit{siddhi}) in ones own body. Each wave the mind creates at the beginning of an action, of all those one shall withdraw oneself. Then \textit{kriyāyoga} arises. 
+
+\bigskip
+
+\leftskip2em Patience, discrimination, equanimity, peace, modesty, desireless: The \textit{yogī} who is endowed with these means is said to be a \textit{kriyāyogī}. 
+\bigskip
+
+\leftskip2em Envy, selfishness, cheating, violence and intoxication, pride, lust, anger, fear, laziness, greed, error and impurity. 
+\bigskip
+
+\leftskip2em Attachment and aversion, indignation and idleness, impatience and dizzyness:  Whoever does not possess these is called a \textit{kriyāyogī}. 
+\bigskip
+
+[If] patience, discrimination, equanimity, peace, contentment etc. are generated in his mind [then] alone he is called a \textit{yogī} of many actions (\textit{bahukriyāyogī}). Fraud, illusion, property, violence, craving, envy, ego, anger, anxiety, shame, greed, error, impurity, attachment, aversion, idleness, heterodoxy, false view, affection of the senses, sexual desire: He who diminishes these from day to day in is mind, he alone is called a yogī of many actions (\textit{bahukriyāyogī}). 
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Varieties of \textit{rājayoga}: Siddhakuṇḍalinīyoga and Mantrayoga]}}\end{english}}
+\pend
+\bigskip
+
+Now varieties of \textit{rājayoga} will be described. Which are these? One [of it] is \textit{siddhakuṇḍalinīyoga} [and one of it] is \textit{mantrayoga}. These two \textit{rājayoga}s will now be described.
+
+At the root-bulp exists the single major vessel, which consists wholly of splendour. This single vessel reaches into these openings which are \textit{iḍā}, \textit{piṅgalā} and \textit{suṣumnā}. On the left side is the Iḍā-channel, which is a resemblance of the moon. On the right side is the Piṅgalā-channel, which is a resemblance of the sun. Within the middle path is a lotuspond being very subtle. [It is] made from a web of light [and it] shines like a thousand lightnings. She is the bestower of enjoyment and liberation. While abiding in (\textit{satyāṃ}) her (\textit{asyāṃ}) knowledge arises [to the point of which] the person becomes all-knowing. The means for the genesis of knowledge in the central channel \textit{suṣumṇā} will now be described.
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the first Cakra]}}\end{english}}
+\pend
+\bigskip
+
+At the beginning [of the central channel?] exists the root-\textit{cakra} having four petals. The first \textit{cakra} of support (\textit{ādhāra}) is at the anus, [it] is red-colored, [it] has Gaṇeśa as its deity, [he] is success, intelligence and power, [and has] a rat as [his] mount, the Ṛṣi [of it] is Kūrma, [its \textit{mudrā}] is the \textit{mudrā} of contraction (\textit{ākuñcamudrā}), [its] vitalwind is \textit{apāna}, in the four petals [of it resides] \textit{rajas}, \textit{sattva}, \textit{tamas} and mindstuffs?!(\textit{manāṃsi}) [symbolized by the syllables] ``vaṃ'', ``śaṃ'', ``ṣaṃ'' and ``saṃ'', in the middle [of it] is a triangle, in the middle [of the triangle] is a trident, and \textit{kāmapīṭha} in the shape of a triangle. In the middle of this seat (\textit{pīṭha}) exists a single form having the shape of a flame. Trough the practice of meditation on this form (\textit{mūrti}) the whole literature, all \textit{śāstras}, all poems, dramas etc. appear in the mind of the person without (prior) learning.
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the second Cakra]}}\end{english}}
+\pend
+\bigskip
+
+Now the second (will be described). The \textit{svādhiṣṭānacakra} having six petals is located at the seat known as \textit{uḍḍīyāṇa}. In its middle exists extremely red glow. The adept becomes very handsome through meditation on it. He becomes the most beloved of the virgins. The vital force increases from day to day.
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the third Cakra]}}\end{english}}
+\pend
+\bigskip
+
+
+The third, a lotus with ten petals exists at the location of the navel. In its middle exists a \textit{cakra} with five angles. In its middle is a single (divine) form. It is not possible to describe her shine with speech (lit. with the tongue). Through the execution of meditation on this (divine) form the body of the person (the meditator) is going to be strong.
+
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the fourth Cakra]}}\end{english}}
+\pend
+\bigskip
+A fourth lotus having twelve petals exists in the middle of the heart. Due to being made of (such an) intense light (the fourth lotus) is not in the range of sight. In its middle exists a lotus having eight petals which is facing downward. It is said that in its middle is the place of the vitalwind \textit{prāṇa} (and) in the middle (of) the eight-petalled lotus is a pericarp (\textit{karṇikā}) in the form of a \textit{liṅga}. The technical designation of her is \textit{kalikā}. In the middle of this \textit{kalikā} exists a single thumb-sized (divine) figurine (\textit{puttalikā}) being similiar to a ruby-gem in color. Her technical designation is embodied soul (\textit{jīva}). Not even with a thousand tongues it is possible to talk about her nature and her power. ``Because of the exercise of meditation on this form the inhabitants of the universe (which are) Humans, Gandharvas, Kinnaras, Guhyakas, Vidyādharas and (their) females, in the heavenly world, underworld and open space are obedient to the will of the practicing person.'', is said here.
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the fifth Cakra]}}\end{english}}
+\pend
+\bigskip
+Now (follows the description of) the fifth lotus having sixteen petals (which) exists at the location of the throat. In its  middle exists a single person which shines like a thousand moons. Because of the exercise of meditation on this person all incurable diseases vanish. The person lives up to 1001 years.
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the sixth Cakra]}}\end{english}}
+\pend
+\bigskip
+Now (there) exists the sixth \textit{cakra} named \textit{ājñā}. This two-petalled \textit{cakra} is situated inbetween the eyebrows. In its middle exists a certain object (\textit{kiṃcid vastu}) being a form of blazing fire without parts, not being female not being male. Because of the exercise of meditation on it the body of the person becomes non-aging and immortal.
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the seventh Cakra]}}\end{english}}
+\pend
+\bigskip
+Now the seventh cakra having 64 petals and being full of nectar exists in the middle of the palate. Being endowed with superabundant beauty, very bright in its middle [and] red in color exists a single pericarp named ``uvula'' (\textit{ghāṇṭikā}). In its middle is a (certain) place (\textit{bhūmi}).
+In its middle exists a flow of nectar like a river (\textit{amṛtādhārāsravantī}), appearing from the digit of the moons disc.
+Because of the exercise of meditation on this digit death does not come near him. Due to uninterrupted meditation the stream of nectar flows. The appearances of emaciation (\textit{kṣayaroga}), fever due to disordered bile (\textit{pittajvara}), heartburn (\textit{hṛdayadāha}), head-disease (\textit{śiroroga}) and tongue insensibility (\textit{jihvāyajaḍa}) vanishes. Eaten venom doesn't trouble him, too. If one is here the mind becomes stable.
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the eighth Cakra]}}\end{english}}
+\pend
+\bigskip
+Now the eighth \textit{cakra}, which has one hundred petals. It exists at the aperture of Brahman. ``The (divine) seat of Jālandhara'' is the designation of the lotus.
+(It is) a place of the accomplished person (\textit{siddhapuruṣasya}). In its middle exists some single (divine) form of the person (\textit{puruṣa}) being a streak(\textit{rekhā}) having the form of smoke and fire. Of this (divine form) exists no end, nor a beginning. Due to the exercise of meditation on this (divine) form both coming and going of the person (\textit{puruṣa}) in space occurs. Affliction from the earth-element does not arise even if he is situated in the middle of the earth. He constantly perceives everything (in the material world) and he becomes separated (from the material world). The force of life increases eminently.
+\bigskip
+\pstart
+\centerline{\begin{english}\textrm{\small{[Description of the ninth Cakra]}}\end{english}}
+\pend
+\bigskip
+Now the differentiations of the ninth \textit{cakra} are explained. The designation of it is ``the \textit{cakra} of the great void'' (\textit{mahāśūnyacakra}). Above that there is no other. Therefore it is declared to be the \textit{cakra} of the great perfection (\textit{mahāsiddhacakra}). A(nother) name of it is ``(divine) seat of Pūrṇagiri''. In the middle of the \textit{mahāśūnyacakra} exists one lotus facing upward, very red in color with a thousand petals - an abode of brilliance and wholeness. Whose fragrance is not in range of mind and speech. In the middle of this lotus exists one pericarp having the shape of a triangle. In the middle of the pericarp exists one seventeenth digit in the shape of a immaculé form. There exists a light of the digit shining like a thousand suns. (But) excessive heat is not arising. (Also it is) shining like a thousand moons (but) excess of cold is not arising. Due to the exercise of meditation upon the digit suffering does not arise in the mind of the practitioner (anymore). Above that is the place of infinite supreme bliss. There above exists \textit{śakti}. Being designated as such she is one single digit. Due to the exercise of meditation on this part the person gets whatever he wishes for. Due to the exercise of meditation on this part the person gets whatever he wishes for. He is furnished with royal pleasure and enjoyment.(Even for him who is) amusing oneself amongst women, and watching musical pleasures, the \textit{kāla} of the person grows daily like the \textit{kalā} of the moon in the bright half of the month. His body is not affected by merit and sin. Due to uninterrupted meditation the power of the light of the innate nature arises. He sees remotely located objects as if they'd be near. 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+\endnumbering
+\end{document}
+
+
+%Große Fragen an das Kolloquium:
+
+%Devanāgarī bitte checken nach geöffneten Sandhis -> weil input ist in IAST und manchmal vergesse ich, dass der Output Devanagari sein soll
+%check for falsche Sandhis
+%Vereinfachung des kritischen Apprarates -> atitejomayatvād dṛṣti... und atitejomayatvāt dṛṣṭi 3 zu 1.... bla bla diese Dinge 
+
+%%% Local Variables:
+%%% mode: LaTeX
+%%% TeX-parse-self: t
+%%% TeX-auto-save: t
+%%% TeX-PDF-mode: t
+%%% TeX-engine: xetex
+%%% eval: (set-input-method "sanskrit")
+%%% eval: (setq TeX-command-default "xelatex")
+%%% eval: (TeX-fold-mode)
+%%% TeX-master: t
+%%% End:
