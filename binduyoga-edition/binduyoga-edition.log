@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.10.28)  5 DEC 2020 15:23
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.10.28)  7 DEC 2020 13:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1698,7 +1698,7 @@ File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 ))
 (./Sigla-Ed.tex) (./binduyoga-edition.aux
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
-(Font)              scaled to size 13.13995pt on input line 253.
+(Font)              scaled to size 13.13995pt on input line 301.
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
 ing=RomDev;" at 13.13995pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
@@ -1877,33 +1877,22 @@ Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 10.95pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
 
-Overfull \hbox (1.7652pt too wide) in paragraph at lines 104--105
-\TU/AdobeTextPro(0)/m/n/10.95 more consistent and meaningful readings, b) are i
-n several cases more
- []
-
-
-Overfull \hbox (2.88213pt too wide) in paragraph at lines 104--105
-\TU/AdobeTextPro(0)/m/n/10.95 stemmatic hints pointing towards the inferiority 
-of group 1., currently
- []
-
 
 Class memoir Warning: The material used in the headers is too large
 (13.59999pt) for the given head height (5.0pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 105.
+(in both cases you will find help in the memoir manual). on input line 104.
 
 
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 105.
+(Font)              scaled to size 10.95pt on input line 104.
 Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 10.95pt
  -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_M.otf
 LaTeX Font Info:    Font shape `TU/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 8.03pt on input line 105.
+(Font)              scaled to size 8.03pt on input line 104.
 Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 8.03pt
  -> /usr/local/texlive/2017/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_M.otf
@@ -1912,31 +1901,39 @@ tine_M.otf
 
 
 ]
-Overfull \hbox (7.7441pt too wide) in paragraph at lines 107--108
+Overfull \hbox (1.7652pt too wide) in paragraph at lines 107--108
+\TU/AdobeTextPro(0)/m/n/10.95 more consistent and meaningful readings, b) are i
+n several cases more
+ []
+
+
+Overfull \hbox (2.88213pt too wide) in paragraph at lines 107--108
+\TU/AdobeTextPro(0)/m/n/10.95 stemmatic hints pointing towards the inferiority 
+of group 1., currently
+ []
+
+
+Overfull \hbox (7.7441pt too wide) in paragraph at lines 110--111
 []\TU/AdobeTextPro(0)/m/n/10.95 Notiz für mich selbst: ENTSCHEIDEN OB SANDHI SE
 TZEN ODER
  []
 
 
-Overfull \hbox (27.62537pt too wide) in paragraph at lines 107--108
+Overfull \hbox (27.62537pt too wide) in paragraph at lines 110--111
 \TU/AdobeTextPro(0)/m/n/10.95 NICHT! HANDSCHRIFTEN VS. EDPRINT! DURCHGÄNGIG BIS
 HER
  []
 
 
-Overfull \hbox (23.42914pt too wide) in paragraph at lines 107--108
+Overfull \hbox (23.42914pt too wide) in paragraph at lines 110--111
 \TU/AdobeTextPro(0)/m/n/10.95 IMMER SANDHI BIS ZUM 1/3 DES NAVAMACAKRAABSCHNITT
 ES 
  []
 
-Package microtype Info: Loading generic settings for font family
-(microtype)             `SanskritText' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/AdobeTextPro(0)/m/sl' in size <10.95> not av
 ailable
 (Font)              Font shape `TU/AdobeTextPro(0)/m/it' tried instead on input
- line 114.
+ line 113.
 Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 10.95pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
@@ -1945,11 +1942,22 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [2]
+Package microtype Info: Loading generic settings for font family
+(microtype)             `SanskritText' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[3] [4
+
+]
 Requested font "Adobe Text Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text
 ;" at 17.28pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-SemiboldIt.ttf
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
-(Font)              scaled to size 14.39996pt on input line 116.
+(Font)              scaled to size 14.39996pt on input line 119.
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
 ing=RomDev;" at 14.39996pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
@@ -1960,7 +1968,7 @@ Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;"
 at 10.0pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
-(Font)              scaled to size 10.79997pt on input line 123.
+(Font)              scaled to size 10.79997pt on input line 126.
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
 ing=RomDev;" at 10.79997pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
@@ -1981,13 +1989,13 @@ Requested font "cmmi9" at 9.0pt
 Requested font "cmsy9" at 9.0pt
  -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 129.
+(Font)              <9> on input line 140.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 129.
+(Font)              <5> on input line 140.
 Requested font "cmr9" at 9.0pt
  -> /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
-(Font)              scaled to size 7.19998pt on input line 129.
+(Font)              scaled to size 7.19998pt on input line 140.
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
 ing=RomDev;" at 7.19998pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
@@ -2001,64 +2009,62 @@ Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;"
 at 7.0pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-Regular.ttf
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 136.
+(Font)              <7> on input line 147.
 Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 10.0pt
  -> /Users/enjotel/Library/Fonts/AdobeTextPro-It.ttf
- [3
-
-]
+ [5]
 Overfull \vbox (8.8993pt too high) has occurred while \output is active []
 
 
 
 LaTeX Font Warning: Font shape `TU/SanskritText(0)/m/sl' undefined
-(Font)              using `TU/SanskritText(0)/m/n' instead on input line 220.
+(Font)              using `TU/SanskritText(0)/m/n' instead on input line 197.
 
 
 Class memoir Warning: The material used in the headers is too large
 (15.71223pt) for the given head height (5.0pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 220.
+(in both cases you will find help in the memoir manual). on input line 197.
 
 
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[4]
+[6]
 Overfull \vbox (27.51694pt too high) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/sl' will be
-(Font)              scaled to size 13.13995pt on input line 232.
+(Font)              scaled to size 13.13995pt on input line 209.
 
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[5]
-Overfull \hbox (0.86082pt too wide) in paragraph at lines 250--279
+[7]
+Overfull \hbox (0.86082pt too wide) in paragraph at lines 227--256
 \TU/SanskritText(0)/m/sl/10.95 वति । तन्मध्ये ऽष्टदलमधोमुखं [][][]  [][][] कमलं
  वर्त्तते । तन्मध्ये प्राणवायोः स्थानमष्टदलक-
  []
 
 
-Overfull \hbox (3.4445pt too wide) in paragraph at lines 250--279
+Overfull \hbox (3.4445pt too wide) in paragraph at lines 227--256
 \TU/SanskritText(0)/m/sl/10.95 स्वर्गपातालाकशमनुष्यगन्धर्वकिन्नरगुह्यकविद्याधरल
 ोकसम्बन्धिन्यः स्त्रीयो ऽपि  [][][] सा-
  []
 
 
-Overfull \hbox (0.86082pt too wide) detected at line 279
+Overfull \hbox (0.86082pt too wide) detected at line 256
 []\TU/SanskritText(0)/m/sl/10.95 वति । तन्मध्ये ऽष्टदलमधोमुखं [][][]  [][][] कम
 लं वर्त्तते । तन्मध्ये प्राणवायोः स्थानमष्टदलक-
  []
 
 
-Overfull \hbox (18.91193pt too wide) has occurred while \output is active
+Overfull \hbox (19.57794pt too wide) has occurred while \output is active
 [] \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 मूर्तेर् [][][][][]\TU
-/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$[][][][]P[][][][]$[]$[
+/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[][][][]P[][][][]$[]$[
 ][][][]E[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] मूर्ति [][][][][]\TU/LinLibe
 rtine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m
-/n/9 ध्यानकरणात् [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][]
+/n/9 ध्यानकरणात् [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][]
 [][]$[]$[][][][]P[][][][]$[]$[][][][]L[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 
 ] ध्यानकारणात् [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$  \TU/AdobeText
 Pro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 °नाटकादिसकलवाङ्मयं
@@ -2071,23 +2077,23 @@ Overfull \vbox (19.24591pt too high) has occurred while \output is active []
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[6]
-Overfull \hbox (3.4445pt too wide) detected at line 279
+[8]
+Overfull \hbox (3.4445pt too wide) detected at line 256
 []\TU/SanskritText(0)/m/sl/10.95 स्वर्गपातालाकशमनुष्यगन्धर्वकिन्नरगुह्यकविद्याध
 रलोकसम्बन्धिन्यः स्त्रीयो ऽपि  [][][] सा-
  []
 
 
-Overfull \hbox (16.69778pt too wide) has occurred while \output is active
-\TU/SanskritText(0)/m/n/9 र्णिकेति [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][
-]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 संज्ञा [][][][][]\
-TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]N[][][][]$[]
-$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro(0)/m/n/9 
-om. [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/
-9 2 \TU/SanskritText(0)/m/n/9 तत्कलिकामध्ये [][][][][]\TU/LinLibertine(4)/m/n/9
- P[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] ततकलिकामध्ये 
-[][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 तत
-्कर्णिकामध्ये
+Overfull \hbox (24.75992pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 कर्णिकेति [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][]
+[]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 संज्ञा [][][][][]
+\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]N[][][][]$[
+]$[][][][]D[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro(0)/m/n/9
+ om. [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n
+/9 2 \TU/SanskritText(0)/m/n/9 तत्कलिकामध्ये [][][][][]\TU/LinLibertine(4)/m/n/
+9 P[][][][]$[]$[][][][]D[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] ततकलिकामध्ये
+ [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 त
+त्कर्णिकामध्ये
  []
 
 
@@ -2101,27 +2107,15 @@ xtPro(0)/m/n/9 em. \TU/SanskritText(0)/m/n/9 पद्मरागसमान�
  []
 
 
-Overfull \hbox (5.83331pt too wide) has occurred while \output is active
+Overfull \hbox (6.49933pt too wide) has occurred while \output is active
 \TU/SanskritText(0)/m/n/9 तस्या [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[
 ]$[][][][]P[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] तस्याः [][][][][]\TU/LinL
-ibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$[]\TU/AdobeTextPro(0)/m/n/9
+ibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[]\TU/AdobeTextPro(0)/m/n/9
  om. [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$  \TU/AdobeTextPro(0)/m/n
 /9 3 \TU/SanskritText(0)/m/n/9 बलम् अथ च स्वरूपं [][][][][]\TU/LinLibertine(4)/
-m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] बलं अथ स
+m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] बलं अथ स
 ्वरूपं [][][][][]\TU/LinLibertine(4)/m/n/9 P[][][][]$[]$[]\TU/SanskritText(0)/m
 /n/9 बलमध्यस्वरूपं
- []
-
-
-Overfull \hbox (0.14714pt too wide) has occurred while \output is active
-\TU/SanskritText(0)/m/n/9 इत्यत्र किं [][][][][]\TU/LinLibertine(4)/m/n/9 N[][]
-[][]$[]$[][][][]U[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 7 \TU/SanskritText(0)/
-m/n/9 इदानीं [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]
-$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro(0)/m/n/9 om. [][][][][]\TU/
-LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]L[][][][]$[]$  
-\TU/AdobeTextPro(0)/m/n/9 7 \TU/SanskritText(0)/m/n/9 कमलं षोदशदलं कण्ठस्थाने [
-][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/San
-skritText(0)/m/n/9 ] कण्टस्थाने
  []
 
 
@@ -2132,24 +2126,24 @@ Overfull \hbox (1.54414pt too wide) has occurred while \output is active
  []
 
 
-Overfull \vbox (25.86249pt too high) has occurred while \output is active []
+Overfull \vbox (38.6564pt too high) has occurred while \output is active []
 
 
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[7]
-Overfull \hbox (6.73337pt too wide) has occurred while \output is active
+[9]
+Overfull \hbox (7.39938pt too wide) has occurred while \output is active
 [][][][][]\TU/LinLibertine(4)/m/n/9 B[][][][]$[]$[][][][]L[][][][]$[]$[]\TU/San
 skritText(0)/m/n/9 स्रवति [][][][][]\TU/LinLibertine(4)/m/n/9 P[][][][]$[]$[]\T
 U/SanskritText(0)/m/n/9 भवति [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$ 
  \TU/AdobeTextPro(0)/m/n/9 8 \TU/SanskritText(0)/m/n/9 वर्त्तते [][][][][]\TU/L
-inLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m
+inLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$ []\TU/SanskritText(0)/m
 /n/9 ] \TU/AdobeTextPro(0)/m/n/9 om. [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][
 ][]$[]$[][][][]P[][][][]$[]$[][][][]L[][][][]$[]$[][][][]B[][][][]$[]$  \TU/Ado
 beTextPro(0)/m/n/9 8 \TU/SanskritText(0)/m/n/9 कलाया [][][][][]\TU/LinLibertine
 (4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] कलाय
-ाः [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[]$[]\TU/
+ाः [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[]\TU/
 SanskritText(0)/m/n/9 कर्णिकाया
  []
 
@@ -2160,21 +2154,21 @@ Overfull \vbox (6.99374pt too high) has occurred while \output is active []
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[8]
+[10]
 LaTeX Font Info:    Font shape `TU/SanskritText(0)/m/n' will be
-(Font)              scaled to size 9.59998pt on input line 481.
+(Font)              scaled to size 9.59998pt on input line 458.
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;letterspace=1.1;mapp
 ing=RomDev;" at 9.59998pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
 Requested font "Sanskrit Text/OT:script=dev2;language=DFLT;" at 8.0pt
  -> /Users/enjotel/Library/Fonts/Sanskr.ttf
 
-Overfull \hbox (23.8748pt too wide) has occurred while \output is active
+Overfull \hbox (24.54082pt too wide) has occurred while \output is active
 \TU/SanskritText(0)/m/n/9 °शिरोरोग- [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][]
-[]$[]$[][][][]U[][][][]$[]$[][][][]E[][][][]$[]$[][][][]P[][][][]$[]$ []\TU/San
+[]$[]$[][][][]D[][][][]$[]$[][][][]E[][][][]$[]$[][][][]P[][][][]$[]$ []\TU/San
 skritText(0)/m/n/9 ] °रोग- [][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$[][
 ][][]B[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 °जिह्
-वायाजडभावा [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]U[][][][]$[
+वायाजडभावा [][][][][]\TU/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[
 ]$ []\TU/SanskritText(0)/m/n/9 ] जिह्वायजडभावान् [][][][][]\TU/LinLibertine(4)/
 m/n/9 L[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 जिह्वाजडभावान्
  []
@@ -2186,7 +2180,7 @@ Overfull \vbox (14.38992pt too high) has occurred while \output is active []
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[9]
+[11]
 Overfull \hbox (0.51677pt too wide) has occurred while \output is active
 [] \TU/AdobeTextPro(0)/m/n/9 7 \TU/SanskritText(0)/m/n/9 मनसा वचसा ] [][][][][]
 \TU/AdobeTextPro(0)/m/n/10 All manuscripts at hand share this usage of the inst
@@ -2207,24 +2201,34 @@ Overfull \vbox (5.41241pt too high) has occurred while \output is active []
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[10]
-Overfull \hbox (21.38661pt too wide) has occurred while \output is active
+[12]
+Overfull \hbox (22.05263pt too wide) has occurred while \output is active
 [] \TU/AdobeTextPro(0)/m/n/9 1 \TU/SanskritText(0)/m/n/9 ध्यानकारणात् [][][][][
 ]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[][][][]B[][][][]$
 []$[][][][]L[][][][]$[]$[][][][]N[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] ध्य
-ानकरणा [][][][][]\TU/LinLibertine(4)/m/n/9 U[][][][]$[]$  \TU/AdobeTextPro(0)/m
+ानकरणा [][][][][]\TU/LinLibertine(4)/m/n/9 D[][][][]$[]$  \TU/AdobeTextPro(0)/m
 /n/9 1 \TU/SanskritText(0)/m/n/9 तद्भवति [][][][][]\TU/LinLibertine(4)/m/n/9 N[
-][][][]$[]$[][][][]U[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro
+][][][]$[]$[][][][]D[][][][]$[]$ []\TU/SanskritText(0)/m/n/9 ] \TU/AdobeTextPro
 (0)/m/n/9 om. [][][][][]\TU/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][
 ]$[]$[][][][]L[][][][]$[]$[][][][]B[][][][]$[]$  \TU/AdobeTextPro(0)/m/n/9 1 \T
 U/SanskritText(0)/m/n/9 राज्यसुखभोगवृतः
  []
 
 
+Overfull \hbox (1.26239pt too wide) has occurred while \output is active
+\TU/SanskritText(0)/m/n/9 नोदप्रेक्षावतः [][][][][]\TU/LinLibertine(4)/m/n/9 E[
+][][][]$[]$[]\TU/SanskritText(0)/m/n/9 संगीतविनोदप्रेक्षावतः [][][][][]\TU/LinL
+ibertine(4)/m/n/9 P[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 संगीतं प्रेक्षावताः 
+[][][][][]\TU/LinLibertine(4)/m/n/9 L[][][][]$[]$[]\TU/SanskritText(0)/m/n/9 सं
+गीतं विनोदवंतं प्रेक्षावंताः [][][][][]\TU/LinLibertine(4)/m/n/9 B[][][][]$[]$ 
+ \TU/AdobeTextPro(0)/m/n/9 2 \TU/SanskritText(0)/m/n/9 एव
+ []
+
+
 Overfull \vbox (10.71223pt too high) has occurred while \output is active []
 
 
-[11] [12
+[13] [14
 
 
 ] Section 2 (./binduyoga-edition.2)
@@ -2235,24 +2239,24 @@ Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
-[13
+[15
 \openout5 = `binduyoga-edition.2'.
 
 ]
-Overfull \hbox (8.38055pt too wide) in paragraph at lines 1125--1126
+Overfull \hbox (8.38055pt too wide) in paragraph at lines 1102--1103
  \TU/AdobeTextPro(0)/m/n/10.95 tions (\TU/AdobeTextPro(0)/m/it/10.95 bahukriyāy
 ogī\TU/AdobeTextPro(0)/m/n/10.95 ). Fraud, illusion, property, violence, cravin
 g, envy,
  []
 
 
-Overfull \hbox (7.18011pt too wide) in paragraph at lines 1135--1136
+Overfull \hbox (7.18011pt too wide) in paragraph at lines 1112--1113
  []\TU/AdobeTextPro(0)/m/n/10.95 At the root-bulp exists the single major vesse
 l, which consists wholly
  []
 
 
-Overfull \hbox (6.35472pt too wide) in paragraph at lines 1135--1136
+Overfull \hbox (6.35472pt too wide) in paragraph at lines 1112--1113
  \TU/AdobeTextPro(0)/m/n/10.95 and liberation. While abiding in (\TU/AdobeTextP
 ro(0)/m/it/10.95 satyāṃ\TU/AdobeTextPro(0)/m/n/10.95 ) her (\TU/AdobeTextPro(0)
 /m/it/10.95 asyāṃ\TU/AdobeTextPro(0)/m/n/10.95 ) knowledge arises
@@ -2262,8 +2266,8 @@ ro(0)/m/it/10.95 satyāṃ\TU/AdobeTextPro(0)/m/n/10.95 ) her (\TU/AdobeTextPro(
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
-[14]
-Overfull \hbox (3.05731pt too wide) in paragraph at lines 1143--1144
+[16]
+Overfull \hbox (3.05731pt too wide) in paragraph at lines 1120--1121
  \TU/AdobeTextPro(0)/m/n/10.95 and mindstuffs?!(\TU/AdobeTextPro(0)/m/it/10.95 
 manāṃsi\TU/AdobeTextPro(0)/m/n/10.95 ) [symbolized by the syllables] “vaṃ”, “śa
 ṃ”,
@@ -2273,8 +2277,8 @@ manāṃsi\TU/AdobeTextPro(0)/m/n/10.95 ) [symbolized by the syllables] “vaṃ
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
-[15]
-Overfull \hbox (5.78728pt too wide) in paragraph at lines 1173--1178
+[17]
+Overfull \hbox (5.78728pt too wide) in paragraph at lines 1150--1155
  []\TU/AdobeTextPro(0)/m/n/10.95 Now (follows the description of) the fifth lot
 us having sixteen petals
  []
@@ -2283,37 +2287,37 @@ us having sixteen petals
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
-[16]
-Overfull \vbox (8.59999pt too high) has occurred while \output is active []
-
-
-[17]
-Overfull \vbox (8.59999pt too high) has occurred while \output is active []
-
-
 [18]
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[19]
+Overfull \vbox (8.59999pt too high) has occurred while \output is active []
+
+
+[20]
 
 Class memoir Warning: The material used in the headers is too large
 (15.71223pt) for the given head height (5.0pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1217.
+(in both cases you will find help in the memoir manual). on input line 1194.
 
 
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
-[19] (./binduyoga-edition.aux)
+[21] (./binduyoga-edition.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30788 strings out of 493005
- 611884 string characters out of 6134595
- 745040 words of memory out of 5000000
- 34520 multiletter control sequences out of 15000+600000
+ 30797 strings out of 493005
+ 611951 string characters out of 6134595
+ 745157 words of memory out of 5000000
+ 34529 multiletter control sequences out of 15000+600000
  7885 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,11n,89p,10421b,721s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on binduyoga-edition.pdf (19 pages).
+Output written on binduyoga-edition.pdf (21 pages).
