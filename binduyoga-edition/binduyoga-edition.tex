@@ -6,30 +6,30 @@
 \setlrmargins{18mm}{*}{*}                      % linker und rechter Rand
 \setulmargins{*}{*}{1.2}                       % ober und unterer Rand
 \setlength{\headheight}{5pt}                             
-\checkandfixthelayout[lines]                                           % ist nötig zur abschließenden Layout-Abstimmung
-\linespread{1.2}                                                       % zusätzlicher Durchschuß, "leading", also eine Reihe Blei im Bleisatz, (=Zeilenabstand)
-\quarkmarks                                                            % Schnittmarken 
+\checkandfixthelayout[lines]                   % ist nötig zur abschließenden Layout-Abstimmung
+\linespread{1.2}                               % zusätzlicher Durchschuß, "leading", also eine Reihe Blei im Bleisatz, (=Zeilenabstand)
+\quarkmarks                                    % Schnittmarken 
 
                                              %%% reledmac setup %%%
-\usepackage[series={A,B},noend,noeledsec,nofamiliar,noledgroup]{reledmac}                                            %  zwei Fußnotenebenen werden angelegt: A und B
-\Xarrangement[A]{paragraph}                                                                                          % A als Paragraph formatiert
-\Xarrangement[B]{paragraph}                                                                                          % B als Paragraph
+\usepackage[series={A,B},noend,noeledsec,nofamiliar,noledgroup]{reledmac}                              %  zwei Fußnotenebenen werden angelegt: A und B
+\Xarrangement[A]{paragraph}                                                                            % A als Paragraph formatiert
+\Xarrangement[B]{paragraph}                                                                            % B als Paragraph
 \lineation{page} \linenummargin{outer}                                                                 % automatische Zeilenzählung seitenweise (nicht für das ganze Dokument) u. am Außenrand      
 \newcommand{\var}[3]{\edtext{}{\lemma{\hskip -3.6mm \textrm{#1}~~#2}\Afootnote[nonum]{{#3}}}}          % Varianten für nummerierte Strophen mit manuellem Bezug auf
                                                                                                        % Vers und Pāda mit 3 Klammerpaaren:  \var{1a}{kritischer Text}{Variante}                     
-\newcommand{\varc}[2]{\nobreak\hskip 0pt \edtext{}{\lemma{#1}\Afootnote{{#2}}}\hskip 0pt \relax}        % Varianten für Prosatext mit automat. Bezug auf Zeilen 
-\newcommand{\varcc}[1]{\edtext{}{\lemma{\hskip -4mm}\Afootnote[nosep]{#1}}}                             % habe vergessen, wozu das war 
-\newcommand{\notes}[2]{\edtext{}{\lemma{#1}\Bfootnote{{\footnotesize\textrm{#2}}}}}                     % 2. Apparat für Anmerkungen     \notes{tat}{Pronomen}
+\newcommand{\varc}[2]{\nobreak\hskip 0pt \edtext{}{\lemma{#1}\Afootnote{{#2}}}\hskip 0pt \relax}       % Varianten für Prosatext mit automat. Bezug auf Zeilen 
+\newcommand{\varcc}[1]{\edtext{}{\lemma{\hskip -4mm}\Afootnote[nosep]{#1}}}                            % habe vergessen, wozu das war 
+\newcommand{\notes}[2]{\edtext{}{\lemma{#1}\Bfootnote{{\footnotesize\textrm{#2}}}}}                    % 2. Apparat für Anmerkungen     \notes{tat}{Pronomen}
                                %%%%%   einprägsamere Macros für reledmac 
-\def\prose{\pstart}\def\endprose{\pend}                                                                 % einprägsamere Varianten statt dem ständigen \pstart \pend
-\def\mula{\pstart}\def\endmula{\pend\medskip}                                                           % Variante mit zusätzlichem Abstand am Ende für mūla-Text 
+\def\prose{\pstart}\def\endprose{\pend}                                                                % einprägsamere Varianten statt dem ständigen \pstart \pend
+\def\mula{\pstart}\def\endmula{\pend\medskip}                                                          % Variante mit zusätzlichem Abstand am Ende für mūla-Text 
 
                                                  %%%%%%   XeTeX- Setup       sollte klar sein
 \usepackage{polyglossia,fontspec,xunicode,libertineotf}     % Ich verwende Libertine für die Sigla, sieht besser aus.
  \widowpenalty=10000
  \clubpenalty=10000
   \setdefaultlanguage{english} \setotherlanguage{sanskrit}
- \setmainfont{Adobe Text Pro} %Adobe Text Pro in Mac umstellen                                                       
+ \setmainfont{Murty Sanskrit} %Adobe Text Pro in Mac umstellen                                                       
 \newfontfamily\devanagarifont[Script=Devanagari,Mapping=RomDev,Scale=1.2,LetterSpace=1.1]{Sanskrit Text}
 \usepackage{microtype}
 \lineskiplimit=-3pt     % sonst werden die Fußnotezeilen bei Nagari auseinandergeschoben
@@ -102,6 +102,14 @@ The very inconsistent use of punctuation marks in the witnesses at hand makes st
 
 Especially in the verse poetry, a \textit{daṇḍa} marks the end of a half verse, half of the \textit{śloka}, and the double \textit{daṇḍa} marks the end of a verse. A half verse is a \textit{pāda}, at least in some literary works, this is concluded by a \textit{daṇḍa} and the end of a \textit{śloka} by a double \textit{daṇḍa}. In the prose the single \textit{daṇḍa} indicates the end of a sentence and the double \textit{daṇḍa} marks the end of a paragraph.
 
+\section{Sandhi}
+
+Among the witnesses we see deviating and inconsistent application of \textit{sandhi}. There is no clear evidence that originally \textit{sandhi} was intentionally not applied. This edition will therefore apply \textit{sandhi} consistently throughout the constituted text to provide a readable text sticking to contemporary conventions in Sanskrit. To simplyfy the apparatus the variant readings concerning \textit{sandhi} are not recorded to the most part. Exceptions are made in remarkable individual cases. 
+
+\section{Class Nasals}
+
+Again, due to inconsistent use of class nasals among the witnesses \textit{anusvāra}s have been substituted with the respective class nasals throughout the critical edition. To simplyfy the apparatus deviating usage of class nasals is not documented in the apparatus. 
+
 \section{Notes}
 \begin{itemize}
 \item probelm with the strongly deviating structuration of the sentences between the two groups of witnesses 1. \edprint \pune \lalchand \oxford und 2. \nepal \dehlia: Even though it is not entirely clear which of the group is closer to the supposedly original of the author, as an hypothesis I suspect that given the cummulative evidence of a) \nepal and \dehlia generally have the better, more consistent and meaningful readings, b) are in several cases more extensive in their descriptions and c) generally there seems to be stemmatic hints pointing towards the inferiority of group 1., currently I decided to prefer the structuration of sentences of group 2.
@@ -131,11 +139,11 @@ Especially in the verse poetry, a \textit{daṇḍa} marks the end of a half ver
 %śrī gaṇeśāya namaḥ /                                                    atha tattvabiṃduyogaprāraṃbhaḥ    \lalchand
 %śrī ṇe ya maḥ /                                                         atha rājayoga         liṣyate      \pune
 %śrī gaṇeśāya namaḥ // śrī gurave namaḥ //                               atha rājayogaprakāro  likhyate //  \nepal
-%śrī gaṇeśāya namaḥ // śrī sarasvatyai namaḥ // śrī nirañjanāya namaḥ // atha rājayogaprakāro likhyate //  \dehlia
+%śrī gaṇeśāya namaḥ // śrī sarasvatyai namaḥ // śrī nirañjanāya namaḥ // atha rājayogaprakāro  likhyate //  \dehlia
 %śrī gaṇeśāya namaḥ / oṃ śrī niraṃjanāya //                              atha rājayogaprakāra  likhyate //  \ujjaina
 %śrī gaṇeśāya namaḥ /                                                    atha rājayoga         likhyate //  \ujjainb
 % 
-śrī gaṇeśāya namaḥ\varc{śrī gaṇeśāya namaḥ \edprint \lalchand}{śrī ṇe ya maḥ \pune śrī gaṇeśāya namaḥ // śrī gurave namaḥ // \nepal śrīgaṇeśāya namaḥ // śrī sarasvatyai namaḥ // śrī nirañjanāya namaḥ // \dehlia}atha rājayogaprakāro likhyate //\varc{atha rājayogaprakāro likhyate \nepal \dehlia}{atha rājayoga prakāra likhyate \ujjaina atha rājayoga likhyate \ujjainb atha rājayoga liṣyate \pune rājayogāntargataḥ // binduyogaḥ \edprint atha tattvabiṃduyogaprāraṃbhaḥ \lalchand} 
+śrī gaṇeśāya namaḥ\varc{śrī gaṇeśāya namaḥ}{śrī ṇe ya maḥ \pune śrī gaṇeśāya namaḥ // śrī gurave namaḥ // \nepal śrīgaṇeśāya namaḥ // śrī sarasvatyai namaḥ // śrī nirañjanāya namaḥ // \dehlia}atha rājayogaprakāro likhyate //\varc{atha rājayogaprakāro likhyate}{atha rājayogaprakāra likhyate \ujjaina atha rājayoga likhyate \ujjainb atha rājayoga liṣyate \pune rājayogāntargataḥ // binduyogaḥ \edprint atha tattvabiṃduyogaprāraṃbhaḥ \lalchand} 
 \endprose
 %Homage to Śrī Gaṇeśa. Now the methods of rājayoga are laid down.
 %-------------------------
@@ -150,7 +158,7 @@ Especially in the verse poetry, a \textit{daṇḍa} marks the end of a half ver
 %rājayogasya idaṃ phalaṃ    \ujjaina
 %rājayogasyedaṃ phalaṃ /    \ujjainb
 %
-rājayogasyedaṃ phalaṃ \varc{rājayogasyedaṃ \pune}{rājayogasya idaṃ \nepal \dehlia \ujjaina}/
+rājayogasyedaṃ phalaṃ \varc{rājayogasyedaṃ}{rājayogasya idaṃ \nepal \dehlia \ujjaina}/
 %
 %this is the result of rājayoga:
 %
@@ -159,52 +167,157 @@ rājayogasyedaṃ phalaṃ \varc{rājayogasyedaṃ \pune}{rājayogasya idaṃ \n
 % \om                                                                                                                                                                \edprint
 % \om                                                                                                                                                                \lalchand
 % \om                                                                                                                                                                \oxford
-%yena rājayogenānekarājyabhogasamaya   eva    anekapārthivavinodaprekṣaṇasamaya  eva    bahutarakālaṃ śarīrasthitirbhavati    sa eva rājayogaḥ tasyai te bhedāḥ      \pune
-%yena rājayogenānekarājyabhogasamaya   eva /  anekapārthivavinodaprekṣaṇasamaya  eva /  bahutarakālaṃ śarīrasthitirbhavati    sa eva rājayogaḥ / tasya ete bhedāḥ /  \nepal
-%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva rājayogaḥ // tasya ete bhedāḥ / \dehlia
-%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati    sa eva rājayogaḥ tasya ete bhedāḥ //   \ujjaina 
-%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣyaṇasamaya eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva rājayogastaisyai te bhedāḥ //   \ujjainb
-yena  rājayogenānekarājyabhogasamaya   eva    anekapārthivavinodaprekṣaṇasamaya  eva    bahutarakālaṃ śarīrasthitirbhavati    sa evaṃ rājayogaḥ / tasyaite bhedāḥ\varc{tasya ete bhedāḥ \dehlia \nepal}{tasyaite bhedaḥ \pune} /
+%yena rājayogenānekarājyabhogasamaya   eva    anekapārthivavinodaprekṣaṇasamaya  eva    bahutarakālaṃ śarīrasthitirbhavati    sa eva  rājayogaḥ tasyaite     bhedāḥ      \pune
+%yena rājayogenānekarājyabhogasamaya   eva /  anekapārthivavinodaprekṣaṇasamaya  eva /  bahutarakālaṃ śarīrasthitirbhavati    sa eva  rājayogaḥ /  tasya ete bhedāḥ /  \nepal
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva  rājayogaḥ // tasya ete bhedāḥ / \dehlia
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣaṇasamaya  eva // bahutarakālaṃ śarīrasthitirbhavati    sa evaṃ rājayogaḥ    tasya ete bhedāḥ //   \ujjaina 
+%yena rājayogena anekarājyabhogasamaya eva // anekapārthivavinodaprekṣyaṇasamaya eva // bahutarakālaṃ śarīrasthitirbhavati // sa eva  rājayogastaisyaite     bhedāḥ //   \ujjainb
+yena rājayogenānekarājyabhogasamaya eva / anekapārthivavinodaprekṣaṇasamaya\varc{°prekṣaṇasamaya}{°prekṣyaṇasamaya \ujjainb} eva / bahutarakālaṃ śarīrasthitirbhavati / sa eva\varc{eva}{evaṃ \ujjainb} rājayogaḥ\varc{rājayogaḥ}{rājayogas° \ujjainb} / tasyaite bhedāḥ\varc{tasyaite bhedāḥ}{tasya ete bhedāḥ \nepal \dehlia \ujjaina} /
 %
-%
+%Rājayoga is that by which longterm durability of the body arises even amongst manifold royal pleasures even amongst the manifold royal entertainments and spectacle. This truly is rājayoga. Of this [rājayoga] these are the varieties:
 %-------------------------
-kriyāyogaḥ / jñānayogaḥ / caryāyogaḥ / haṭhayogaḥ / karmayogaḥ / layayogaḥ / dhyānayogaḥ / mantrayogaḥ / lakṣyayogaḥ / vāsanāyogaḥ / śivayogaḥ / brahmayogaḥ / advaitayogaḥ / siddhayogaḥ / rājayogaḥ\varc{siddhayogaḥ / rājayogaḥ \pune}{rājayogaḥ / siddhayogaḥ \nepal \dehlia}\notes{kriyāyogaḥ ... rājayogaḥ}{\englishnote{\small The initial codification of 15 yogas appears so far only in \nepal \pune and \dehlia. It is ommitted in \edprint \lalchand. \oxford can't be determined due to missing folios.}} / ete pañcadaśayogāḥ //
+%
+% \om                                                                                                                                                                \edprint
+% \om                                                                                                                                                                \lalchand
+% \om                                                                                                                                                                \oxford
+% kriyāyogaḥ 1 jñānayogaḥ 2 caryāyogaḥ 3 haṭhayogaḥ 4 karmayogaḥ 5 layayogaḥ 6 dhyānayogaḥ 7 maṃtrayogaḥ 8 lakṣyayogaḥ 9 vāsanāyogaḥ 10 śivayogaḥ 11 brahmayogaḥ 12 advaitayogaḥ 13 siddhayogaḥ 14 rājayogaḥ 15 ete paṃcadaśayogāḥ \pune
+% kriyāyogaḥ / jñānayogaḥ / caryāyogaḥ / haṭhayogaḥ / karmayogaḥ / layayogaḥ / dhyānayogaḥ / maṃtrayogaḥ / lakṣyayogaḥ / vāsanāyogaḥ / śivayogaḥ / brahmayogaḥ / advaitayogaḥ / rājayogaḥ / siddhayogaḥ / ete paṃcadaśayogāḥ // \nepal
+% kriyāyogaḥ // jñānayogaḥ // caryāyogaḥ // haṭhayogaḥ // karmayogaḥ // layayogaḥ // dhyānayogaḥ // maṃtrayogaḥ // lakṣyayogaḥ // vāsanāyogaḥ // śivayogaḥ // brahmayogaḥ // advaitayogaḥ // rājayogaḥ // siddhayogaḥ // ete paṃcadaśayogāḥ // \dehlia
+% kriyāyogaḥ // jñānayogaḥ // tvaryāyogaḥ // haṭhayogaḥ // karmayogaḥ // layayogaḥ // dhyānayogaḥ maṃtrayogaḥ  lakṣayogaḥ  vāsanāyogaḥ  śivayogaḥ  brahmayogaḥ  advaitayogaḥ  rājayogaḥ  siddhayogaḥ ete paṃcadaśayogāḥ  \ujjaina
+% kriyāyogaḥ // jñānayogaḥ // caryāyogaḥ // haṭhayogaḥ // karmayogaḥ // nayayogaḥ // dhyānayogaḥ // maṃtrayogaḥ // lakṣyayogaḥ // vāsanāyogaḥ // śivayogaḥ // brahmayogaḥ // advaitayogaḥ // siddhayogaḥ // rājayogaḥ // evaṃ paṃcadaśāyogā bhavaṃti // \ujjainb
+%
+%
+%
+kriyāyogaḥ / jñānayogaḥ / caryāyogaḥ\varc{caryāyogaḥ}{tvaryāyogaḥ \ujjaina} / haṭhayogaḥ / karmayogaḥ / layayogaḥ\varc{layayoga}{nayayogaḥ \ujjainb} / dhyānayogaḥ / mantrayogaḥ / lakṣyayogaḥ\varc{lakṣyayogaḥ}{lakṣayoga \ujjaina} / vāsanāyogaḥ / śivayogaḥ / brahmayogaḥ / advaitayogaḥ / siddhayogaḥ / rājayogaḥ\varc{siddhayogaḥ / rājayogaḥ}{rājayogaḥ / siddhayogaḥ \nepal \dehlia \ujjaina}\notes{kriyāyogaḥ ... rājayogaḥ}{\englishnote{\small The initial codification of 15 \textit{yoga}s appears in \nepal, \pune, \dehlia, \ujjaina and \ujjainb. It is ommitted in \edprint \lalchand. \oxford can't be determined due to missing folios. \pune is the only witness which numbered the \textit{yoga}s with \textit{devanāgarī}-digits. The other witnesses separate the list with single or double \textit{daṇḍa}s.}} / ete pañcadaśayogāḥ\varc{ete pañcadaśayogāḥ}{evaṃ paṃcadaśāyogā bhavaṃti \ujjainb} //
+%
 \endprose
-
 \pstart
 \centerline{\begin{english}\textrm{\small{[Description of \textit{kriyāyoga}]}}\end{english}}
 \pend
 \bigskip
-
 \prose
 \noindent
-idānīṃ kriyāyogasya lakṣaṇaṃ kathyate\varc{kathyate \pune \nepal}{kathayate \dehlia}/
+% \om                                     \edprint
+% \om                                     \lalchand
+% \om                                     \oxford
+%idānīṃ kriyāyogasya lakṣaṇaṃ kathyate /  \pune
+%idānīṃ kriyāyogasya lakṣaṇaṃ kathyate /  \nepal
+%idānīṃ kriyāyogasya lakṣaṇaṃ kathayate / \dehlia
+%idānīṃ kriyāyogasya lakṣaṇaṃ kathyate /  \nepal
+%idānīṃ kriyāyogasya lakṣaṇaṃ kathyate /  \ujjaina
+%atha   kriyāyogas   lakṣaṇaṃ          // \ujjainb
+%
+idānīṃ\varc{idāṇīṃ}{atha \ujjainb} kriyāyogasya\varc{kriyāyogasya}{kriyāyogas \ujjainb} lakṣaṇaṃ kathyate\varc{kathyate}{kathayate \dehlia \om \ujjainb}/
+%
+%Now the characteristic of the Yoga of [mental] action (kriyāyoga) described.
+%
+%-------------------------
+%
 \endprose
 \medskip
-
+%
 %\AtEveryStanza{\vskip 2mm}??? Er will das nicht beim kompilieren. Warum?
 \setlength{\stanzaindentbase}{13pt}
 \setstanzaindents{0,4,4,4,4}
-
+%
+%
+% \om                                                   \edprint
+% \om                                                   \lalchand
+% \om                                                   \oxford
+%kriyāmuktir    ayaṃ yogaḥ    svapiṇḍe siddhidāyakaḥ    \pune
+%kriyāmuktir    ayaṃ yogaḥ /  svapiṇḍe siddhidāyakaḥ /  \nepal 
+%kriyāmuktir    ayaṃ yogaḥ    svapiṇḍe siddhidāyakaḥ /  \dehlia
+%kriyāyuktir    ayaṃ yogaḥ /  svapiṇḍe siddhidāyakaḥ /  \ujjaina
+%kriyāmuktiḥ // ayaṃ yogaḥ    svapiṃ?  siddhidāyakaṃ // \ujjainb 
+%
 \stanza
 kriyāmuktirayaṃ yogaḥ svapiṇḍe siddhidāyakaḥ/ &
+%
+%This Yoga is liberation through [mental] action. It bestows (siddhi) in ones own body
+%
+%-------------------------
+% \om                                                   \edprint
+% \om                                                   \lalchand
+% \om                                                   \oxford
+%yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā         \pune
+%yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/        \nepal
+%yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/        \dehlia 
+%yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/ 1      \ujjaina
+%yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/        \ujjainb
+%
 yaṃ yaṃ karoti kallolaṃ kāryāraṃbhe manaḥ sadā/ &
-tattataḥ kuñcanaṃ kurvan kriyāyogastato bhavet\varc{bhavet \pune}{ato bhava \nepal \dehlia}// \& %komisch das beide es falsch haben. ato bhava macht aber keinen Sinn, oder? 
+%
+%Each wave the mind creates at the beginning of an action,
+%
+%%-------------------------
+% \om                                                        \edprint
+% \om                                                        \lalchand
+% \om                                                        \oxford
+%   tattataḥ kuñcanaṃ kurvan kriyāyogas tato bhavet           \pune
+%   tattataḥ kuñcanaṃ kurvan kriyāyogas ato bhava    //      \nepal
+%   tattataḥ kuñcanaṃ kurvan kriyāyogas ato bhava    //      \dehlia 
+%   taṃkṛ taṃ kuñcanaṃ kurvan kriyāyoga sato ?va     //1//   \ujjaina
+%   tatastataḥ kuṃcanaṃ kurvan kriyāyogas tato bhavet //1//  \ujjainb
+%
+tattataḥ\varc{tattataḥ}{tatastataḥ \ujjainb taṃkṛ taṃ \ujjaina} kuñcanaṃ kurvan kriyāyogastato bhavet\varc{bhavet}{ato bhava \nepal \dehlia sato va \ujjaina}// \& 
 \medskip
-\stanza
-kṣamāvivekavairāgyaṃ\varc{kṣamāvivekavairāgyaṃ \nepal \dehlia \pune}{kṣamā vivekaṃ vairāgyaṃ \edprint} śāntiḥ santoṣanispṛhāḥ\varc{santoṣanispṛhāḥ \pune}{santoṣaniṣpṛhā \edprint santoṣanispṛhaḥ \dehlia santoṣanispṛhā \nepal} / &
-etadyuktiyuto\varc{etadyuktiyuto \pune \edprint}{etat yuktiyuto \dehlia \nepal} yogī kriyāyogī nigadyate// \&
-\medskip
+%
+%of all those one shall withdraw oneself. Then kriyāyoga arises.
+%
+%-------------------------
+% \om                                                                                                  \oxford
+% \om                                                                                                  \lalchand
+%kṣamā vivekaṃ vairāgyaṃ śāntiḥ santoṣaniṣpṛhā    etadyuktiyuto yogī         kriyāyogī nigadyate       \edprint
+%kṣamāvivekavairāgyaṃ    śāntiḥ santoṣanispṛhā    etat yuktiyuto yogī        kriyāyogī nigadyate       \nepal
+%kṣamāvivekavairāgyaṃ    śāntiḥ santoṣanispṛhaḥ   etat yuktiyuto yogī        kriyāyogī nigadyate       \dehlia
+%kṣamāvivekavairāgyaṃ    śāntiḥ santoṣanispṛhāḥ   etadyuktiyuto yogī         kriyāyogī nigadyate       \pune
+%kṣamāvivekavairāgya---- śāntisantoṣaniḥspṛhī     etadyuktiyuto yosau        kriyāyogī nigadyate       \ujjaina 
+%kṣamā vivekaṃ vairāgyaṃ śāntisaṃtoṣaniṣpṛhāḥ //  etatmuktiyuto yogī         kriyāyogī nigadyate //2// \ujjainb
+%
+%The text of the Printed Edition starts here ---> 
+%
 \stanza 
-mātsaryaṃ mamatā māyā hiṃsā ca madagarvatā\varc{madagarvatā \nepal \dehlia}{madagarvitā \pune \edprint}/ & 
+kṣamāvivekavairāgyaṃ\varc{°vivekavairāgyaṃ}{vivekaṃ vairāgyaṃ \edprint \ujjainb} \notes{kṣamā°}{\englishnote{\small \edprint starts here.}} śāntiḥ\varc{śāntiḥ}{śānti° \ujjaina \ujjainb} santoṣanispṛhāḥ\varc{santoṣanispṛhāḥ}{saṃtoṣaniṣpṛhāḥ \ujjain bsantoṣaniṣpṛhā \edprint santoṣanispṛhaḥ \dehlia santoṣanispṛhā \nepal santoṣaniḥspṛhī \ujjaina } / &
+yuktiyuto yogī\varc{°yuktiyuto}{°yuktiyuto yosau \ujjaina}{muktiyuto yogī} kriyāyogī nigadyate//\&
+\medskip
+%
+%Patience, discrimination, equanimity, peace, modesty, desireless: The yogī who is endowed with these means is said to be a kriyāyogī.
+%
+%------------------------
+% \om                                             \oxford
+% \om                                             \lalchand
+% mātsaryaṃ mamatā māyā hiṃsā ca   madagarvitā /  \edprint
+% mātsarya  mamatā māyā hiṃsāśā    madagarvitāḥ    \pune
+% mātsarya  mamatā māyā hiṃsāḥ //  madagarvatā /  \nepal    -> the hiṃsā---''ḥ//'' in \nepal looks like a śā -> indicator that the others copied from \nepal? 
+% mātsarya  mamatā māyā hiṃsāśā    madagarvatā /  \dehlia
+% mātsaryaṃ mamatā māyā hiṃsāśā    madagarvatā /  \ujjaina
+% mātsaryaṃ mamatā māyā hiṃsāśā    madagarvatā /  \ujjainb
+%
+%
+\stanza 
+mātsaryaṃ\varc{mātsaryaṃ}{mātsarya \nepal \dehlia \pune} mamatā māyā hiṃsā ca\varc{hiṃsā ca}{hiṃsāḥ \nepal hiṃsāśā \pune \dehlia \ujjaina \ujjainb} madagarvatā\varc{madagarvatā}{madagarvitā \edprint madagarvitāḥ \pune}/ & 
 kāmakrodhabhayaṃ \varc{kāmakrodhabhayaṃ \pune \nepal \edprint}{krāmakrodho bhayaṃ \dehlia}lajjā lobhamohau tathāśuciḥ\varc{tathā 'śuciḥ \pune \dehlia \nepal}{tathā śuciḥ \edprint}// \& %müsste es eigentlichn nicht tathāśuciḥ sein?
 \medskip
-\stanza %Lalchand starts here: how shall I mark this in the apparatus? Or where? Is it here? With a note? 
-rāgadveṣau \varc{rāgadveṣau \edprint \nepal \pune \dehlia}{athadveṣo \lalchand}ghṛnālasyaṃ bhrantirdaṃbho \varc{bhraṃtirdaṃbho \nepal \pune \lalchand}{bhrāṃtirdebho \dehlia bhrāntitvaṃ \edprint}akṣamā bhramaḥ\varc{akṣamā bhramaḥ \nepal}{kṣamābhramaḥ \dehlia \lalchand \pune mokṣamābhramaḥ \edprint}/ &
+%
+%Envy, selfishness, cheating, violence and intoxication,
+%
+%-----------------------
+%  \om                                                       \oxford
+%  atha dveṣo ghṛṇālasyaṃ bhrāṃtir   daṃbho kṣamā bhramaḥ //     \lalchand
+%  rāgadveṣau ghṛṇālasyaṃ bhrāntitvaṃ     mokṣamā bhramaḥ /      \edprint
+%  rāgadveṣau ghṛṇālasyaṃ bhrāṃtir   ddaṃbhokaṣmā bhramaḥ        \pune
+%  rāgadveṣau ghṛṇālasyaṃ bhrāṃtir   daṃbho kṣamā bhramaḥ //4// \nepal   
+%  rāgadveṣau ghṛṇālasyaṃ bhrāṃtir   debho  kṣamā bhramaḥ //     \dehlia
+%  rāgadoṣau  ghṛṇālasyaṃ bhrāṃti    daṃbha kṣamī bhramaḥ 4    \ujjaina
+%  rāgadveṣau ghṛṇālasyaṃ bhrāṃtir   daṃbho kṣamā bhramaḥ //    \ujjainb
+%
+%
+\stanza 
+rāgadveṣau\varc{rāgadveṣau}{rāgadoṣau \ujjaina athadveṣo \lalchand}\notes{rāga°}{\englishnote{\small \lalchand starts here.}} ghṛṇālasyaṃ bhrantirdaṃbho \varc{bhraṃtirdaṃbho}{bhrāṃtirdebho \dehlia bhrāntitvaṃ \edprint bhrāṃti daṃbha \ujjaina}kṣamā bhramaḥ\varc{kṣamā bhramaḥ}{mokṣamābhramaḥ \edprint °kṣamī bhramaḥ \ujjaina}/ &
+%
+%
+%
 yasyaitāni na \varc{na \nepal \pune \lalchand \dehlia}{ca \edprint}vidyante kriyāyogī sa ucyate// \&
-
-%rāgadveṣau ghṛṇālasyaṃ bhrāntitvaṃ mokṣamābhramaḥ / &
-%yasyaitāni ca vidyante kriyāyogī sa ucyate // \&
 \medskip
 \prose
 \noindent
