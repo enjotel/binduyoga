@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.16)  10 DEC 2020 08:48
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.11.16)  7 JAN 2021 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1864,26 +1864,16 @@ Package polyglossia Info: Skipping automatic font setup for language sanskrit.
 \sanskrit@punctthin=\XeTeXcharclass5
 )
 Requested font "Adobe Text Pro" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 \g__fontspec_family_AdobeTextPro_int=\count292
-Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
 Requested font "Adobe Text Pro/BI/OT" at 10.0pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-SemiboldIt.ttf
-Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
 Requested font "Adobe Text Pro/B/OT" at 10.0pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-Semibold.ttf
-Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
 Requested font "Adobe Text Pro/I/OT" at 10.0pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-It.ttf
-Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
-Requested font "Adobe Text Pro/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
 Requested font "Adobe Text Pro/B/OT" at 10.0pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-Semibold.ttf
 Requested font "Adobe Text Pro/B/OT" at 10.0pt
@@ -1938,59 +1928,52 @@ Requested font "Adobe Text Pro/BI/OT" at 10.0pt
 .................................................
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
-Requested font "Sanskrit Text/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-
-*************************************************
-* fontspec warning: "script-not-exist-latn"
-* 
-* Font 'Sanskrit Text' does not contain script 'Devanagari'.
-* 'Latin' script used instead.
-*************************************************
-\g__fontspec_family_SanskritText_int=\count293
-Requested font "Sanskrit Text/BI/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
+Requested font "Murty Sanskrit/OT" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+\g__fontspec_family_MurtySanskrit_int=\count293
+Requested font "Murty Sanskrit/BI/OT" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Sanskrit Text/BI (it probably doesn't exist).
+. Could not resolve font Murty Sanskrit/BI (it probably doesn't exist).
 .................................................
-Requested font "Sanskrit Text/B/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font Sanskrit Text/B (it probably doesn't exist).
-.................................................
-Requested font "Sanskrit Text/I/OT" at 10.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
+Requested font "Murty Sanskrit/B/OT" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
 .................................................
 . fontspec info: "no-font-shape"
 . 
-. Could not resolve font Sanskrit Text/I (it probably doesn't exist).
+. Could not resolve font Murty Sanskrit/B (it probably doesn't exist).
+.................................................
+Requested font "Murty Sanskrit/I/OT" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font Murty Sanskrit/I (it probably doesn't exist).
 .................................................
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 10.95pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'SanskritText(0)' created for font 'Sanskrit Text' with options
-. [Script=Devanagari,Mapping=RomDev,Scale=1.2,LetterSpace=1.1].
+. Font family 'MurtySanskrit(0)' created for font 'Murty Sanskrit' with
+. options [Script=Devanagari,Mapping=RomDev,Scale=1.2,LetterSpace=1.1].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.2]"Sanskrit
-. Text/OT:script=latn;language=DFLT;mapping=RomDev;letterspace=1.1;"
+. <->s*[1.2]"Murty
+. Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;letterspace=1.1;"
 . 
 . * 'small caps' with NFSS spec.:
 . 
 . and font adjustment code:
 . 
 .................................................
-(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks32
 \MT@count=\count294
@@ -2008,40 +1991,48 @@ Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
-(./Sigla-Ed.tex)
-No file binduyoga-edition.aux.
+(./Sigla-Ed.tex) (./binduyoga-edition.aux
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 11.99997pt on input line 158.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 11.99997pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+)
 \openout1 = `binduyoga-edition.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 82.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 84.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 82.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 84.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    ... okay on input line 84.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 82.
+LaTeX Info: Redefining \selectfont on input line 84.
 .................................................
 . fontspec info: "setup-math"
 . 
@@ -2049,69 +2040,69 @@ LaTeX Info: Redefining \selectfont on input line 82.
 .................................................
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 82.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 82.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 82.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 82.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 82.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 82.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 82.
-LaTeX Font Info:    Redeclaring math accent \check on input line 82.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 82.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 82.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 82.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 82.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 84.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 84.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 84.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 84.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 84.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 84.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 84.
+LaTeX Font Info:    Redeclaring math accent \check on input line 84.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 84.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 84.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 84.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 84.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 82.
+(Font)              `operators' in the math version `normal' on input line 84.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> EU1/AdobeTextPro(0)/m/n on input line 8
-2.
+4.
 LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 82.
+(Font)              `operators' in the math version `bold' on input line 84.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> EU1/AdobeTextPro(0)/m/n on input line 
-82.
+84.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  EU1/AdobeTextPro(0)/m/n --> EU1/AdobeTextPro(0)/m/n on 
-input line 82.
+input line 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> EU1/AdobeTextPro(0)/m/it on input line
- 82.
+ 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> EU1/AdobeTextPro(0)/bx/n on input line
- 82.
+ 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> EU1/LinBiolinum(0)/m/n on input line 8
-2.
+4.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> EU1/LinLibertine(5)/m/n on input line 
-82.
+84.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  EU1/AdobeTextPro(0)/m/n --> EU1/AdobeTextPro(0)/bx/n on
- input line 82.
+ input line 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> EU1/AdobeTextPro(0)/bx/it on input li
-ne 82.
+ne 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> EU1/LinBiolinum(0)/bx/n on input line
- 82.
+ 84.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> EU1/LinLibertine(5)/bx/n on input line
- 82.
-LaTeX Info: Redefining \microtypecontext on input line 82.
+ 84.
+LaTeX Info: Redefining \microtypecontext on input line 84.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -2123,13 +2114,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 17.28pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "Adobe Text Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 17.28pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-Semibold.ttf
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 14.4pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "Adobe Text Pro/B/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 14.4pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-Semibold.ttf
@@ -2143,10 +2134,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 8.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 6.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "cmmi10" at 10.95pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 Requested font "cmmi8" at 8.0pt
@@ -2160,11 +2151,11 @@ Requested font "cmsy8" at 8.0pt
 Requested font "cmsy6" at 6.0pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 86.
+(Font)              <10.95> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 86.
+(Font)              <8> on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 86.
+(Font)              <6> on input line 88.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
@@ -2182,18 +2173,18 @@ Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 Class memoir Warning: The material used in the headers is too large
 (13.59999pt) for the given head height (5.0pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 104.
+(in both cases you will find help in the memoir manual). on input line 106.
 
 
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `EU1/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 104.
+(Font)              scaled to size 10.95pt on input line 106.
 Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 10.95pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_M.otf
 LaTeX Font Info:    Font shape `EU1/LinLibertine(5)/m/n' will be
-(Font)              scaled to size 8.03pt on input line 104.
+(Font)              scaled to size 8.03pt on input line 106.
 Requested font "[LinLibertine_M.otf]/OT:script=latn;language=DFLT;" at 8.03pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_M.otf
@@ -2202,39 +2193,34 @@ tine_M.otf
 
 
 ]
-Overfull \hbox (1.76527pt too wide) in paragraph at lines 107--108
-\EU1/AdobeTextPro(0)/m/n/10.95 more consistent and meaningful readings, b) are 
-in several cases more
+Overfull \hbox (5.47507pt too wide) in paragraph at lines 109--110
+\EU1/AdobeTextPro(0)/m/n/10.95 Among the witnesses we see deviating and inconsi
+stent application of \EU1/AdobeTextPro(0)/m/it/10.95 sandhi\EU1/AdobeTextPro(0)
+/m/n/10.95 .
  []
 
 
-Overfull \hbox (2.8822pt too wide) in paragraph at lines 107--108
-\EU1/AdobeTextPro(0)/m/n/10.95 stemmatic hints pointing towards the inferiority
- of group 1., currently
+Overfull \hbox (0.87828pt too wide) in paragraph at lines 113--114
+\EU1/AdobeTextPro(0)/m/n/10.95 Again, due to inconsistent use of class nasals a
+mong the witnesses \EU1/AdobeTextPro(0)/m/it/10.95 anusvāra\EU1/AdobeTextPro(0)
+/m/n/10.95 s
  []
 
-
-Overfull \hbox (7.74417pt too wide) in paragraph at lines 110--111
-[]\EU1/AdobeTextPro(0)/m/n/10.95 Notiz für mich selbst: ENTSCHEIDEN OB SANDHI S
-ETZEN ODER
- []
-
-
-Overfull \hbox (27.62544pt too wide) in paragraph at lines 110--111
-\EU1/AdobeTextPro(0)/m/n/10.95 NICHT! HANDSCHRIFTEN VS. EDPRINT! DURCHGÄNGIG BI
-SHER
- []
-
-
-Overfull \hbox (23.42921pt too wide) in paragraph at lines 110--111
-\EU1/AdobeTextPro(0)/m/n/10.95 IMMER SANDHI BIS ZUM 1/3 DES NAVAMACAKRAABSCHNIT
-TES 
- []
-
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 13.13995pt on input line 127.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 13.13995pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+Package microtype Info: Loading generic settings for font family
+(microtype)             `MurtySanskrit' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;" at 10.95pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
 LaTeX Font Info:    Font shape `EU1/AdobeTextPro(0)/m/sl' in size <10.95> not a
 vailable
 (Font)              Font shape `EU1/AdobeTextPro(0)/m/it' tried instead on inpu
-t line 113.
+t line 127.
 Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 10.95pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-It.ttf
@@ -2243,294 +2229,234 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [2]
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/n' will be
-(Font)              scaled to size 13.13995pt on input line 117.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;mapping=RomDev;lette
-rspace=1.1;" at 13.13995pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-Package microtype Info: Loading generic settings for font family
-(microtype)             `SanskritText' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;" at 10.95pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-
-Overfull \vbox (8.59999pt too high) has occurred while \output is active []
-
-
-[3] [4
-
-]
 Requested font "Adobe Text Pro/BI/OT:script=latn;language=DFLT;mapping=tex-text
 ;" at 17.28pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-SemiboldIt.ttf
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/n' will be
-(Font)              scaled to size 14.39996pt on input line 119.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;mapping=RomDev;lette
-rspace=1.1;" at 14.39996pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
- Section 1
-
-Package reledmac Warning: Can't find line-list file binduyoga-edition.1 on inpu
-t line 120.
-
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 14.39996pt on input line 129.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 14.39996pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+ Section 1 (./binduyoga-edition.1)
 \openout5 = `binduyoga-edition.1'.
 
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/n' will be
-(Font)              scaled to size 10.79997pt on input line 126.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;mapping=RomDev;lette
-rspace=1.1;" at 10.79997pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 10.79997pt on input line 136.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 10.79997pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 9.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;" at 9.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
 Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 9.0pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_DR.otf
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;" at 9.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 5.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 Requested font "cmmi9" at 9.0pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 Requested font "cmsy9" at 9.0pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 142.
+(Font)              <9> on input line 152.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 142.
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/n' will be
-(Font)              scaled to size 7.19998pt on input line 142.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;mapping=RomDev;lette
-rspace=1.1;" at 7.19998pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;" at 6.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
+(Font)              <5> on input line 152.
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 7.19998pt on input line 152.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 7.19998pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;" at 6.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
+" at 10.0pt
+ -> /home/enjotel/.local/share/fonts/AdobeTextPro-It.ttf
 Requested font "[LinLibertine_DR.otf]/OT:script=latn;language=DFLT;mapping=tex-
 text;+tnum;+lnum;" at 10.0pt
  -> /usr/local/texlive/2015/texmf-dist/fonts/opentype/public/libertine/LinLiber
 tine_DR.otf
 Requested font "Adobe Text Pro/OT:script=latn;language=DFLT;mapping=tex-text;" 
 at 7.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-Regular.ttf
+ -> /home/enjotel/.local/share/fonts/Adobe-Text-Pro_2050.ttf
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 173.
-Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
-" at 10.0pt
- -> /home/enjotel/.local/share/fonts/AdobeTextPro-It.ttf
-[5]
+(Font)              <7> on input line 196.
+ [3
 
-LaTeX Font Warning: Font shape `EU1/SanskritText(0)/m/sl' undefined
-(Font)              using `EU1/SanskritText(0)/m/n' instead on input line 227.
+]
+Underfull \hbox (badness 1748) has occurred while \output is active
+[] \EU1/AdobeTextPro(0)/m/n/9 1 \EU1/MurtySanskrit(0)/m/n/9 तत्ततः ] ततस्ततः []
+[][][][]\EU1/LinLibertine(4)/m/n/9 U[][][][]$[]$[]\EU1/MurtySanskrit(0)/m/n/9 त
+ंकृ तं [][][][][]\EU1/LinLibertine(4)/m/n/9 U[][][][]$[]$  \EU1/AdobeTextPro(0)
+/m/n/9 1 \EU1/MurtySanskrit(0)/m/n/9 भवेत् ] अतो भव [][][][][]\EU1/LinLibertine
+(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[]\EU1/MurtySanskrit(0)/m/n/9 सतो व
+ [][][][][]\EU1/LinLibertine(4)/m/n/9 U[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9
+ 2
+ []
+
+
+Underfull \vbox (badness 1735) has occurred while \output is active []
+
+
+
+LaTeX Font Warning: Font shape `EU1/MurtySanskrit(0)/m/sl' undefined
+(Font)              using `EU1/MurtySanskrit(0)/m/n' instead on input line 406.
+
 
 
 Class memoir Warning: The material used in the headers is too large
-(15.71223pt) for the given head height (5.0pt), it is recommended to
+(16.05054pt) for the given head height (5.0pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 227.
+(in both cases you will find help in the memoir manual). on input line 406.
 
 
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
+
+
+[4]
+Overfull \vbox (18.17557pt too high) has occurred while \output is active []
+
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/sl' will be
+(Font)              scaled to size 13.13995pt on input line 576.
+
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
+
+
+[5]
+Overfull \hbox (1.69594pt too wide) in paragraph at lines 590--619
+\EU1/MurtySanskrit(0)/m/sl/10.95 वायुश्चतुर्दलेषु [][][]  रजःसत्त्वतमोमनांसि वं
+ शं षं सं मध्यत्रिकोणे त्रिशिखा [][][]  तन्मध्ये [][][]
+ []
+
+
+Overfull \hbox (1.69594pt too wide) detected at line 619
+[]\EU1/MurtySanskrit(0)/m/sl/10.95 वायुश्चतुर्दलेषु [][][]  रजःसत्त्वतमोमनांसि 
+वं शं षं सं मध्यत्रिकोणे त्रिशिखा [][][]  तन्मध्ये [][][]
+ []
+
+
+Underfull \hbox (badness 1077) has occurred while \output is active
+[] \EU1/AdobeTextPro(0)/m/n/9 1 \EU1/MurtySanskrit(0)/m/n/9 भुक्तिमुक्तिदा ] भु
+क्तिमुक्तिप्रदा [][][][][]\EU1/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]L[][]
+[][]$[]$[]\EU1/MurtySanskrit(0)/m/n/9 भुक्तिमुक्तिदा शिवरूपिणी सुषुम्णा नाडी प्
+रवर्त्तते
+ []
+
+
+Underfull \hbox (badness 1275) has occurred while \output is active
+\EU1/MurtySanskrit(0)/m/n/9 ऽपायाः [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][]
+[]$[]$[]\EU1/MurtySanskrit(0)/m/n/9 °उपायः [][][][][]\EU1/LinLibertine(4)/m/n/9
+ L[][][][]$[]$[]\EU1/MurtySanskrit(0)/m/n/9 °उपाया [][][][][]\EU1/LinLibertine(
+4)/m/n/9 U[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 2 \EU1/MurtySanskrit(0)/m/n/
+9 कथ्यन्ते ] कथ्यते [][][][][]\EU1/LinLibertine(4)/m/n/9 L[][][][]$[]$  \EU1/Ad
+obeTextPro(0)/m/n/9 4 \EU1/MurtySanskrit(0)/m/n/9 चतुर्दलं मूलचक्रं
+ []
+
+
+Overfull \vbox (22.33492pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [6]
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/sl' will be
-(Font)              scaled to size 13.13995pt on input line 235.
+Underfull \hbox (badness 3009) has occurred while \output is active
+[] \EU1/AdobeTextPro(0)/m/n/9 1 \EU1/MurtySanskrit(0)/m/n/9 तस्याः [][][][][]\E
+U1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[][][][]E[][][][]$[]
+$ []\EU1/MurtySanskrit(0)/m/n/9 ] तस्या [][][][][]\EU1/LinLibertine(4)/m/n/9 P[
+][][][]$[]$[][][][]L[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 1 \EU1/MurtySanskr
+it(0)/m/n/9 मूर्तेर् [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]
+D[][][][]$[]$[][][][]P[][][][]$[]$[][][][]E[][][][]$[]$ []\EU1/MurtySanskrit(0)
+/m/n/9 ] मूर्ति [][][][][]\EU1/LinLibertine(4)/m/n/9 L[][][][]$[]$  \EU1/AdobeT
+extPro(0)/m/n/9 1 \EU1/MurtySanskrit(0)/m/n/9 ध्यानकरणात्
+ []
 
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+
+Overfull \vbox (34.0166pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [7]
-Overfull \hbox (0.61801pt too wide) in paragraph at lines 253--282
-\EU1/SanskritText(0)/m/sl/10.95 संज्ञा  [][][]  तत्कलिकामध्ये  [][][]  पद्मरागर
-त्नसमानवर्णांगुष्थप्रमाणैका  [][][]  पुत्तलिका
+Overfull \hbox (1.95433pt too wide) detected at line 670
+[]\EU1/MurtySanskrit(0)/m/sl/10.95 । अस्या [][][]  मूर्तेर्ध्यानकरणात् [][][]  
+स्वर्गपातालाकशमनुष्यगन्धर्वकिन्नरगुह्यकविद्या-
  []
 
 
-Overfull \hbox (0.27467pt too wide) in paragraph at lines 253--282
-\EU1/SanskritText(0)/m/sl/10.95 र्वकिन्नरगुह्यकविद्याधरलोकसम्बन्धिन्यः स्त्रीयो
- ऽपि  [][][] साधकस्य पुरुषस्य
+Overfull \hbox (0.56284pt too wide) detected at line 703
+[][]\EU1/MurtySanskrit(0)/m/sl/10.95 इदानीं  [][][] पञ्चमं कमलं षोदशदलं कण्ठस्थ
+ाने  [][][] वर्तते । तन्मध्ये कोटिचन्द्रस-
  []
 
 
-Overfull \hbox (0.43558pt too wide) has occurred while \output is active
-[] \EU1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 चतुर्दलं मूलचक्रं []
-[][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$ []\EU1/Sa
-nskritText(0)/m/n/9 ] चतुर्दलं मूलं चक्रं [][][][][]\EU1/LinLibertine(4)/m/n/9 
-E[][][][]$[]$[][][][]P[][][][]$[]$[]\EU1/SanskritText(0)/m/n/9 चतुर्दलमूलचक्रं 
-[][][][][]\EU1/LinLibertine(4)/m/n/9 L[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 
-0 \EU1/SanskritText(0)/m/n/9 प्रथममाधारचक्रं
- []
-
-
-Overfull \hbox (12.30132pt too wide) has occurred while \output is active
-\EU1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 अग्निशिखाकारैका [][][][
-][]\EU1/LinLibertine(4)/m/n/9 E[][][][]$[]$ []\EU1/SanskritText(0)/m/n/9 ] अग्न
-िशिखाकारा एका [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][]
-[]$[]$[]\EU1/SanskritText(0)/m/n/9 मग्निशिखाकारा एका [][][][][]\EU1/LinLibertin
-e(4)/m/n/9 P[][][][]$[]$[]\EU1/SanskritText(0)/m/n/9 ज्ञिशिखाकरणका
- []
-
-
-Overfull \hbox (8.61754pt too wide) has occurred while \output is active
-\EU1/SanskritText(0)/m/n/9 साधको [][][][][]\EU1/LinLibertine(4)/m/n/9 P[][][][]
-$[]$[][][][]L[][][][]$[]$[][][][]E[][][][]$[]$ []\EU1/SanskritText(0)/m/n/9 ] स
-धकः [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$  \E
-U1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 ऽतिसुन्दरो [][][][][]\EU1
-/LinLibertine(4)/m/n/9 P[][][][]$[]$[][][][]L[][][][]$[]$[][][][]E[][][][]$[]$ 
-[]\EU1/SanskritText(0)/m/n/9 ] अतिसुन्दरो [][][][][]\EU1/LinLibertine(4)/m/n/9 
-N[][][][]$[]$[][][][]D[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritT
-ext(0)/m/n/9 युवतिनामतिवल्लभो
- []
-
-
-Overfull \hbox (0.11247pt too wide) has occurred while \output is active
-\EU1/AdobeTextPro(0)/m/n/10 missing folios.[][][][]  \EU1/AdobeTextPro(0)/m/n/9
- 0 \EU1/SanskritText(0)/m/n/9 स्वाधिष्टानचक्रं ] [][][][][]\EU1/AdobeTextPro(0)
-/m/n/10 One would rather expect \EU1/AdobeTextPro(0)/m/it/10 svādhiṣṭhānacakraṃ
-\EU1/AdobeTextPro(0)/m/n/10 .
- []
-
-
-Overfull \vbox (33.13348pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [8]
-Overfull \hbox (0.61801pt too wide) detected at line 282
-[]\EU1/SanskritText(0)/m/sl/10.95 संज्ञा  [][][]  तत्कलिकामध्ये  [][][]  पद्मरा
-गरत्नसमानवर्णांगुष्थप्रमाणैका  [][][]  पुत्तलिका
- []
+Underfull \vbox (badness 2042) has occurred while \output is active []
 
 
-Overfull \hbox (0.27467pt too wide) detected at line 282
-[]\EU1/SanskritText(0)/m/sl/10.95 र्वकिन्नरगुह्यकविद्याधरलोकसम्बन्धिन्यः स्त्री
-यो ऽपि  [][][] साधकस्य पुरुषस्य
- []
-
-
-Overfull \hbox (1.54414pt too wide) has occurred while \output is active
-\EU1/AdobeTextPro(0)/m/it/10 bhavaṃti \EU1/AdobeTextPro(0)/m/n/10 as witnessed 
-in [][][][]\EU1/LinLibertine(4)/m/n/10 N[][][][]$[]$\EU1/AdobeTextPro(0)/m/n/10
- and \EU1/AdobeTextPro(0)/m/it/10 pṛthvīloka saṃbaṃdhinyo pi striyaḥ vasyā bhav
-aṃti
- []
-
-
-Overfull \vbox (43.70766pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [9]
-Overfull \hbox (0.16641pt too wide) detected at line 445
-[]\EU1/SanskritText(0)/m/sl/10.95 ध्यानकरणादमृतधारा  [][][]  [][][]  स्रवति [][
-][]  ।  [][][]  क्षयरोगपित्तज्वरहृदयदाहशिरोरोगजिह्वा-
+LaTeX Font Info:    Font shape `EU1/MurtySanskrit(0)/m/n' will be
+(Font)              scaled to size 9.59998pt on input line 872.
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;mapping=RomDev;lett
+erspace=1.1;" at 9.59998pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+Requested font "Murty Sanskrit/OT:script=deva;language=DFLT;" at 8.0pt
+ -> /home/enjotel/.local/share/fonts/Murty-Sanskrit-1.00.otf
+
+Overfull \hbox (1.70601pt too wide) detected at line 941
+[][]\EU1/MurtySanskrit(0)/m/sl/10.95 इदानीं अष्टमचक्रं ब्रह्मरन्ध्रस्थाने शतदलं
+ [][][]  वर्तते । तस्य कमलस्य जालन्ध-
  []
 
 
-Underfull \vbox (badness 2096) has occurred while \output is active []
+Overfull \vbox (25.4506pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [10]
-LaTeX Font Info:    Font shape `EU1/SanskritText(0)/m/n' will be
-(Font)              scaled to size 9.59998pt on input line 484.
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;mapping=RomDev;lette
-rspace=1.1;" at 9.59998pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-Requested font "Sanskrit Text/OT:script=latn;language=DFLT;" at 8.0pt
- -> /home/enjotel/.local/share/fonts/Sanskr.ttf
-
-Overfull \vbox (27.7909pt too high) has occurred while \output is active []
+Overfull \vbox (26.54733pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [11]
-Overfull \hbox (47.83635pt too wide) has occurred while \output is active
-[] \EU1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 अष्टमचक्रं ब्रह्मरंध
-्रस्थाने शतदलं [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][
-][]$[]$ []\EU1/SanskritText(0)/m/n/9 ] ब्रह्मरंध्रस्थाने ऽष्टमं शतदलं चक्रं [][
-][][][]\EU1/LinLibertine(4)/m/n/9 E[][][][]$[]$[][][][]P[][][][]$[]$[]\EU1/Sans
-kritText(0)/m/n/9 ब्रह्मरन्ध्रस्थाने
+Overfull \hbox (0.88635pt too wide) has occurred while \output is active
+\EU1/MurtySanskrit(0)/m/n/9 लासवतः [][][][][]\EU1/LinLibertine(4)/m/n/9 E[][][]
+[]$[]$[][][][]P[][][][]$[]$[][][][]N[][][][]$[]$[][][][]D[][][][]$[]$ []\EU1/Mu
+rtySanskrit(0)/m/n/9 ] विलासवंतं [][][][][]\EU1/LinLibertine(4)/m/n/9 L[][][][]
+$[]$[][][][]B[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 8 \EU1/MurtySanskrit(0)/m
+/n/9 संगीतविनोदप्रेक्ष्यावतः [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$
+[][][][]D[][][][]$[]$ []\EU1/MurtySanskrit(0)/m/n/9 ] संगीतविलासवतः
  []
 
 
-Overfull \hbox (10.32391pt too wide) has occurred while \output is active
-\EU1/SanskritText(0)/m/n/9 ऽग्निधूमाकारारेखा [][][][][]\EU1/LinLibertine(4)/m/n
-/9 L[][][][]$[]$[][][][]B[][][][]$[]$  \EU1/AdobeTextPro(0)/m/n/9 0 \EU1/Sanskr
-itText(0)/m/n/9 यादृशी तादृश्येका [][][][][]\EU1/LinLibertine(4)/m/n/9 P[][][][
-]$[]$[][][][]L[][][][]$[]$[][][][]B[][][][]$[]$ []\EU1/SanskritText(0)/m/n/9 ] 
-यादृशी तादृशी एका [][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[]
-[][][]$[]$[]\EU1/SanskritText(0)/m/n/9 यादृश्यादृश्येका
- []
+Overfull \vbox (30.32594pt too high) has occurred while \output is active []
 
 
-Overfull \vbox (20.75182pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
 [12]
-Overfull \hbox (14.3087pt too wide) has occurred while \output is active
-[][][][][]\EU1/LinLibertine(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[]\EU1/A
-dobeTextPro(0)/m/n/9 om. [][][][][]\EU1/LinLibertine(4)/m/n/9 P[][][][]$[]$  \E
-U1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 न [][][][][]\EU1/LinLiber
-tine(4)/m/n/9 E[][][][]$[]$[][][][]B[][][][]$[]$[][][][]L[][][][]$[]$ []\EU1/Sa
-nskritText(0)/m/n/9 ] \EU1/AdobeTextPro(0)/m/n/9 om. [][][][][]\EU1/LinLibertin
-e(4)/m/n/9 N[][][][]$[]$[][][][]D[][][][]$[]$[][][][]P[][][][]$[]$  \EU1/AdobeT
-extPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 स्पृशतः [][][][][]\EU1/LinLibertin
-e(4)/m/n/9 E[][][][]$[]$[][][][]L[][][][]$[]$[][][][]B[][][][]$[]$[][][][]N[][]
-[][]$[]$[][][][]D[][][][]$[]$ []\EU1/SanskritText(0)/m/n/9 ] \EU1/AdobeTextPro(
-0)/m/n/9 om. [][][][][]\EU1/LinLibertine(4)/m/n/9 P[][][][]$[]$  \EU1/AdobeText
-Pro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 निरन्तरध्यानकरणात्
- []
+Overfull \vbox (11.05054pt too high) has occurred while \output is active []
 
 
-Overfull \hbox (0.51677pt too wide) has occurred while \output is active
-[] \EU1/AdobeTextPro(0)/m/n/9 0 \EU1/SanskritText(0)/m/n/9 मनसा वचसा ] [][][][]
-[]\EU1/AdobeTextPro(0)/m/n/10 All manuscripts at hand share this usage of the i
-nstrumentals. Only
- []
+[13] [14
 
 
-Overfull \hbox (1.8095pt too wide) has occurred while \output is active
-[][][][][]\EU1/AdobeTextPro(0)/m/n/10 A \EU1/AdobeTextPro(0)/m/it/10 saptadaśī 
-kalā \EU1/AdobeTextPro(0)/m/n/10 appears frequently in Śaiva literature. Refere
-nces need to be added
- []
-
-
-Overfull \vbox (53.3798pt too high) has occurred while \output is active []
-
-
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
-
-
-[13]
-reledmac reminder: 
- The number of the footnotes in this section has changed since the last run.
- You will need to run LaTeX two more times before the footnote placement
- and line numbering in this section are correct.
-
-Overfull \vbox (10.71223pt too high) has occurred while \output is active []
-
-
-[14] Section 2
-
-Package reledmac Warning: Can't find line-list file binduyoga-edition.2 on inpu
-t line 1093.
-
+] Section 2 (./binduyoga-edition.2)
 Requested font "Adobe Text Pro/I/OT:script=latn;language=DFLT;mapping=tex-text;
 " at 9.0pt
  -> /home/enjotel/.local/share/fonts/AdobeTextPro-It.ttf
@@ -2539,28 +2465,13 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [15
-
-
 \openout5 = `binduyoga-edition.2'.
 
 ]
-Overfull \hbox (8.38055pt too wide) in paragraph at lines 1128--1129
+Overfull \hbox (8.38055pt too wide) in paragraph at lines 1537--1538
  \EU1/AdobeTextPro(0)/m/n/10.95 tions (\EU1/AdobeTextPro(0)/m/it/10.95 bahukriy
 āyogī\EU1/AdobeTextPro(0)/m/n/10.95 ). Fraud, illusion, property, violence, cra
 ving, envy,
- []
-
-
-Overfull \hbox (7.18011pt too wide) in paragraph at lines 1138--1139
- []\EU1/AdobeTextPro(0)/m/n/10.95 At the root-bulp exists the single major vess
-el, which consists wholly
- []
-
-
-Overfull \hbox (6.35472pt too wide) in paragraph at lines 1138--1139
- \EU1/AdobeTextPro(0)/m/n/10.95 and liberation. While abiding in (\EU1/AdobeTex
-tPro(0)/m/it/10.95 satyāṃ\EU1/AdobeTextPro(0)/m/n/10.95 ) her (\EU1/AdobeTextPr
-o(0)/m/it/10.95 asyāṃ\EU1/AdobeTextPro(0)/m/n/10.95 ) knowledge arises
  []
 
 
@@ -2568,7 +2479,7 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [16]
-Overfull \hbox (3.05731pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (3.05731pt too wide) in paragraph at lines 1555--1556
  \EU1/AdobeTextPro(0)/m/n/10.95 and mindstuffs?!(\EU1/AdobeTextPro(0)/m/it/10.9
 5 manāṃsi\EU1/AdobeTextPro(0)/m/n/10.95 ) [symbolized by the syllables] “vaṃ”, 
 “śaṃ”,
@@ -2579,7 +2490,7 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [17]
-Overfull \hbox (5.78728pt too wide) in paragraph at lines 1176--1181
+Overfull \hbox (5.78728pt too wide) in paragraph at lines 1585--1590
  []\EU1/AdobeTextPro(0)/m/n/10.95 Now (follows the description of) the fifth lo
 tus having sixteen petals
  []
@@ -2593,21 +2504,17 @@ Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [19]
+
+Class memoir Warning: The material used in the headers is too large
+(16.05054pt) for the given head height (5.0pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1614.
+
+
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
 [20]
-reledmac reminder: 
- The number of the footnotes in this section has changed since the last run.
- You will need to run LaTeX two more times before the footnote placement
- and line numbering in this section are correct.
-
-Class memoir Warning: The material used in the headers is too large
-(15.71223pt) for the given head height (5.0pt), it is recommended to
-either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 1220.
-
-
 Overfull \vbox (8.59999pt too high) has occurred while \output is active []
 
 
@@ -2617,12 +2524,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 31706 strings out of 493668
- 637417 string characters out of 6145662
- 762216 words of memory out of 5000000
- 34839 multiletter control sequences out of 15000+600000
- 7942 words of font info for 86 fonts, out of 8000000 for 9000
+ 31725 strings out of 493668
+ 637875 string characters out of 6145662
+ 739381 words of memory out of 5000000
+ 34849 multiletter control sequences out of 15000+600000
+ 7958 words of font info for 88 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 67i,11n,70p,10432b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,70p,10432b,756s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on binduyoga-edition.pdf (21 pages).
